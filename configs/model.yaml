@@ -1,0 +1,645 @@
+version: '1.0'
+model_root: ../models
+selection:
+  primary: onnxruntime
+  fallback: openvino
+models:
+- id: MulticlassSegmentationV2
+  task: semantic_segmentation
+  format: onnx
+  path: onnx/MulticlassSegmentationV2.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: a4fa17985eaec268bad30c01abe8888d391fc902db9881aa2531d90b9fc23d81
+  status: inference-validated
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 1024
+      - 1024
+      type: tensor(float)
+  output_specs:
+    output:
+      shape:
+      - 1
+      - 8
+      - 1024
+      - 1024
+      finite: true
+  preprocess_version: rgb-nchw-zero-one-1024-v1
+  postprocess_version: eight-class-map-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.semantic_segmentation.multiclass_segmentation_v2:MulticlassSegmentationV2Inference
+  logical_id: MulticlassSegmentationV2
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: SemanticSearchImage
+  task: image_embedding
+  format: onnx
+  path: onnx/SemanticSearchImage.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: cb4d3f001708f8f0428c71ff464e6db8d4b021768923585cd7008a59b3e17ca0
+  status: inference-validated
+  input_specs:
+    image:
+      shape:
+      - 1
+      - 3
+      - 224
+      - 224
+      type: tensor(float)
+  output_specs:
+    features:
+      shape:
+      - 1
+      - 512
+      finite: true
+  preprocess_version: clip-rgb-nchw-224-v1
+  postprocess_version: l2-image-embedding-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.image_embedding.semantic_search_image:SemanticSearchImageInference
+  logical_id: SemanticSearchImage
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: face_detector_retinaface
+  task: face_detection
+  format: onnx
+  path: onnx/face_detector_retinaface.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: 4824776d7e38983ff560881072f4c56aa73ec589266a269db8222e65367bac02
+  status: ort-smoke-passed
+  input_specs:
+    input_1:
+      shape:
+      - 1
+      - 3
+      - 1024
+      - 1024
+      type: tensor(float)
+  output_specs:
+    boxes:
+      shape:
+      - 1
+      - 43008
+      - 4
+      finite: true
+    scores:
+      shape:
+      - 1
+      - 43008
+      - 2
+      finite: true
+    landmarks:
+      shape:
+      - 1
+      - 43008
+      - 10
+      finite: true
+  preprocess_version: pending-model-specific
+  postprocess_version: pending-model-specific
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.face_detection.face_detector_retinaface:FaceDetectorRetinafaceInference
+  logical_id: face_detector_retinaface
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: model_luminocity_denoise
+  task: luminance_denoise
+  format: onnx
+  path: onnx/model_luminocity_denoise.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: d8b84de60ac7e2c737e4d73786504af474214b0db4476d6c53932177434fd3c8
+  status: inference-validated
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 1
+      - 256
+      - 256
+      type: tensor(float)
+  output_specs:
+    output:
+      shape:
+      - 1
+      - 1
+      - 256
+      - 256
+      finite: true
+  preprocess_version: luminance-nchw-zero-one-256-v1
+  postprocess_version: clipped-luminance-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.luminance_denoise.model_luminocity_denoise:ModelLuminocityDenoiseInference
+  logical_id: model_luminocity_denoise
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: salient_object_improve_exp19_it150k
+  task: salient_segmentation
+  format: onnx
+  path: onnx/salient_object_improve_exp19_it150k.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: f456e0f0d9337fec15095fd979934ae0b4a9158f835d4ce21e53d3804957bd6b
+  status: inference-validated
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 512
+      - 512
+      type: tensor(float)
+  output_specs:
+    output:
+      shape:
+      - 1
+      - 2
+      - 512
+      - 512
+      finite: true
+  preprocess_version: rgb-nchw-zero-one-512-v1
+  postprocess_version: salient-foreground-mask-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.salient_segmentation.salient_object_improve_exp19_it150k:SalientObjectImproveExp19It150KInference
+  logical_id: salient_object_improve_exp19_it150k
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: srn_deblur_512
+  task: deblur_restore
+  format: onnx
+  path: onnx/srn_deblur_512.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: 68ece318df9e76ab80f6416bcc341f6d84d25c1c7058791608b9c190a4adc4ec
+  status: inference-validated
+  input_specs:
+    Placeholder:0:
+      shape:
+      - 1
+      - 3
+      - 512
+      - 512
+      type: tensor(float)
+  output_specs:
+    g_net/dec1_0_2/BiasAdd:0:
+      shape:
+      - 1
+      - 3
+      - 512
+      - 512
+      finite: true
+  preprocess_version: rgb-nchw-zero-one-512-v1
+  postprocess_version: clipped-rgb-restoration-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.deblur_restore.srn_deblur_512:SrnDeblur512Inference
+  logical_id: srn_deblur_512
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: GFPGANv1.3_2023
+  task: face_restoration
+  format: onnx
+  path: onnx/GFPGANv1.3_2023.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: e714e22e94f613132a1215ecd8fd7872acbd1802b638ac5384ae44821bb2be46
+  status: inference-validated
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 512
+      - 512
+      type: tensor(float)
+  output_specs:
+    1434/sink_port_0:
+      shape:
+      - 1
+      - 3
+      - 512
+      - 512
+      finite: true
+  preprocess_version: rgb-nchw-minus-one-one-512-v1
+  postprocess_version: gfpgan-zero-one-restoration-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.face_restoration.gfpganv1_3_2023:GFPGANv132023Inference
+  logical_id: GFPGANv1.3_2023
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: mobilenet_exp78_portrait_BOKEH12
+  task: portrait_bokeh
+  format: onnx
+  path: onnx/mobilenet_exp78_portrait_BOKEH12.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: external-model-root
+  sha256: 971fbb937f8653cc4cce86c30d77d167551d82ba05491dfe99f82a4fbf76f1bd
+  status: inference-validated
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 513
+      - 513
+      type: tensor(float)
+  output_specs:
+    Decoder/Sigmoid/sink_port_0:
+      shape:
+      - 1
+      - 1
+      - 513
+      - 513
+      finite: true
+    Decoder/segmap/sink_port_0:
+      shape:
+      - 1
+      - 513
+      - 513
+      finite: true
+  preprocess_version: rgb-nchw-zero-one-513-v1
+  postprocess_version: portrait-probability-mask-v1
+  notes: Do not copy private application assets into this repository.
+  inference_class: ai.model.onnx.portrait_bokeh.mobilenet_exp78_portrait_bokeh12:MobilenetExp78PortraitBOKEH12Inference
+  logical_id: mobilenet_exp78_portrait_BOKEH12
+  backend: onnxruntime
+  max_memory_mb: 512
+  device: cpu
+  parameters: {}
+- id: HumanLandmarks_onnx
+  logical_id: HumanLandmarks
+  task: human_analysis
+  format: onnx
+  path: onnx/HumanLandmarks.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: converted from local Luminar OpenVINO IR
+  sha256: 2f052b791e5fbb1eacdf77e73c543dbd574be3e0b026ce530baa477e230b9538
+  status: inference-validated
+  input_specs:
+    in:
+      shape:
+      - 1
+      - 256
+      - 256
+      - 3
+      type: tensor(float)
+  output_specs:
+    out:
+      shape:
+      - 1
+      - 256
+      - 256
+      - 18
+      finite: true
+  preprocess_version: rgb-nhwc-zero-one-256-v1
+  postprocess_version: dense-18ch-heatmaps-v1
+  inference_class: ai.model.onnx.human_analysis.human_landmarks:HumanLandmarksOnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: Deterministically converted from the exact local IR; ORT forward validated.
+  device: cpu
+  parameters: {}
+- id: IrisLandmarks_onnx
+  logical_id: IrisLandmarks
+  task: iris_landmarks
+  format: onnx
+  path: onnx/IrisLandmarks.onnx
+  license: UNKNOWN_EXTERNAL_ASSET
+  source: converted from local Luminar OpenVINO IR
+  sha256: 78d0ac90854a34559ccf85f4ee6e27607d7c14fb1a13b9f28f761a5548fd7917
+  status: inference-validated
+  input_specs:
+    in:
+      shape:
+      - 1
+      - 256
+      - 256
+      - 3
+      type: tensor(float)
+  output_specs:
+    out:
+      shape:
+      - 1
+      - 256
+      - 256
+      - 18
+      finite: true
+  preprocess_version: rgb-nhwc-zero-one-256-v1
+  postprocess_version: dense-18ch-heatmaps-v1
+  inference_class: ai.model.onnx.iris_landmarks.iris_landmarks:IrisLandmarksOnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: Deterministically converted from the exact local IR; ORT forward validated.
+  device: cpu
+  parameters: {}
+- id: improved_sky_segmentator_v462_i8_onnx
+  logical_id: improved_sky_segmentator_v462_i8
+  task: sky_segmentation
+  format: onnx
+  path: onnx/improved_sky_segmentator_v462_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 1f3496676345297b8806fbad3e75c34db28613d7d1407b04de7fcda2b97eeeae
+  status: ort-smoke-passed
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 513
+      - 513
+      type: tensor(float)
+  output_specs:
+    probabilities:
+      shape:
+      - 1
+      - 2
+      - 513
+      - 513
+      type: tensor(float)
+    class_map:
+      shape:
+      - 1
+      - 513
+      - 513
+      type: tensor(int32)
+  preprocess_version: sky-rgb-nchw-513-v1
+  postprocess_version: sky-foreground-probability-v1
+  inference_class: ai.model.onnx.sky_segmentation.improved_sky_segmentator_v462_i8:ImprovedSkySegmentatorV462I8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: ORT-loadable conversion; numerical parity against the source IR remains pending.
+  device: cpu
+  parameters: {}
+- id: horizon_align_i8_onnx
+  logical_id: horizon_align_i8
+  task: horizon_alignment
+  format: onnx
+  path: onnx/horizon_align_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 46b5cacf9626b71ef95310f59013974d905e9f08b44b1ff2bb0ea781065a56c5
+  status: ort-smoke-passed
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 224
+      - 224
+      type: tensor(float)
+  output_specs:
+    output:
+      shape:
+      - 1
+      - 1
+      type: tensor(float)
+  preprocess_version: horizon-rgb-nchw-224-v1
+  postprocess_version: horizon-angle-v1
+  inference_class: ai.model.onnx.horizon_alignment.horizon_align_i8:HorizonAlignI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 256
+  notes: ORT-loadable conversion; numerical parity against the source IR remains pending.
+  device: cpu
+  parameters: {}
+- id: skyinwater_v16_i8_onnx
+  logical_id: skyinwater_v16_i8
+  task: sky_segmentation
+  format: onnx
+  path: onnx/skyinwater_v16_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 18963e7d46812c98716f389fe894e015bb2fa804e704203b7972df2fdbfd3733
+  status: ort-smoke-passed
+  input_specs:
+    input:
+      shape:
+      - 1
+      - 3
+      - 513
+      - 513
+      type: tensor(float)
+  output_specs:
+    probabilities:
+      shape:
+      - 1
+      - 2
+      - 513
+      - 513
+      type: tensor(float)
+    class_map:
+      shape:
+      - 1
+      - 513
+      - 513
+      type: tensor(int32)
+  preprocess_version: sky-water-rgb-nchw-513-v1
+  postprocess_version: sky-water-foreground-probability-v1
+  inference_class: ai.model.onnx.sky_segmentation.skyinwater_v16_i8:SkyinwaterV16I8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: ORT-loadable conversion; numerical parity against the source IR remains pending.
+  device: cpu
+  parameters: {}
+- id: DepthAnythingV2SmallOpenVino_onnx
+  logical_id: DepthAnythingV2SmallOpenVino
+  task: depth_estimation
+  format: onnx
+  path: onnx/DepthAnythingV2SmallOpenVino.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 3b339f27e283179e07902ca37a491c25327e72b68cdaaa4dd2263a63d62e59ba
+  status: ort-smoke-passed
+  input_specs:
+    x.3:
+      shape:
+      - 1
+      - 3
+      - 518
+      - 518
+      type: tensor(float)
+  output_specs:
+    Result_17407:
+      shape:
+      - 1
+      - 1
+      - 518
+      - 518
+      type: tensor(float)
+  preprocess_version: depth-anything-v2-imagenet-nchw-518-v1
+  postprocess_version: relative-depth-minmax-v1
+  inference_class: ai.model.onnx.depth_estimation.depth_anything_v2_small_open_vino:DepthAnythingV2SmallOpenVinoOnnxInference
+  backend: onnxruntime
+  max_memory_mb: 1024
+  notes: ORT-loadable conversion; numerical parity against the source IR remains pending.
+  device: cpu
+  parameters: {}
+- id: skin_detector_i8_onnx
+  logical_id: skin_detector_i8
+  task: skin_segmentation
+  format: onnx
+  path: onnx/skin_detector_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 9657da0c3f4d0044d80055380310d190d569c021fc188747a687c3388f240e3c
+  status: ort-smoke-passed
+  input_specs:
+    ImageTensor:
+      shape:
+      - 1
+      - 3
+      - 513
+      - 513
+      type: tensor(float)
+  output_specs:
+    PROBA/sink_port_0:
+      shape:
+      - 1
+      - 2
+      - 513
+      - 513
+      type: tensor(float)
+  preprocess_version: skin-rgb-nchw-513-v1
+  postprocess_version: skin-foreground-probability-v1
+  inference_class: ai.model.onnx.skin_segmentation.skin_detector_i8:SkinDetectorI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: ORT-loadable conversion; numerical parity against the source IR remains pending.
+  device: cpu
+  parameters: {}
+- id: eyes_detector_i8_onnx
+  logical_id: eyes_detector_i8
+  task: eye_segmentation
+  format: onnx
+  path: onnx/eyes_detector_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: d2ae99653bb856eb18a58aaf76c52461c9a242146fc7845be2da71e206354668
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-160x80-v1
+  postprocess_version: eye-class-map-v1
+  inference_class: ai.model.onnx.face_analysis.eyes_detector_i8:EyesDetectorI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 256
+  notes: ORT real forward passed; Luminar numerical parity pending.
+- id: face_boxes_i8_onnx
+  logical_id: face_boxes_i8
+  task: face_detection
+  format: onnx
+  path: onnx/face_boxes_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: b587e3e58a23bc2eba7eda3c52848fa5d136454b24d2349440643cfd1d7e4df1
+  status: inference-validated
+  preprocess_version: rgb-nchw-raw255-640-v1
+  postprocess_version: face-box-threshold-v1
+  inference_class: ai.model.onnx.face_analysis.face_boxes_i8:FaceBoxesI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 768
+  notes: ORT real forward passed; Luminar numerical parity pending.
+- id: face_landmarks_i8_onnx
+  logical_id: face_landmarks_i8
+  task: face_landmarks
+  format: onnx
+  path: onnx/face_landmarks_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 511991fc7aed26034169fbfc14525e2e0f183b8a8215fe6ae312fc5e11bc273f
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-256-v1
+  postprocess_version: heatmap-landmarks-69-v1
+  inference_class: ai.model.onnx.face_analysis.face_landmarks_i8:FaceLandmarksI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: ORT real forward passed; Luminar numerical parity pending.
+- id: human_clothes_exp13_v2_onnx
+  logical_id: human_clothes_exp13_v2
+  task: human_clothes_segmentation
+  format: onnx
+  path: onnx/human_clothes_exp13_v2.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 395a4017b5ed42fae0c7c29ff0910c6ad62cdf7c4a4bfb29a1a59a6a268bbcf6
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-1024-v1
+  postprocess_version: human-clothes-five-class-v1
+  inference_class: ai.model.onnx.human_analysis.human_clothes_exp13_v2:HumanClothesExp13V2OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 1024
+  notes: ORT real forward passed; Luminar numerical parity pending.
+- id: magic_lights_exp37_dataset123_1024_onnx
+  logical_id: magic_lights_exp37_dataset123_1024
+  task: light_detection
+  format: onnx
+  path: onnx/magic_lights_exp37_dataset123_1024.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: dc917f7d594f94ea500451354954bd62e0347b2461b7a282a7101c27b78c945b
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-1024-v1
+  postprocess_version: yolo-light-boxes-v1
+  inference_class: ai.model.onnx.light_detection.magic_lights_exp37_dataset123_1024:MagicLightsExp37OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 1024
+  notes: Positive/negative ORT probes validate output scales, anchors, confidence
+    threshold, NMS and finite decoded boxes; final Luminar light rendering parity
+    remains pending.
+- id: saliency_map_i8_onnx
+  logical_id: saliency_map_opset9_billinear_upsampling_keras_tensorflow_i8
+  task: saliency_segmentation
+  format: onnx
+  path: onnx/saliency_map_opset9_billinear_upsampling_keras_tensorflow_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 3cb999a2c1d1f480d26f94811723cb5fd7bff4561b84217f02ddb2c3227f9269
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-256-v1
+  postprocess_version: saliency-mask-v1
+  inference_class: ai.model.onnx.saliency_segmentation.saliency_map_i8:SaliencyMapI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 512
+  notes: ORT real forward passed; Luminar numerical parity pending.
+- id: segmentator_i8_onnx
+  logical_id: segmentator_i8
+  task: semantic_segmentation
+  format: onnx
+  path: onnx/segmentator_i8.onnx
+  license: PROPRIETARY_LOCAL_INSTALL
+  source: Converted from IR shared by Luminar Neo 1.25.1 build 21065 and 1.26.0 build
+    21267
+  sha256: 39f75adc2ea4304e64adb9a03228a7fb3e3cd143386afc1d52c0e532eac05766
+  status: inference-validated
+  preprocess_version: rgb-nchw-zero-one-513-v1
+  postprocess_version: semantic-151-class-v1
+  inference_class: ai.model.onnx.semantic_segmentation.segmentator_i8:SegmentatorI8OnnxInference
+  backend: onnxruntime
+  max_memory_mb: 1024
+  notes: ORT real forward passed; Luminar class mapping parity pending.

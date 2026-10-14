@@ -1,0 +1,220 @@
+{
+  "version": "2.0",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "logical_viewport": [1440, 900],
+  "device_scale_factor": 2,
+  "physical_viewport": [2880, 1800],
+  "contracts": [
+    {
+      "id": "catalog-photo-context-submenu",
+      "initial_fixture": {"reset": true, "workspace": "catalog", "catalog": "single-selected-record"},
+      "events": [
+        {"action": "contextmenu", "target": "selected-catalog-record"},
+        {"action": "hover", "target": "设置评分-submenu"},
+        {"action": "click", "target": "★★★★★"},
+        {"action": "contextmenu", "target": "selected-catalog-record"},
+        {"action": "click", "target": "向右旋转 90°"},
+        {"action": "wait", "condition": "catalog-record-updated"},
+        {"action": "contextmenu", "target": "selected-catalog-record"},
+        {"action": "click", "target": "向左旋转 90°"},
+        {"action": "wait", "condition": "catalog-record-updated"}
+      ],
+      "visible_assertions": ["parent-and-child-menu-visible", "five-star-state-visible", "preview-rotation-visible", "rotation-roundtrip-restored"],
+      "api_assertions": ["rating-equals-five", "rotation-delta-equals-ninety", "rotation-roundtrip-restores-orientation", "same-asset-id-preserved"],
+      "final_screenshot_state": "catalog",
+      "allowed_wait_conditions": ["catalog-record-updated"],
+      "failure_artifacts": ["screenshot", "console", "network", "catalog-sqlite"]
+    },
+    {
+      "id": "catalog-folder-context-scroll",
+      "initial_fixture": {"reset": true, "workspace": "catalog", "catalog": "long-collection"},
+      "events": [
+        {"action": "contextmenu", "target": "validation-folder"},
+        {"action": "assert", "condition": "导入图片到该文件夹-action-visible"},
+        {"action": "keypress", "target": "escape"},
+        {"action": "click", "target": "existing-catalog-record"},
+        {"action": "scroll", "target": "catalog-grid", "value": "bottom"},
+        {"action": "assert", "condition": "last-catalog-row-visible"},
+        {"action": "scroll", "target": "catalog-grid", "value": "top"},
+        {"action": "assert", "condition": "selected-record-preserved"}
+      ],
+      "visible_assertions": ["folder-context-menu-visible", "import-action-visible", "last-catalog-row-visible", "selection-preserved-after-scroll"],
+      "api_assertions": ["asset-count-unchanged", "validation-folder-action-resolves-exact-folder", "selected-asset-id-preserved"],
+      "final_screenshot_state": "catalog",
+      "allowed_wait_conditions": ["catalog-layout-settled"],
+      "failure_artifacts": ["screenshot", "console", "network", "catalog-sqlite"]
+    },
+    {
+      "id": "edit-tool-expand-crop",
+      "initial_fixture": {"reset": true, "workspace": "edit", "project": "single-image", "tool": "crop_ai"},
+      "events": [
+        {"action": "click", "target": "裁切AI"},
+        {"action": "assert", "condition": "crop-tool-expanded"},
+        {"action": "drag", "target": "crop-frame", "value": "source-ratio-swap-4:3-canonical-box"},
+        {"action": "assert", "condition": "crop-ratio-swap-equals-four-three"},
+        {"action": "click", "target": "水平对齐"},
+        {"action": "drag", "target": "preview-image", "value": {"angle_degrees": 2.5, "length_points": 290}},
+        {"action": "click", "target": "应用"},
+        {"action": "wait", "condition": "preview-image-ready"},
+        {"action": "assert", "condition": "crop-tool-collapsed"}
+      ],
+      "visible_assertions": ["crop-tool-expanded", "crop-ratio-swap-equals-four-three", "crop-overlay-geometry-visible", "crop-tool-auto-collapsed-after-apply"],
+      "api_assertions": ["one-crop-edit-created", "source-ratio-swap-equals-four-three", "crop-box-equals-canonical-box", "straighten-input-angle-equals-two-point-five", "preview-dimensions-match-crop"],
+      "final_screenshot_state": "tool-collapsed",
+      "allowed_wait_conditions": ["preview-image-ready", "project-edit-stack-updated"],
+      "failure_artifacts": ["screenshot", "console", "network", "project-json", "execution-trace"]
+    },
+    {
+      "id": "photo-switch-history",
+      "initial_fixture": {"reset": true, "workspace": "edit", "projects": ["photo-a", "photo-b"]},
+      "events": [
+        {"action": "apply", "target": "photo-a-details", "value": 0.35},
+        {"action": "wait", "condition": "project-edit-stack-updated"},
+        {"action": "keypress", "target": "command-z"},
+        {"action": "wait", "condition": "project-edit-stack-updated"},
+        {"action": "keypress", "target": "command-shift-z"},
+        {"action": "wait", "condition": "preview-image-ready"},
+        {"action": "click", "target": "photo-b-filmstrip"},
+        {"action": "apply", "target": "photo-b-vignette", "value": 0.6},
+        {"action": "wait", "condition": "project-edit-stack-updated"},
+        {"action": "click", "target": "photo-a-filmstrip"},
+        {"action": "assert", "condition": "photo-a-edit-history-visible"},
+        {"action": "click", "target": "photo-b-filmstrip"},
+        {"action": "assert", "condition": "photo-b-edit-history-visible"}
+      ],
+      "visible_assertions": ["photo-a-history-restored", "photo-b-history-isolated", "undo-preview-visible", "redo-preview-identical"],
+      "api_assertions": ["photo-a-edit-id-stable", "photo-b-edit-id-distinct", "history-order-isolated-per-project", "redo-restores-identical-parameters-and-preview-hash"],
+      "final_screenshot_state": "edit-history",
+      "allowed_wait_conditions": ["project-edit-stack-updated", "preview-image-ready"],
+      "failure_artifacts": ["screenshot", "console", "network", "project-a-json", "project-b-json", "execution-trace"]
+    },
+    {
+      "id": "preset-import-preview-apply",
+      "initial_fixture": {"reset": true, "workspace": "presets", "project": "single-image", "local_presets": []},
+      "events": [
+        {"action": "upload", "target": "添加 Luminar Neo 预设集合", "fixture_file": "canonical-lnp-package"},
+        {"action": "wait", "condition": "local-preset-visible"},
+        {"action": "click", "target": "imported-local-preset"},
+        {"action": "wait", "condition": "preset-preview-ready"},
+        {"action": "click", "target": "应用预设"},
+        {"action": "wait", "condition": "project-edit-stack-updated"},
+        {"action": "restart", "target": "api"},
+        {"action": "wait", "condition": "local-preset-visible-after-restart"}
+      ],
+      "visible_assertions": ["imported-preset-visible", "preset-preview-ready", "busy-state-cleared", "preset-visible-after-api-restart"],
+      "api_assertions": ["preset-index-created-once", "preset-graph-order-matches-fixture", "preset-applied-once", "preset-persists-after-api-restart"],
+      "final_screenshot_state": "presets",
+      "allowed_wait_conditions": ["local-preset-visible", "preset-preview-ready", "project-edit-stack-updated", "local-preset-visible-after-restart"],
+      "failure_artifacts": ["screenshot", "console", "network", "preset-index-json", "project-json"]
+    },
+    {
+      "id": "layer-lifecycle",
+      "initial_fixture": {"reset": true, "workspace": "edit", "project": "single-image", "layers": []},
+      "events": [
+        {"action": "click", "target": "添加图层"},
+        {"action": "click", "target": "内置免费图层素材"},
+        {"action": "wait", "condition": "layer-visible"},
+        {"action": "drag", "target": "layer-order", "value": "top"},
+        {"action": "contextmenu", "target": "overlay-layer"},
+        {"action": "click", "target": "Hide Layer"},
+        {"action": "contextmenu", "target": "overlay-layer"},
+        {"action": "click", "target": "Show Layer"},
+        {"action": "drag", "target": "layer-opacity", "value": 0.5},
+        {"action": "select", "target": "layer-blend", "value": "screen"},
+        {"action": "click", "target": "水平翻转"},
+        {"action": "click", "target": "填充"},
+        {"action": "wait", "condition": "preview-image-ready"},
+        {"action": "contextmenu", "target": "overlay-layer"},
+        {"action": "click", "target": "移除图层"}
+      ],
+      "visible_assertions": ["layer-visible-before-delete", "layer-hidden-and-restored", "layer-opacity-fifty-percent", "screen-blend-selected", "layer-removed"],
+      "api_assertions": ["layer-created-once", "layer-order-persisted", "layer-visibility-roundtrip", "layer-opacity-equals-half", "layer-transform-and-blend-persisted", "preview-and-export-state-hash-match", "layer-deleted"],
+      "final_screenshot_state": "layer-stack",
+      "allowed_wait_conditions": ["layer-visible", "project-layer-stack-updated", "preview-image-ready"],
+      "failure_artifacts": ["screenshot", "console", "network", "project-json", "export-file"]
+    },
+    {
+      "id": "mask-lifecycle",
+      "initial_fixture": {"reset": true, "workspace": "edit", "project": "one-layer", "masks": []},
+      "events": [
+        {"action": "click", "target": "遮罩-tab"},
+        {"action": "click", "target": "画笔"},
+        {"action": "set", "target": "画笔大小", "value": 80},
+        {"action": "set", "target": "画笔柔和度", "value": 24},
+        {"action": "set", "target": "画笔强度", "value": 70},
+        {"action": "drag", "target": "preview-image", "value": "canonical-mask-stroke"},
+        {"action": "wait", "condition": "mask-preview-ready"},
+        {"action": "keypress", "target": "command-z"},
+        {"action": "keypress", "target": "command-shift-z"},
+        {"action": "wait", "condition": "mask-preview-ready"},
+        {"action": "click", "target": "重置工具遮罩"}
+      ],
+      "visible_assertions": ["mask-preview-visible", "brush-size-eighty", "brush-softness-twenty-four", "brush-strength-seventy", "mask-history-undo-redo-visible", "mask-removed"],
+      "api_assertions": ["mask-created-once", "mask-brush-parameters-persisted", "mask-history-undo-redo-identical", "preview-and-export-state-hash-match", "mask-deleted"],
+      "final_screenshot_state": "layer-stack",
+      "allowed_wait_conditions": ["mask-preview-ready", "project-layer-stack-updated", "preview-image-ready"],
+      "failure_artifacts": ["screenshot", "console", "network", "project-json", "mask-png", "export-file"]
+    },
+    {
+      "id": "compare-zoom-pan",
+      "initial_fixture": {"reset": true, "workspace": "edit", "project": "one-visible-edit", "zoom": 1.0},
+      "events": [
+        {"action": "mousedown", "target": "前后对比"},
+        {"action": "wait", "condition": "source-image-ready"},
+        {"action": "mouseup", "target": "前后对比"},
+        {"action": "select", "target": "zoom-200-percent"},
+        {"action": "drag", "target": "image-stage", "value": "canonical-pan"},
+        {"action": "assert", "condition": "pan-offset-visible"},
+        {"action": "select", "target": "fit-to-view"},
+        {"action": "wait", "condition": "preview-image-ready"}
+      ],
+      "visible_assertions": ["source-image-visible-during-compare", "edited-preview-restored", "zoom-indicator-two-hundred", "pan-offset-visible", "fit-restores-canvas"],
+      "api_assertions": ["project-state-hash-unchanged", "no-edit-mutation-request", "preview-hash-restored-after-fit"],
+      "final_screenshot_state": "edit",
+      "allowed_wait_conditions": ["source-image-ready", "preview-image-ready", "layout-settled"],
+      "failure_artifacts": ["screenshot", "console", "network", "execution-trace"]
+    },
+    {
+      "id": "multi-image-three-workflows",
+      "initial_fixture": {"reset": true, "workspace": "catalog", "workflows": ["hdr_merge", "focus_stacking", "panorama_stitching"]},
+      "events": [
+        {"action": "run-workflow", "target": "HDR 合并", "fixture_file": "hdr-bracket-set"},
+        {"action": "wait", "condition": "hdr-preview-ready"},
+        {"action": "export", "target": "hdr-result"},
+        {"action": "run-workflow", "target": "焦点堆叠", "fixture_file": "focus-stack-set"},
+        {"action": "wait", "condition": "focus-preview-ready"},
+        {"action": "export", "target": "focus-result"},
+        {"action": "run-workflow", "target": "全景拼接", "fixture_file": "panorama-set"},
+        {"action": "wait", "condition": "panorama-preview-ready"},
+        {"action": "export", "target": "panorama-result"}
+      ],
+      "visible_assertions": ["hdr-preview-and-export-complete", "focus-preview-and-export-complete", "panorama-preview-and-export-complete", "all-frame-names-and-order-visible"],
+      "api_assertions": ["three-workflows-created-once", "all-input-hashes-and-order-persisted", "three-analysis-states-ready", "three-render-hashes-stable", "three-export-hashes-match-preview"],
+      "final_screenshot_state": "multi-image-complete",
+      "allowed_wait_conditions": ["hdr-preview-ready", "focus-preview-ready", "panorama-preview-ready", "export-response-complete"],
+      "failure_artifacts": ["screenshot", "console", "network", "workflow-json", "export-files"]
+    },
+    {
+      "id": "export-dialog-file",
+      "initial_fixture": {"reset": true, "workspace": "edit", "project": "one-visible-edit", "export_directory": "empty"},
+      "events": [
+        {"action": "click", "target": "导出"},
+        {"action": "wait", "condition": "export-dialog-ready"},
+        {"action": "fill", "target": "export-filename", "value": "canonical-export"},
+        {"action": "select", "target": "export-format", "value": "png"},
+        {"action": "fill", "target": "export-width", "value": 1080},
+        {"action": "select", "target": "export-profile", "value": "sRGB"},
+        {"action": "click", "target": "取消"},
+        {"action": "assert", "condition": "no-export-file-created"},
+        {"action": "click", "target": "导出"},
+        {"action": "click", "target": "确认导出"},
+        {"action": "wait", "condition": "export-response-complete"}
+      ],
+      "visible_assertions": ["export-dialog-ready", "filename-format-size-profile-readable", "cancel-closes-without-output", "export-completes-once"],
+      "api_assertions": ["cancel-created-zero-files", "one-export-file-created", "export-metadata-matches-dialog", "export-pixel-hash-matches-preview-state", "effect-remains-restorable"],
+      "final_screenshot_state": "edit",
+      "allowed_wait_conditions": ["export-dialog-ready", "export-response-complete"],
+      "failure_artifacts": ["screenshot", "console", "network", "export-file", "export-metadata"]
+    }
+  ]
+}

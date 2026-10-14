@@ -1,0 +1,102 @@
+{
+  "version": "1.28.1-23487",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "reference": "Luminar Neo 1.28.1 build 23487 local zh-Hans edit workspace",
+  "source_inventory": {
+    "installed_tool_entries": 41,
+    "visible_edit_tools": 40,
+    "excluded_source_tools": ["MPLayerProperties"]
+  },
+  "default_capability": "color_adjustments",
+  "catalog_collection": "夏日户外拍照",
+  "workspaces": [
+    {"id": "catalog", "label": "目录"},
+    {"id": "presets", "label": "预置"},
+    {"id": "edit", "label": "编辑"}
+  ],
+  "workflow_labels": {
+    "hdr_merge": "HDR 合并",
+    "focus_stacking": "焦点堆叠",
+    "panorama_stitching": "全景拼接"
+  },
+  "catalog_actions": [],
+  "tool_groups": [
+    {"id": "common", "label": "通用", "tone": "common", "capabilities": ["crop_ai"]},
+    {"id": "extensions", "label": "图像质量", "tone": "quality", "capabilities": ["denoise", "deblur"]},
+    {"id": "essentials", "label": "基本功能", "tone": "essential", "capabilities": ["default_effects", "ai_enhance", "erase", "structure_ai", "color_adjustments", "bw_channels", "details", "denoise_laplacian", "vignette"]},
+    {"id": "landscape", "label": "风景", "tone": "landscape", "capabilities": ["sky_replace", "sunrays", "blue_hour", "fog", "landscape_enhancer", "water_enhancer"]},
+    {"id": "creative", "label": "创意", "tone": "creative", "capabilities": ["depth_volume", "color_transfer", "magic_lights", "complex_bleach", "lut_mapping", "color_toning", "fade", "new_neon_light", "radiance", "glow_orton", "blur", "grain"]},
+    {"id": "portrait", "label": "人像", "tone": "portrait", "capabilities": ["face_ai", "bokeh_ai", "face_enhancer", "skin_smooth", "slim_people", "high_key"]},
+    {"id": "pro", "label": "专业", "tone": "pro", "capabilities": ["pro_contrast", "color_enhancer", "dodge_burn", "clone"]}
+  ],
+  "capability_visuals": {
+    "crop_ai": {"icon": "crop", "ai_badge": true},
+    "denoise": {"icon": "quality", "ai_badge": true},
+    "deblur": {"icon": "quality", "ai_badge": true},
+    "default_effects": {"icon": "light", "ai_badge": false},
+    "ai_enhance": {"icon": "adjust", "ai_badge": true},
+    "erase": {"icon": "erase", "ai_badge": false},
+    "structure_ai": {"icon": "structure", "ai_badge": true},
+    "color_adjustments": {"icon": "color", "ai_badge": false},
+    "bw_channels": {"icon": "mono", "ai_badge": false},
+    "details": {"icon": "structure", "ai_badge": false},
+    "denoise_laplacian": {"icon": "quality", "ai_badge": false},
+    "vignette": {"icon": "adjust", "ai_badge": false},
+    "sky_replace": {"icon": "sky", "ai_badge": true},
+    "sunrays": {"icon": "light", "ai_badge": false},
+    "blue_hour": {"icon": "light", "ai_badge": true},
+    "fog": {"icon": "adjust", "ai_badge": true},
+    "landscape_enhancer": {"icon": "landscape", "ai_badge": false},
+    "water_enhancer": {"icon": "water", "ai_badge": true},
+    "depth_volume": {"icon": "light", "ai_badge": false},
+    "color_transfer": {"icon": "color", "ai_badge": false},
+    "magic_lights": {"icon": "light", "ai_badge": false},
+    "complex_bleach": {"icon": "mono", "ai_badge": false},
+    "lut_mapping": {"icon": "color", "ai_badge": false},
+    "color_toning": {"icon": "color", "ai_badge": false},
+    "fade": {"icon": "adjust", "ai_badge": false},
+    "new_neon_light": {"icon": "light", "ai_badge": false},
+    "radiance": {"icon": "light", "ai_badge": false},
+    "glow_orton": {"icon": "light", "ai_badge": false},
+    "blur": {"icon": "adjust", "ai_badge": false},
+    "grain": {"icon": "quality", "ai_badge": false},
+    "face_ai": {"icon": "portrait", "ai_badge": true},
+    "bokeh_ai": {"icon": "portrait", "ai_badge": true},
+    "face_enhancer": {"icon": "portrait", "ai_badge": true},
+    "skin_smooth": {"icon": "portrait", "ai_badge": false},
+    "slim_people": {"icon": "portrait", "ai_badge": true},
+    "high_key": {"icon": "light", "ai_badge": false},
+    "pro_contrast": {"icon": "adjust", "ai_badge": false},
+    "color_enhancer": {"icon": "color", "ai_badge": false},
+    "dodge_burn": {"icon": "light", "ai_badge": false},
+    "clone": {"icon": "clone", "ai_badge": false}
+  },
+  "layer_library": {
+    "preview_limit": 6,
+    "groups": [
+      {"id": "stardust-bokeh", "label": "星尘散景", "collection_id": "698abfac-5ee1-46e5-89e6-b743309a220d", "expected_count": 12, "preview_limit": 6},
+      {"id": "light-leaks", "label": "漏光", "collection_id": "0e7de55b-4e7d-4054-b3b2-6a03d59620b3", "expected_count": 12, "preview_limit": 6},
+      {"id": "sparklers", "label": "烟火", "collection_id": "df123927-7334-49d3-a984-94a20b918eb5", "expected_count": 8, "preview_limit": 6},
+      {"id": "flares", "label": "耀斑", "collection_id": "b39907b7-367e-4fa2-a59c-d494b2e5aeb8", "expected_count": 6, "preview_limit": 6}
+    ]
+  },
+  "sky_defaults": {
+    "horizon_offset": 0.0,
+    "horizontal_offset": 0.0,
+    "vertical_offset": 0.0,
+    "sky_flip": false,
+    "sky_global": 30.0,
+    "fix_gaps": 10.0,
+    "brightness": 0.0,
+    "temperature": 0.0,
+    "edge_refinement": 30.0,
+    "foreground_relight": 20.0,
+    "relight_saturation": 0.0,
+    "relight_human": 0.0,
+    "reflection_amount": 50.0,
+    "reflection_blur": 0.0,
+    "sky_blur": 0.0,
+    "sky_grain": 0.0,
+    "atmospheric_haze": 0.0
+  }
+}

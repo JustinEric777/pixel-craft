@@ -1,0 +1,144 @@
+version: '1.0'
+reference_build: luminar-neo-macos-1.28.1-23487
+scope_policy:
+  native_persistence_required: false
+scope:
+  source: configs/ui/editor.json
+  exclude_paid: true
+  require_visible_tool_case: true
+  validation_samples:
+  - role: monochrome
+    relative_path: summer-outdoor/a_7641587156716241427/004_67f337016c.jpg
+    intended_uses: [bw_channels]
+  - role: portrait
+    relative_path: summer-outdoor/a_7597425125583143459/005_958682b7e1.jpg
+    intended_uses: [bokeh_ai]
+  - role: general
+    relative_path: summer-outdoor/a_7637493472862011940/008_e45cd3c34a.jpg
+    intended_uses: [color_adjustments, structure_ai]
+  - role: enhance
+    relative_path: summer-outdoor/a_7626002573673136674/004_60ae06fe1d.jpg
+    intended_uses: [ai_enhance]
+  - role: denoise
+    relative_path: exact-fixtures/sensor-noise.png
+    intended_uses: [denoise]
+  - role: light-effects
+    relative_path: exact-fixtures/night-lights.png
+    intended_uses: [magic_lights, new_neon_light]
+  - role: slim-people
+    relative_path: summer-outdoor/a_7621917407459721769/004_0eb1333bf3.jpg
+    intended_uses: [slim_people]
+  - role: presets
+    relative_path: summer-outdoor/a_7641587156716241427/006_e96b048e16.jpg
+    intended_uses: [default_effects]
+  - role: sky
+    relative_path: summer-outdoor/a_7637493472862011940/008_e45cd3c34a.jpg
+    intended_uses: [sky_replace, sky_enhancer, augmented_sky]
+  - role: sunrays
+    relative_path: summer-outdoor/a_7637493472862011940/005_31ef652e9d.jpg
+    intended_uses: [sunrays]
+  - role: sharpness
+    relative_path: summer-outdoor/a_7644198036071301647/004_f1938bc979.jpg
+    intended_uses: [deblur]
+  fallback_sample_roles_by_tool_group:
+    catalog: sharpness
+    common: general
+    extensions: sharpness
+    essentials: general
+    landscape: sky
+    creative: general
+    portrait: portrait
+    pro: general
+capture:
+  case_defaults:
+    new_neon_light:
+      strokes:
+      - points:
+        - [0.25, 0.32]
+        - [0.72, 0.62]
+    clone:
+      strokes:
+      - points:
+        - - 0.58
+          - 0.52
+        - - 0.62
+          - 0.52
+        source:
+        - 0.48
+        - 0.52
+        radius: 0.04
+    dodge_burn:
+      strokes:
+      - points:
+        - - 0.45
+          - 0.48
+        - - 0.55
+          - 0.52
+        radius: 0.05
+    erase:
+      strokes:
+      - points:
+        - - 0.48
+          - 0.48
+        - - 0.52
+          - 0.52
+        radius: 0.05
+  asset_family_by_capability:
+    augmented_sky: sky
+    color_transfer: color_transfer
+    lut_mapping: lut
+    sky_replace: sky
+  required_outputs:
+  - preview
+  - export
+  required_metadata:
+  - case_id
+  - reference_build
+  - capability_id
+  - parameters
+  - input_sha256
+  - export_format
+  - color_profile
+  - app_version
+  ui_viewports:
+  - - 2880
+    - 1800
+  ui_states:
+  - catalog
+  - presets
+  - edit
+  - layer-stack
+  - layer-library
+  - tool-expanded
+  - edit-history
+  - more-panel
+  - info-panel
+  - edit-collapsed
+  - black-white-before-conversion
+  - black-white-after-conversion
+  - denoise-level-selected
+  - export-dialog
+  - multi-image
+  - multi-image-complete
+thresholds:
+  default:
+    ssim_min: 0.98
+    mae_max: 0.03
+    require_shape_match: true
+  capabilities:
+    grain:
+      comparator: grain-statistical
+      low_frequency_ssim_min: 0.995
+      residual_std_relative_error_max: 0.08
+      residual_mean_delta_max: 0.005
+      gradient_delta_max: 0.005
+  ui:
+    mae_max: 0.03
+    changed_pixel_ratio_max: 0.02
+  note: Thresholds remain provisional until Luminar repeat-export variance is measured.
+runtime:
+  primary: onnxruntime
+  fallback: openvino
+  forbidden_backends:
+  - coreml
+  allow_implicit_downloads: false

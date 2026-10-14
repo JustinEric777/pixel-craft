@@ -1,0 +1,3453 @@
+{
+    "AdjustmentLayers" : {
+        "DefaultEffects" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "autodevelop",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Autodevelop_enabled"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "expanded" : true,
+                "title" : "Camera Profile",
+                "children" : [
+                    [
+                        {
+                            "type" : "cameraProfile",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Texture"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "expanded" : true,
+                "title" : "Light",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Exposure"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Highlights"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Shadows"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Blacks & Whites",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlackWhiteEffect",
+                            "parameter" : "Whites"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlackWhiteEffect",
+                            "parameter" : "Blacks"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Curves",
+                "children" : [
+                    [
+                        {
+                            "type" : "curves",
+                            "effect" : "MIPLCurveEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "RGB"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "R"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "G"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "B"
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Color",
+                "children" : [
+                    [
+                        {
+                            "type" : "white_balance",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLDevelopCommonEffectID",
+                                    "effectRAW" : "MIPLRawDevelopEffect",
+                                    "parameter" : "Temperature"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLDevelopCommonEffectID",
+                                    "effectRAW" : "MIPLRawDevelopEffect",
+                                    "parameter" : "Tint"
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Temperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "effectRAW" : "MIPLRawDevelopEffect",
+                            "parameter" : "Tint"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSaturationEffect",
+                            "parameter" : "Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVibranceEffect",
+                            "parameter" : "Vibrance"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sharpness",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Radius"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Masking"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Noise Reduction",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Luminosity"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Color"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Boost"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Optics",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effectRAW" : "MIPLLensCorrectionEffect",
+                            "parameter" : "AutoLensCorrectionOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effectRAW" : "MIPLLensCorrectionEffect",
+                            "parameter" : "ChromaticAberrationOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "DefringeOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Distortion"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Vignette"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Vignette Midpoint"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Transform",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "AutoCameraTransformCorrectionOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Vertical"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Horizontal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Aspect"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "LensCorrectionAdjustmentSubLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "parameter" : "AutoLensCorrectionOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "parameter" : "ChromaticAberrationOn"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "DefringeOn"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Distortion"
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Vignette"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLensCorrectionEffect",
+                            "parameter" : "Vignette Midpoint"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "BasicAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBrillianceWarmthEffect",
+                            "parameter" : "Warmth"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLExposureEffect",
+                            "parameter" : "Exposure"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLContrastEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighlightsEffect",
+                            "parameter" : "Highlights"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighlightsEffect",
+                            "parameter" : "Shadows"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIStructureLocalMaskingEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSaturationEffect",
+                            "parameter" : "Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVibranceEffect",
+                            "parameter" : "Vibrance"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DevelopAdjustmentSubLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "white_balance",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLDevelopCommonEffectID",
+                                    "parameter" : "Temperature"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLDevelopCommonEffectID",
+                                    "parameter" : "Tint"
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Temperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Tint"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Exposure"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Highlights"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDevelopCommonEffectID",
+                            "parameter" : "Shadows"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Blacks & Whites",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlackWhiteEffect",
+                            "parameter" : "Whites"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlackWhiteEffect",
+                            "parameter" : "Blacks"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Curves",
+                "children" : [
+                    [
+                        {
+                            "type" : "curves",
+                            "effect" : "MIPLCurveEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "RGB"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "R"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "G"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLCurveEffect",
+                                    "parameter" : "B"
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DenoiseAI" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseAIEffect",
+                            "effectRAW" : "MIPLDenoiseAIRawEffect",
+                            "parameter" : "Luminosity Denoise"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effectRAW" : "MIPLDenoiseAIRawEffect",
+                            "parameter" : "Color Denoise"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseAIEffect",
+                            "effectRAW" : "MIPLDenoiseAIRawEffect",
+                            "parameter" : "Details"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseAIEffect",
+                            "effectRAW" : "MIPLDenoiseAIRawEffect",
+                            "parameter" : "Sharpness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "BlueHourEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "presetPopup",
+                            "effect" : "MIPLBlueHourEffect"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "SkyExposure"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sky",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Temperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Tint"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Dawn",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "DawnAmount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "DawnSize"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "DawnTemperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "DawnTint"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "DawnExpAmount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Scene",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "SceneShade"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Relighting Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Relight Human"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Feathering"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Water Reflection",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Water"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "WaterBlur"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Mask Refinement",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "SkyGlobal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Horizon"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "FixGaps"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlueHourEffect",
+                            "parameter" : "Sigma"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DeblurAI" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDeblurAIEffect",
+                            "parameter" : "DeblurType"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDeblurAIEffect",
+                            "parameter" : "Level"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDeblurAIEffect",
+                            "parameter" : "FaceEnhance"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIEnhanceAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDynamicContrastEffect",
+                            "parameter" : "Boost"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyEnhancerEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIStructureEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIStructureEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIStructureEffect",
+                            "parameter" : "Boost"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ExtendedColorAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSaturationEffect",
+                            "parameter" : "Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVibranceEffect",
+                            "parameter" : "Vibrance"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLRemoveColorCastEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "HSL",
+                "children" : [
+                    [
+                        {
+                            "type" : "popUpTabs",
+                            "groups" : [
+                                {
+                                    "title" : "Hue",
+                                    "selectedByDefault" : true,
+                                    "iconName" : "HSLHueIconName",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hOrange"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hYellow"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hAqua"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hBlue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hPurple"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "hMagenta"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Saturation",
+                                    "iconName" : "HSLSaturationIconName",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sOrange"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sYellow"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sAqua"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sBlue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sPurple"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "sMagenta"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Luminance",
+                                    "iconName" : "HSLLuminanceIconName",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lOrange"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lYellow"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lAqua"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lBlue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lPurple"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLChannelsEffect",
+                                            "parameter" : "lMagenta"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHueShiftEffect",
+                            "parameter" : "Hue"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "BWChannels_v1_Effect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBWChannels_v1_Effect",
+                            "parameter" : "Apply"
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "tabs",
+                            "groups" : [
+                                {
+                                    "title" : "Luminance",
+                                    "selectedByDefault" : true,
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lYellow"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lCyan"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lBlue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "lViolet"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Saturation",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sYellow"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sCyan"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sBlue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLBWChannels_v1_Effect",
+                                            "parameter" : "sViolet"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DetailsEnhancerAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDetailsEffect",
+                            "parameter" : "Overall_Small_Detail"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDetailsEffect",
+                            "parameter" : "Overall_Medium_Detail"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDetailsEffect",
+                            "parameter" : "Overall_Large_Detail"
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Details Masking",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDetailsEffect",
+                            "parameter" : "HighlightsProtection"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDetailsEffect",
+                            "parameter" : "Masking"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sharpening Masking",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Radius"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSharpenEffect",
+                            "parameter" : "Masking"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DenoiseLaplacianEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Luminosity"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Color"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDenoiseLaplacianEffect",
+                            "parameter" : "Boost"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "LandscapeEnhancerAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDehazeEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWarmSkylight_v1_Effect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFoliageEnhanceEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFoliageEnhanceEffect",
+                            "parameter" : "Shift"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "VignetteAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "position",
+                            "title" : "Choose Subject",
+                            "effect" : "MIPLVignetteEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLVignetteEffect",
+                                    "parameter" : "Offset X"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLVignetteEffect",
+                                    "parameter" : "Offset Y"
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "Vignette Size"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "CropMode"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "Roundness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "Feather"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVignetteEffect",
+                            "parameter" : "Inner Light"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SkyReplacementAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "for_this_photo",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Texture"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Texture"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sky Orientation",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Horizon"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Sky Vertical Offset"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Sky Horizontal Offset"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "SkyFlip"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Mask Refinement",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "SkyGlobal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "FixGaps"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Sigma"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Scene Relighting",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Relighting"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Relighting Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Relight Human"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Reflection",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Water"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "WaterBlur"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sky Adjustments",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "SkyBlur"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Sky Grain"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "White"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "Temperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkyReplacementEffect",
+                            "parameter" : "SkyExposure"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AugmentedSkyEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "Texture"
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "Temperature"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "Haze"
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "UseCorners"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "SkyGlobal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "SkyBlur"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAugmentedSkyEffect",
+                            "parameter" : "FlipH"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SunLightRaysAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "position",
+                            "title" : "Place Sun Center",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLSunLightRaysEffect",
+                                    "parameter" : "X"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLSunLightRaysEffect",
+                                    "parameter" : "Y"
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Rays Opacity"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Look"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Rays Length"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Sun Penetration"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Sun Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Sun Radius"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Sun Glow Radius"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Sun Glow Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Rays Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Rays Number"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Randomize"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Warmth",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Sun Warmth"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSunLightRaysEffect",
+                            "parameter" : "Rays Warmth"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ComplexBleachAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLComplexBleachEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLComplexBleachEffect",
+                            "parameter" : "Local Contrast"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Brightness & Saturation",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLComplexBleachEffect",
+                            "parameter" : "Brightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLComplexBleachEffect",
+                            "parameter" : "Saturation"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "FadeEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "Fade"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "Saturation"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Color Toning",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "ToningRange"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "ToningHue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFadeEffect",
+                            "parameter" : "ToningSaturation"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ImageRadianceAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthEffect",
+                            "parameter" : "Shadows Repair"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthEffect",
+                            "parameter" : "Smoothness"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Colorize",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthEffect",
+                            "parameter" : "Vividness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthEffect",
+                            "parameter" : "Warmth"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "LUTMappingEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLUTMappingEffect",
+                            "parameter" : "Texture"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLUTMappingEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLUTMappingEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLLUTMappingEffect",
+                            "parameter" : "Saturation"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "TextureOverlay_v1_AdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Texture"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "UseCorners"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "layerBlendMode"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Brightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLTextureOverlay_v1_Effect",
+                            "parameter" : "Hue Shift"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "GlowOrtonAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Type"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Softness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Brightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLOrtonGlowEffect",
+                            "parameter" : "Warmth"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "GrainNewAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLGrainNewEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Size & Roughness",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLGrainNewEffect",
+                            "parameter" : "Size"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLGrainNewEffect",
+                            "parameter" : "Roughness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "FogFilterAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFogFilterEffect",
+                            "parameter" : "FogType"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFogFilterEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ProContrastAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "Highlights"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "MiddleH"
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "Midtones"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "MiddleM"
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "Shadows"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSmartContrastEffect",
+                            "parameter" : "MiddleS"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AdjustableGraduated_v1_AdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "tabs",
+                            "groups" : [
+                                {
+                                    "title" : "Top",
+                                    "selectedByDefault" : true,
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ExposureT"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ContrastT"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ShadowsTop"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "HighlightsTop"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "WarmthT"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "VibranceT"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Bottom",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ExposureB"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ContrastB"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "ShadowsBottom"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "HighlightsBottom"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "WarmthB"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAdjustableGraduated_v1_Effect",
+                                            "parameter" : "VibranceB"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DodgeBurnAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                ]
+            }
+        ],
+        "ColorEnhancerAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBrillianceWarmthEffect",
+                            "parameter" : "Vividness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBrillianceWarmthEffect",
+                            "parameter" : "Warmth"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Color Contrast",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLContrastColorRangeEffect",
+                            "parameter" : "Color Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLContrastColorRangeEffect",
+                            "parameter" : "Hue"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Split Color Warmth",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSplitWarmthEffect",
+                            "parameter" : "Warm Colors"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSplitWarmthEffect",
+                            "parameter" : "Cool Colors"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Color Balance",
+                "children" : [
+                    [
+                        {
+                            "type" : "popUpTabs",
+                            "groups" : [
+                                {
+                                    "title" : "Shadows",
+                                    "selectedByDefault" : true,
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "SRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "SGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "SBlue"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Midtones",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "MRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "MGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "MBlue"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Highlights",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "HRed"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "HGreen"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLColorBalanceEffect",
+                                            "parameter" : "HBlue"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "PhotoFilterAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLPhotoFilterEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLPhotoFilterEffect",
+                            "parameter" : "Hue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLPhotoFilterEffect",
+                            "parameter" : "Saturation"
+                        },
+                        {
+                            "type" : "separator"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLPhotoFilterEffect",
+                            "parameter" : "PreserveLuminosity"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ColorToningAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSplitToningEffect",
+                            "parameter" : "Amount"
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "tabs",
+                            "groups" : [
+                                {
+                                    "title" : "Shadows",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLSplitToningEffect",
+                                            "parameter" : "ShadowsSaturation"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLSplitToningEffect",
+                                            "parameter" : "ShadowsHue"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Highlights",
+                                    "selectedByDefault" : true,
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLSplitToningEffect",
+                                            "parameter" : "HighlightsSaturation"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLSplitToningEffect",
+                                            "parameter" : "HighlightsHue"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSplitToningEffect",
+                            "parameter" : "Balance"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SkinSmoothEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinFaceSmoothEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinBodySmoothEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinSoftenerNNEffect",
+                            "parameter" : "ShineRemoval"
+                        },
+                        {
+                            "type": "parameter",
+                            "effect" : "MIPLSkinFaceDefectsEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SkinSoftenerNNEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinSoftenerNNEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinSoftenerNNEffect",
+                            "parameter" : "ShineRemoval"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinDefectsEffect",
+                            "parameter" : "RemoveDefects"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "FaceEnhancer_vn0_Effect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Face Light"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Slim Face"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Eyes",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "TextureIris"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Iris Visibility"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Iris Flare"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Enlarge Eyes"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eye Whitening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eye Enhancer"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Red Eye Removal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Dark Circles Removal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eyebrow Improve"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Mouth",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Redness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Darkening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Teeth whitening"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "FaceEnhancer_vn0_EffectNew" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Face Light"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Slim Face"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Eyes",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "TextureIris"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Iris Visibility"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Iris Flare"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Enlarge Eyes"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eye Whitening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eye Enhancer"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Red Eye Removal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSkinFaceDarkCirclesEffect",
+                            "parameter" : "Dark Circle"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Eyebrow Improve"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Mouth",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Redness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Lips Darkening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancer_vn0_Effect",
+                            "parameter" : "Teeth whitening"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "FaceEnhancerEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Face Light"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Slim Face"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Eyes",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "TextureIris"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Iris Visibility"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Iris Flare"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Enlarge Eyes"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Eye Whitening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Eye Enhancer"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Red Eye Removal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Dark Circles Removal"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Eyebrow Improve"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Mouth",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Lips Saturation"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Lips Redness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Lips Darkening"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLFaceEnhancerEffect",
+                            "parameter" : "Teeth whitening"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "HighKeyAdjustmentLayer" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Standard High Key"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Dynamic High Key"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Blacks"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Advanced Settings",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Glow"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Contrast"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLHighKeyEffect",
+                            "parameter" : "Saturation"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SlimPeopleEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSlimPeopleEffect",
+                            "parameter" : "Shape"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSlimPeopleEffect",
+                            "parameter" : "Abdomen"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SlimPeople_vn0_Effect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSlimPeople_vn0_Effect",
+                            "parameter" : "Shape"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSlimPeople_vn0_Effect",
+                            "parameter" : "Abdomen"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIFogEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFogEffect",
+                            "parameter" : "Mode"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFogEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFogEffect",
+                            "parameter" : "Depth"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFogEffect",
+                            "parameter" : "Lightness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIBokehEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : false,
+                "expanded" : true,
+                "title" : "Brush Control",
+                "children" : [
+                    [
+                        {
+                            "type" : "brushControl",
+                            "effect" : "MIPLAIBokehEffect"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "title" : "Background",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "Exposure"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "Lightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "Warmth"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "FocusPos"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehEffect",
+                            "parameter" : "Dehalo"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "BlurEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlurEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLBlurEffect",
+                            "parameter" : "Rotation"
+                        },
+                        {
+                            "type" : "position",
+                            "title" : "Place Blur Center",
+                            "effect" : "MIPLBlurEffect",
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLBlurEffect",
+                                    "parameter" : "X"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLBlurEffect",
+                                    "parameter" : "Y"
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "NewNeonLightEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "presetSelector",
+                            "effect" : "MIPLNewNeonLightEffect"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonAmount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonIndent"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : false,
+                "expanded" : true,
+                "title" : "Style",
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonGlow"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "CloudsIndent"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonHue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonWhiteness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "NewGlowLightEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "tabs",
+                            "groups" : [
+                                {
+                                    "title" : "Inner",
+                                    "selectedByDefault" : true,
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "ObjectAmount"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "ObjectHue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "ObjectWhiteness"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "ObjectExposure"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "ObjectContrast"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "Background"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title" : "Outer",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "GlowAmount"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "GlowSize"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "GlowHue"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLNewNeonLightEffect",
+                                            "parameter" : "GlowWhiteness"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            },
+            {
+                "title" : "Sparkles",
+                "expandable" : true,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "StarsAmount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "StarsIndent"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "StarsHue"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "NewNeonFreeformLightEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "FreeNeonAmount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title" : "Style",
+                "expandable" : false,
+                "expanded" : true,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "FreeNeonGlow"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "FreeCloudsIndent"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "FreeNeonHue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "FreeNeonWhiteness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "NewNeonOutlineLightEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "presetSelector",
+                            "effect" : "MIPLNewNeonLightEffect"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonAmount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonIndent"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title" : "Style",
+                "expandable" : false,
+                "expanded" : true,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonGlow"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "CloudsIndent"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonHue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLNewNeonLightEffect",
+                            "parameter" : "NeonWhiteness"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "WaterAIEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Blue"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Green"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "OriginalColor"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Brightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Contrast"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "expanded" : false,
+                "title" : "Refine Area",
+                "children" : [
+                    [
+                        {
+                            "type" : "brushControl",
+                            "effect" : "MIPLWaterAIEffect"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Mask Feather"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLWaterAIEffect",
+                            "parameter" : "Depth"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ColorTransferEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "Texture"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "Amount Color"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "Amount Luminocity"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "FilterR"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "FilterEps"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLColorTransferEffect",
+                            "parameter" : "UseSemanticMasks"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "VirtualFlashLightEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Amount Far"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Depth"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : true,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Dehalo"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Warmth"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLVirtualFlashLightEffect",
+                            "parameter" : "Warmth Far Plane"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "MagicLightsEffect" : [
+            {
+                "expandable" : false,
+                "expanded" : true,
+                "title" : "Brush Control",
+                "children" : [
+                    [
+                        {
+                            "type" : "brushControl",
+                            "effect" : "MIPLMagicLightsEffect"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Size"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Beam Width"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Glow"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Clearness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Brightness"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Number of Beams"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLMagicLightsEffect",
+                            "parameter" : "Rotation"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "ERASE" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "ERASE",
+                            "parameter" : "ERASE_MASKED"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "ERASE",
+                            "parameter" : "ERASE_WIRES"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "ERASE",
+                            "parameter" : "ERASE_DUST"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "SegmentationEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSegmentationEffect",
+                            "parameter" : "Object"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLSegmentationEffect",
+                            "parameter" : "ShowTrimap"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DodgeAndBurnEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDodgeAndBurnEffect",
+                            "parameter" : "Amount"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable" : false,
+                "expanded" : true,
+                "title" : "Brush Control",
+                "children" : [
+                    [
+                        {
+                            "type" : "brushControl",
+                            "effect" : "MIPLDodgeAndBurnEffect"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "CLONE" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "brushControl",
+                            "effect" : "CLONE"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIFaceDepthEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFaceDepthEffect",
+                            "parameter" : "Exposure"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFaceDepthEffect",
+                            "parameter" : "FilterRadius"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIFaceDepthEffect",
+                            "parameter" : "Light Contrast"
+                        }
+                    ],
+                    [
+                        {
+                            "type" : "lightTabs",
+                            "count" : 5,
+                            "children" : [
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Amount"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Hue"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Saturation"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Depth"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "TextureOn"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Texture"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "Pattern"
+                                },
+                                {
+                                    "type" : "parameter",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "parameter" : "TextureScale"
+                                },
+                                {
+                                    "type" : "positionOffset",
+                                    "title" : "",
+                                    "effect" : "MIPLAIFaceDepthEffect",
+                                    "children" : [
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAIFaceDepthEffect",
+                                            "parameter" : "TextureAngleH"
+                                        },
+                                        {
+                                            "type" : "parameter",
+                                            "effect" : "MIPLAIFaceDepthEffect",
+                                            "parameter" : "TextureAngleV"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "DepthVolumeEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "depthMask",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Middle"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Sigma"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Temperature2"
+                        }
+                    ]
+                ]
+            },
+            {
+                "expandable": true,
+                "children": [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Brightness1"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Temperature1"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Brightness3"
+                        },
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLDepthVolumeEffect",
+                            "parameter" : "Temperature3"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "AIBokehNewEffect" : [
+            {
+                "expandable" : false,
+                "children" : [
+                    [
+                        {
+                            "type" : "parameter",
+                            "effect" : "MIPLAIBokehNewEffect",
+                            "parameter" : "Amount"
+                        },
+                        {
+                            "type" : "bokehFocus",
+                            "effect" : "MIPLAIBokehNewEffect",
+                            "parameter" : "FocusPos"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title" : "Bokeh Shape Adjustments",
+                "expandable" : true,
+                "children" : [
+                    [
+                        {
+                            "type" : "bokehShape",
+                            "effect" : "MIPLAIBokehNewEffect",
+                            "parameter" : "Shape"
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+}

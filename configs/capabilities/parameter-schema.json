@@ -1,0 +1,995 @@
+{
+  "version": "0.2.0",
+  "common_parameters": {
+    "amount": {
+      "type": "float",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.4
+    },
+    "opacity": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    "denoise_level": {
+      "type": "enum",
+      "values": [
+        "low",
+        "middle",
+        "high"
+      ],
+      "default": "middle"
+    },
+    "luminosity": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 100
+    },
+    "details": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 50
+    },
+    "sharpness": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 50
+    },
+    "sharp_type": {
+      "type": "enum",
+      "values": [
+        "universal"
+      ],
+      "default": "universal"
+    },
+    "sharp_level": {
+      "type": "enum",
+      "values": [
+        "low",
+        "middle",
+        "high"
+      ],
+      "default": "middle"
+    },
+    "face_enhancer_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "converted": {
+      "type": "boolean",
+      "default": false
+    },
+    "asset_id": {
+      "type": "asset",
+      "required": false
+    },
+    "strokes": {
+      "type": "array",
+      "default": []
+    },
+    "neon_spread": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.6
+    },
+    "neon_atmosphere": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.05
+    },
+    "neon_hue": {
+      "type": "float",
+      "min": 0.0,
+      "max": 360.0,
+      "default": 270.0
+    },
+    "neon_whiteness": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.3
+    },
+    "scale": {
+      "type": "enum",
+      "values": [
+        2,
+        4,
+        6
+      ],
+      "default": 2
+    },
+    "bokeh_shape": {
+      "type": "enum",
+      "values": [
+        "circle",
+        "filled_circle",
+        "oval",
+        "hexagon",
+        "heart",
+        "star"
+      ],
+      "default": "circle"
+    },
+    "texture_opacity": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    },
+    "texture_mode": {
+      "type": "enum",
+      "values": [
+        "screen",
+        "multiply",
+        "replace"
+      ],
+      "default": "screen"
+    },
+    "texture_offset_y": {
+      "type": "float",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "sky_scale": {
+      "type": "float",
+      "min": 0.25,
+      "max": 4.0,
+      "default": 1.0
+    },
+    "horizon_offset": {
+      "type": "float",
+      "min": 0.05,
+      "max": 0.95,
+      "default": 0.58,
+      "native_min": -100,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "horizon_blending": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    },
+    "horizontal_offset": {
+      "type": "float",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": -100,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "vertical_offset": {
+      "type": "float",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": -100,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "rotation": {
+      "type": "float",
+      "min": -30.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    "crop_box": {
+      "type": "array",
+      "default": [0.0, 0.0, 1.0, 1.0]
+    },
+    "crop_ratio": {
+      "type": "enum",
+      "values": ["original", "free", "1:1", "4:3", "3:2", "16:9"],
+      "default": "original"
+    },
+    "crop_rotation": {
+      "type": "float",
+      "min": -180.0,
+      "max": 180.0,
+      "default": 0.0
+    },
+    "straighten": {
+      "type": "float",
+      "min": -45.0,
+      "max": 45.0,
+      "default": 0.0
+    },
+    "flip_x": {
+      "type": "boolean",
+      "default": false
+    },
+    "flip_y": {
+      "type": "boolean",
+      "default": false
+    },
+    "brightness": {
+      "type": "float",
+      "min": 0.1,
+      "max": 3.0,
+      "default": 1.0,
+      "native_min": -100,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "contrast": {
+      "type": "float",
+      "min": 0.1,
+      "max": 3.0,
+      "default": 1.0
+    },
+    "saturation": {
+      "type": "float",
+      "min": 0.0,
+      "max": 3.0,
+      "default": 1.0
+    },
+    "temperature": {
+      "type": "float",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": -100,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "edge_refinement": {
+      "type": "float",
+      "min": 2.0,
+      "max": 20.0,
+      "default": 6.0,
+      "native_min": 10,
+      "native_max": 100,
+      "native_default": 30
+    },
+    "foreground_relight": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.2,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 20
+    },
+    "sky_flip": {
+      "type": "boolean",
+      "default": false
+    },
+    "sky_global": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.5,
+      "default": 1.0,
+      "native_min": 4,
+      "native_max": 100,
+      "native_default": 30,
+      "anchor_values": [1.0, 0.0, 1.5],
+      "native_anchors": [
+        {"value": 0.0, "native_value": 4},
+        {"value": 1.0, "native_value": 30},
+        {"value": 1.5, "native_value": 100}
+      ],
+      "calibration_status": "pending-single-variable-native-exports"
+    },
+    "fix_gaps": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.2105263158,
+      "native_min": 2,
+      "native_max": 40,
+      "native_default": 10
+    },
+    "relight_saturation": {
+      "type": "float",
+      "min": 1.0,
+      "max": 2.0,
+      "default": 1.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "relight_human": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "reflection_amount": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 50
+    },
+    "reflection_blur": {
+      "type": "float",
+      "min": 0.0,
+      "max": 20.0,
+      "default": 0.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "sky_blur": {
+      "type": "float",
+      "min": 0.0,
+      "max": 20.0,
+      "default": 0.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "sky_grain": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "atmospheric_haze": {
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "native_min": 0,
+      "native_max": 100,
+      "native_default": 0
+    },
+    "source_effects": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "fixture_overrides": [
+    {
+      "capability_id": "magic_lights",
+      "parameter": "amount",
+      "values": [1.0],
+      "input": {
+        "path": "test_data/parity/inputs/exact-fixtures/night-lights.png",
+        "sha256": "dea0eef2d07ba9709c77e09ebf373141a7a5d5a4f3f6ff8366f6b610d73ebfc3",
+        "width": 1080,
+        "height": 1440
+      }
+    },
+    {
+      "capability_id": "new_neon_light",
+      "parameter": "amount",
+      "values": [1.0],
+      "input": {
+        "path": "test_data/parity/inputs/exact-fixtures/night-lights.png",
+        "sha256": "dea0eef2d07ba9709c77e09ebf373141a7a5d5a4f3f6ff8366f6b610d73ebfc3",
+        "width": 1080,
+        "height": 1440
+      }
+    },
+    {
+      "capability_id": "denoise",
+      "parameter": "amount",
+      "values": [1.0],
+      "input": {
+        "path": "test_data/parity/inputs/exact-fixtures/sensor-noise.png",
+        "sha256": "f179d36452a1040dd04a971ab0b984e1823576835c44b03fbf54b811efab7d8b",
+        "width": 1080,
+        "height": 1436
+      }
+    },
+    {
+      "capability_id": "denoise_laplacian",
+      "parameter": "amount",
+      "values": [1.0],
+      "input": {
+        "path": "test_data/parity/inputs/exact-fixtures/sensor-noise.png",
+        "sha256": "f179d36452a1040dd04a971ab0b984e1823576835c44b03fbf54b811efab7d8b",
+        "width": 1080,
+        "height": 1436
+      }
+    },
+    {
+      "capability_id": "slim_people",
+      "parameter": "amount",
+      "values": [-1.0, 1.0],
+      "input": {
+        "path": "test_data/parity/inputs/summer-outdoor/a_7621917407459721769/004_0eb1333bf3.jpg",
+        "sha256": "634587a834a4fe6531a17a2df44de1deece2c842feec32eb071b46fa49c9e2fa",
+        "width": 1080,
+        "height": 1440
+      }
+    },
+    {
+      "capability_id": "skin_smooth",
+      "parameter": "amount",
+      "values": [1.0],
+      "input": {
+        "path": "test_data/parity/inputs/summer-outdoor/a_7620794980651287075/003_5fe83464de.jpg",
+        "sha256": "9955f98ea6d23afd41e17a362322e9bfcda1ea80109d0b9af8d69bee26481126",
+        "width": 1080,
+        "height": 1619
+      }
+    },
+    {
+      "capability_id": "face_ai",
+      "parameter": "amount",
+      "values": [0.5],
+      "input": {
+        "path": "test_data/parity/inputs/summer-outdoor/a_7620794980651287075/003_5fe83464de.jpg",
+        "sha256": "9955f98ea6d23afd41e17a362322e9bfcda1ea80109d0b9af8d69bee26481126",
+        "width": 1080,
+        "height": 1619
+      }
+    }
+  ],
+  "capabilities": {
+    "ai_enhance": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "default_effects": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -5, "native_max": 5}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "raw_default_effects": {
+      "group": "global",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "structure_ai": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "details": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "color_adjustments": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "bw_channels": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ],
+      "internal_parameters": [
+        "converted"
+      ]
+    },
+    "landscape_enhancer": {
+      "group": "landscape",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "vignette": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "sky_enhancer": {
+      "group": "sky",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "sky_replace": {
+      "group": "sky",
+      "parameters": [
+        "asset_id",
+        "horizon_offset",
+        "vertical_offset",
+        "horizontal_offset",
+        "sky_flip",
+        "sky_global",
+        "fix_gaps",
+        "edge_refinement",
+        "foreground_relight",
+        "relight_saturation",
+        "relight_human",
+        "reflection_blur",
+        "reflection_amount",
+        "sky_grain",
+        "sky_blur",
+        "atmospheric_haze",
+        "temperature",
+        "brightness"
+      ],
+      "internal_parameters": [
+        "amount",
+        "opacity",
+        "asset_path"
+      ],
+      "native_contract": {
+        "source_effect": "MIPLSkyReplacementEffect",
+        "reference_build": "luminar-neo-macos-1.28.0-23071",
+        "range_evidence": "test_data/outputs/luminar-1.28.0-23071/observations/sky-r15-fullscreen/native-control-contract.json",
+        "effect_curve_status": "pending-single-variable-native-exports"
+      }
+    },
+    "augmented_sky": {
+      "group": "sky",
+      "parameters": [
+        "amount",
+        "opacity",
+        "asset_id",
+        "sky_scale",
+        "horizon_offset",
+        "horizon_blending",
+        "horizontal_offset",
+        "vertical_offset",
+        "rotation",
+        "brightness",
+        "contrast",
+        "saturation",
+        "temperature",
+        "edge_refinement",
+        "foreground_relight"
+      ]
+    },
+    "relight": {
+      "group": "light",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "fog": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "sunrays": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "virtual_flash": {
+      "group": "light",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "magic_lights": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "color_toning": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "color_enhancer": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "color_transfer": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "asset_id"
+      ]
+    },
+    "blue_hour": {
+      "group": "landscape",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "water_enhancer": {
+      "group": "landscape",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "complex_bleach": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "fade": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "radiance": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "lut_mapping": {
+      "group": "color",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "asset_id"
+      ]
+    },
+    "glow_orton": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "grain": {
+      "group": "style",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "pro_contrast": {
+      "group": "global",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "high_key": {
+      "group": "style",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "bokeh_ai": {
+      "group": "portrait",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "bokeh_shape"
+      ]
+    },
+    "background_removal": {
+      "group": "masking",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "mask_ai": {
+      "group": "masking",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "face_ai": {
+      "group": "portrait",
+      "parameter_overrides": {
+        "amount": {
+          "min": 0.0,
+          "signed": false,
+          "native_min": 0,
+          "native_max": 100
+        }
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "face_enhancer": {
+      "group": "portrait",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "skin_ai": {
+      "group": "portrait",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "skin_smooth": {
+      "group": "portrait",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "slim_people": {
+      "group": "portrait",
+      "parameter_overrides": {
+        "amount": {"signed": true, "native_min": -100, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "erase": {
+      "group": "retouch",
+      "parameters": [
+        "strokes"
+      ]
+    },
+    "dodge_burn": {
+      "group": "retouch",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "strokes"
+      ]
+    },
+    "clone": {
+      "group": "retouch",
+      "parameters": [
+        "strokes"
+      ]
+    },
+    "denoise": {
+      "group": "restore",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "denoise_level",
+        "luminosity",
+        "details",
+        "sharpness"
+      ]
+    },
+    "deblur": {
+      "group": "restore",
+      "parameters": [
+        "sharp_level",
+        "face_enhancer_enabled"
+      ],
+      "internal_parameters": [
+        "sharp_type"
+      ]
+    },
+    "defocus": {
+      "group": "restore",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "super_resolution": {
+      "group": "restore",
+      "parameters": [
+        "amount",
+        "opacity",
+        "scale"
+      ]
+    },
+    "semantic_search": {
+      "group": "search",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "crop_ai": {
+      "group": "composition",
+      "parameters": [
+        "crop_box",
+        "crop_ratio",
+        "flip_x",
+        "flip_y"
+      ],
+      "internal_parameters": [
+        "crop_rotation",
+        "straighten"
+      ]
+    },
+    "depth_volume": {
+      "group": "depth",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "universal_background_removal": {
+      "group": "masking",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "classifier": {
+      "group": "search",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "new_neon_light": {
+      "group": "light",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount",
+        "strokes",
+        "neon_spread",
+        "neon_atmosphere",
+        "neon_hue",
+        "neon_whiteness"
+      ]
+    },
+    "hdr_merge": {
+      "group": "workflow",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "focus_stacking": {
+      "group": "workflow",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "panorama_stitching": {
+      "group": "workflow",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "photo_restoration": {
+      "group": "restore",
+      "parameters": [
+        "amount",
+        "opacity"
+      ]
+    },
+    "denoise_laplacian": {
+      "group": "restore",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "blur": {
+      "group": "creative",
+      "parameter_overrides": {
+        "amount": {"min": 0.0, "signed": false, "native_min": 0, "native_max": 100}
+      },
+      "parameters": [
+        "amount"
+      ]
+    },
+    "luminar_preset": {
+      "group": "preset",
+      "parameters": [
+        "source_effects",
+        "opacity"
+      ]
+    }
+  }
+}

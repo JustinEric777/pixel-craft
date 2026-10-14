@@ -1,0 +1,1500 @@
+{
+  "version": "1.0",
+  "reference_id": "luminar-neo-macos-1.28.0-23071",
+  "matrix_fingerprint": "51715c84dc437f2bf5bd00a2f60b429c00e58d3fa96ff881f91fd3dd8e806ce0",
+  "record_count": 74,
+  "counts": {
+    "supported": 74
+  },
+  "gate": "passed",
+  "records": [
+    {
+      "matrix_state_id": "tool:crop_ai:parameter:crop_box:modified",
+      "capability_id": "crop_ai",
+      "parameter": "crop_box",
+      "parameter_type": "array",
+      "canonical_value": [
+        0.1,
+        0.1,
+        0.8,
+        0.8
+      ],
+      "status": "supported",
+      "reason": "bound to the native crop box and exact Apply action",
+      "native": {
+        "kind": "crop-box",
+        "drag": [
+          0.0,
+          0.0,
+          0.1,
+          0.1
+        ],
+        "apply_locator_id": "NSButton.Crop.Apply"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:crop_ai:expanded.ax.json",
+        "sha256": "20b70275b12aa78f7a2c2dc80ae8871683379ce36b873911776f7290ac7e6123"
+      }
+    },
+    {
+      "matrix_state_id": "tool:crop_ai:parameter:crop_ratio:modified",
+      "capability_id": "crop_ai",
+      "parameter": "crop_ratio",
+      "parameter_type": "enum",
+      "canonical_value": "free",
+      "status": "supported",
+      "reason": "bound to the native crop ratio menu and exact Free choice",
+      "native": {
+        "kind": "menu-choice",
+        "control_locator_id": "NSButton.Crop.AspectRatio",
+        "choice_title": "自由",
+        "value": "free"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:crop_ai:expanded.ax.json",
+        "sha256": "20b70275b12aa78f7a2c2dc80ae8871683379ce36b873911776f7290ac7e6123"
+      }
+    },
+    {
+      "matrix_state_id": "tool:crop_ai:parameter:flip_x:modified",
+      "capability_id": "crop_ai",
+      "parameter": "flip_x",
+      "parameter_type": "boolean",
+      "canonical_value": true,
+      "status": "supported",
+      "reason": "bound to the exact native crop flip button",
+      "native": {
+        "kind": "button",
+        "control_locator_id": "NSButton.Crop.FlipHorizontal",
+        "value": true
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:crop_ai:expanded.ax.json",
+        "sha256": "20b70275b12aa78f7a2c2dc80ae8871683379ce36b873911776f7290ac7e6123"
+      }
+    },
+    {
+      "matrix_state_id": "tool:crop_ai:parameter:flip_y:modified",
+      "capability_id": "crop_ai",
+      "parameter": "flip_y",
+      "parameter_type": "boolean",
+      "canonical_value": true,
+      "status": "supported",
+      "reason": "bound to the exact native crop flip button",
+      "native": {
+        "kind": "button",
+        "control_locator_id": "NSButton.Crop.FlipVertical",
+        "value": true
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:crop_ai:expanded.ax.json",
+        "sha256": "20b70275b12aa78f7a2c2dc80ae8871683379ce36b873911776f7290ac7e6123"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise:parameter:amount:modified",
+      "capability_id": "denoise",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDenoiseAIEffect.Luminosity Denoise.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed",
+        "activation_locator_id": "NSButton.Noiseless.Mid"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise:expanded.ax.json",
+        "sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise:parameter:denoise_level:modified",
+      "capability_id": "denoise",
+      "parameter": "denoise_level",
+      "parameter_type": "enum",
+      "canonical_value": "low",
+      "status": "supported",
+      "reason": "bound to the exact native Noiseless level button",
+      "native": {
+        "kind": "button",
+        "control_locator_id": "NSButton.Noiseless.Low",
+        "value": "low"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise:expanded.ax.json",
+        "sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise:parameter:luminosity:modified",
+      "capability_id": "denoise",
+      "parameter": "luminosity",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Noiseless adjustment slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDenoiseAIEffect.Luminosity Denoise.Slider",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise:expanded.ax.json",
+        "sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise:parameter:details:modified",
+      "capability_id": "denoise",
+      "parameter": "details",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Noiseless adjustment slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDenoiseAIEffect.Details.Slider",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise:expanded.ax.json",
+        "sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise:parameter:sharpness:modified",
+      "capability_id": "denoise",
+      "parameter": "sharpness",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Noiseless adjustment slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDenoiseAIEffect.Sharpness.Slider",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise:expanded.ax.json",
+        "sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:deblur:parameter:sharp_level:modified",
+      "capability_id": "deblur",
+      "parameter": "sharp_level",
+      "parameter_type": "enum",
+      "canonical_value": "low",
+      "status": "supported",
+      "reason": "bound to the exact native Supersharp level button",
+      "native": {
+        "kind": "button",
+        "control_locator_id": "NSButton.Supersharp.Low",
+        "value": "low"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:deblur:expanded.ax.json",
+        "sha256": "99edb2c0340ca4704a556c666fc06fe0ead76180ccf867d7e79d1b67a2de288e"
+      }
+    },
+    {
+      "matrix_state_id": "tool:deblur:parameter:face_enhancer_enabled:modified",
+      "capability_id": "deblur",
+      "parameter": "face_enhancer_enabled",
+      "parameter_type": "boolean",
+      "canonical_value": true,
+      "status": "supported",
+      "reason": "bound to the exact native Supersharp face enhancer toggle",
+      "native": {
+        "kind": "button",
+        "control_locator_id": "NSButton.Supersharp.FaceEnhancer",
+        "value": true
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:deblur:expanded.ax.json",
+        "sha256": "99edb2c0340ca4704a556c666fc06fe0ead76180ccf867d7e79d1b67a2de288e"
+      }
+    },
+    {
+      "matrix_state_id": "tool:default_effects:parameter:amount:modified",
+      "capability_id": "default_effects",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDevelopCommonEffectID.Exposure.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:default_effects:expanded.ax.json",
+        "sha256": "d2f2842bb520b7f83d43d576e8a3dc9102b995e24ffce4207f6d212c2801e861"
+      }
+    },
+    {
+      "matrix_state_id": "tool:ai_enhance:parameter:amount:modified",
+      "capability_id": "ai_enhance",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDynamicContrastEffect.Boost.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:ai_enhance:expanded.ax.json",
+        "sha256": "7bebae2d58617ab5218bfc341bd26983791b30f2982bd747dc340c79acbbbaa9"
+      }
+    },
+    {
+      "matrix_state_id": "tool:erase:parameter:strokes:modified",
+      "capability_id": "erase",
+      "parameter": "strokes",
+      "parameter_type": "array",
+      "canonical_value": [
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "radius": 0.05,
+          "strength": 1.0
+        }
+      ],
+      "status": "supported",
+      "reason": "bound to the verified normalized preview stroke recipe",
+      "native": {
+        "kind": "stroke",
+        "stroke": [
+          0.18,
+          0.18,
+          0.28,
+          0.18
+        ],
+        "source": null,
+        "apply_locator_id": "EraseButton",
+        "activation_locator_id": null
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:erase:expanded.ax.json",
+        "sha256": "e979fdfae4f5e8b867723413ebdb6e73e4e68d260122cf357f422e95fbc608c1"
+      }
+    },
+    {
+      "matrix_state_id": "tool:structure_ai:parameter:amount:modified",
+      "capability_id": "structure_ai",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLAIStructureEffect.Amount.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:structure_ai:expanded.ax.json",
+        "sha256": "df570208c1db34fbf64161668466cbffa7f4448f4fe41e6401f59294725ff51d"
+      }
+    },
+    {
+      "matrix_state_id": "tool:color_adjustments:parameter:amount:modified",
+      "capability_id": "color_adjustments",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSaturationEffect.Saturation.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:color_adjustments:expanded.ax.json",
+        "sha256": "4e4ea713d5dd61ec85f8019b5bf6cf3e1f134042c4a2cc51b18481c31e974837"
+      }
+    },
+    {
+      "matrix_state_id": "tool:bw_channels:parameter:amount:modified",
+      "capability_id": "bw_channels",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLBWChannels_v1_Effect.lRed.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed",
+        "activation_locator_id": "NSButton.MIPLBWChannels_v1_Effect.Apply"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:bw_channels:expanded.ax.json",
+        "sha256": "6ce05158de3b77385d3f9f0cb1be8ca601d9c50ec69965a0edb572d78578709a"
+      }
+    },
+    {
+      "matrix_state_id": "tool:details:parameter:amount:modified",
+      "capability_id": "details",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDetailsEffect.Overall_Small_Detail.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:details:expanded.ax.json",
+        "sha256": "cf47731df383314f4d91776b5c4afe65190d1a430fab41cfc420d4f275723464"
+      }
+    },
+    {
+      "matrix_state_id": "tool:denoise_laplacian:parameter:amount:modified",
+      "capability_id": "denoise_laplacian",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDenoiseLaplacianEffect.Luminosity.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:denoise_laplacian:expanded.ax.json",
+        "sha256": "62f53cb0f7e4ae41148a8a18544f00511dbf990b8aea4b43ffec6a9157bc20ad"
+      }
+    },
+    {
+      "matrix_state_id": "tool:vignette:parameter:amount:modified",
+      "capability_id": "vignette",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLVignetteEffect.Amount.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:vignette:expanded.ax.json",
+        "sha256": "159a73d85ed36cd79cc43c8897a0fc9fac96e2b0131bb333091a8af878f84b4a"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:asset_id:modified",
+      "capability_id": "sky_replace",
+      "parameter": "asset_id",
+      "parameter_type": "asset",
+      "canonical_value": "fixture:canonical-asset",
+      "status": "supported",
+      "reason": "bound to the native sky asset picker",
+      "native": {
+        "kind": "asset-picker",
+        "control_locator_id": "NSButton.TextureButtonSky Selection",
+        "value": "first-local-free"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:horizon_offset:modified",
+      "capability_id": "sky_replace",
+      "parameter": "horizon_offset",
+      "parameter_type": "float",
+      "canonical_value": 0.635,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Orientation",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Horizon",
+        "value": 30.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:vertical_offset:modified",
+      "capability_id": "sky_replace",
+      "parameter": "vertical_offset",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Orientation",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Sky Vertical Offset",
+        "value": 30.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:horizontal_offset:modified",
+      "capability_id": "sky_replace",
+      "parameter": "horizontal_offset",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Orientation",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Sky Horizontal Offset",
+        "value": 30.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:sky_flip:modified",
+      "capability_id": "sky_replace",
+      "parameter": "sky_flip",
+      "parameter_type": "boolean",
+      "canonical_value": true,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "button",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Orientation",
+        "control_locator_id": "NSButton.MIPLSkyReplacementEffect.SkyFlip",
+        "value": true,
+        "value_space": "native",
+        "prerequisite": "select-first-local-sky"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:sky_global:modified",
+      "capability_id": "sky_replace",
+      "parameter": "sky_global",
+      "parameter_type": "float",
+      "canonical_value": 0.975,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Mask Refinement",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.SkyGlobal",
+        "value": 29.35,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:fix_gaps:modified",
+      "capability_id": "sky_replace",
+      "parameter": "fix_gaps",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Mask Refinement",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.FixGaps",
+        "value": 26.7,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:edge_refinement:modified",
+      "capability_id": "sky_replace",
+      "parameter": "edge_refinement",
+      "parameter_type": "float",
+      "canonical_value": 13.7,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Mask Refinement",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Sigma",
+        "value": 68.5,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:foreground_relight:modified",
+      "capability_id": "sky_replace",
+      "parameter": "foreground_relight",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Scene Relighting",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Relighting",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:relight_saturation:modified",
+      "capability_id": "sky_replace",
+      "parameter": "relight_saturation",
+      "parameter_type": "float",
+      "canonical_value": 1.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Scene Relighting",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Relighting Saturation",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:relight_human:modified",
+      "capability_id": "sky_replace",
+      "parameter": "relight_human",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Scene Relighting",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Relight Human",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:reflection_blur:modified",
+      "capability_id": "sky_replace",
+      "parameter": "reflection_blur",
+      "parameter_type": "float",
+      "canonical_value": 13.0,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Reflection",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.WaterBlur",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:reflection_amount:modified",
+      "capability_id": "sky_replace",
+      "parameter": "reflection_amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Reflection",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Water",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:sky_grain:modified",
+      "capability_id": "sky_replace",
+      "parameter": "sky_grain",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Adjustments",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Sky Grain",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:sky_blur:modified",
+      "capability_id": "sky_replace",
+      "parameter": "sky_blur",
+      "parameter_type": "float",
+      "canonical_value": 13.0,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Adjustments",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.SkyBlur",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:atmospheric_haze:modified",
+      "capability_id": "sky_replace",
+      "parameter": "atmospheric_haze",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Adjustments",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.White",
+        "value": 65.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:temperature:modified",
+      "capability_id": "sky_replace",
+      "parameter": "temperature",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Adjustments",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.Temperature",
+        "value": 30.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sky_replace:parameter:brightness:modified",
+      "capability_id": "sky_replace",
+      "parameter": "brightness",
+      "parameter_type": "float",
+      "canonical_value": 1.985,
+      "status": "supported",
+      "reason": "bound to an exact native Sky AI control with independent readback",
+      "native": {
+        "kind": "slider",
+        "section_locator_id": "AdvancedSlider.NSButton.Sky Adjustments",
+        "control_locator_id": "Slider.MIPLSkyReplacementEffect.SkyExposure",
+        "value": 30.0,
+        "value_space": "native"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sky_replace:expanded.ax.json",
+        "sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504"
+      }
+    },
+    {
+      "matrix_state_id": "tool:sunrays:parameter:amount:modified",
+      "capability_id": "sunrays",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSunLightRaysEffect.Rays Opacity.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:sunrays:expanded.ax.json",
+        "sha256": "7d463f0147a28371512e6af1a2976704e3c92992aa1ab52edf6db5246c388bae"
+      }
+    },
+    {
+      "matrix_state_id": "tool:blue_hour:parameter:amount:modified",
+      "capability_id": "blue_hour",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLBlueHourEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:blue_hour:expanded.ax.json",
+        "sha256": "4d1103d6e98982bb3ee28c8102cbbbefa8785e8fa8033375dd144f2f19867342"
+      }
+    },
+    {
+      "matrix_state_id": "tool:fog:parameter:amount:modified",
+      "capability_id": "fog",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLAIFogEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:fog:expanded.ax.json",
+        "sha256": "5991f092fbacf904710062f44d6c1f8dbf8701d3040fdb9e3ae3505d5f678327"
+      }
+    },
+    {
+      "matrix_state_id": "tool:landscape_enhancer:parameter:amount:modified",
+      "capability_id": "landscape_enhancer",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDehazeEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:landscape_enhancer:expanded.ax.json",
+        "sha256": "9442814c6405ff12c13f2da2170b5712f5e55fc728303b4ba655cd80bbebbc26"
+      }
+    },
+    {
+      "matrix_state_id": "tool:water_enhancer:parameter:amount:modified",
+      "capability_id": "water_enhancer",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLWaterAIEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:water_enhancer:expanded.ax.json",
+        "sha256": "1a724d5c74378c137d0fa60b5f64aa73230fa0230bf9f21960bed3a417faea2c"
+      }
+    },
+    {
+      "matrix_state_id": "tool:depth_volume:parameter:amount:modified",
+      "capability_id": "depth_volume",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDepthVolumeEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:depth_volume:expanded.ax.json",
+        "sha256": "bebd354ee4f055c7c5613af1fbb0fc75a73d7cb790f72d73dbda566ff6799379"
+      }
+    },
+    {
+      "matrix_state_id": "tool:color_transfer:parameter:amount:modified",
+      "capability_id": "color_transfer",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the exact native amount control after selecting a reference asset",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLColorTransferEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed",
+        "prerequisite": "select-first-local-reference"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:color_transfer:expanded.ax.json",
+        "sha256": "7fb56fddd5883ce9ee37ffca5585e58d2ebe6a3f083af39ff66f28143211da59"
+      }
+    },
+    {
+      "matrix_state_id": "tool:color_transfer:parameter:asset_id:modified",
+      "capability_id": "color_transfer",
+      "parameter": "asset_id",
+      "parameter_type": "asset",
+      "canonical_value": "fixture:canonical-asset",
+      "status": "supported",
+      "reason": "bound to the tool's exact native local asset selector",
+      "native": {
+        "kind": "asset-picker",
+        "control_locator_id": "NSButton.TextureButtonReference Path",
+        "value": "first-local-free"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:color_transfer:expanded.ax.json",
+        "sha256": "7fb56fddd5883ce9ee37ffca5585e58d2ebe6a3f083af39ff66f28143211da59"
+      }
+    },
+    {
+      "matrix_state_id": "tool:magic_lights:parameter:amount:modified",
+      "capability_id": "magic_lights",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLMagicLightsEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:magic_lights:expanded.ax.json",
+        "sha256": "246937233dd9f36fedb05823f84f4532758c71008162f5333f286268db85ad09"
+      }
+    },
+    {
+      "matrix_state_id": "tool:complex_bleach:parameter:amount:modified",
+      "capability_id": "complex_bleach",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLComplexBleachEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:complex_bleach:expanded.ax.json",
+        "sha256": "11e4ba93425ed59f6b28b9559d652d92776157f3c30cc20e055bd903f51cebb2"
+      }
+    },
+    {
+      "matrix_state_id": "tool:lut_mapping:parameter:amount:modified",
+      "capability_id": "lut_mapping",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLLUTMappingEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:lut_mapping:expanded.ax.json",
+        "sha256": "d7fb2a185c0614ea1e94f785ba5526dd7abb0ad2074e7e476b876254f7fcf554"
+      }
+    },
+    {
+      "matrix_state_id": "tool:lut_mapping:parameter:asset_id:modified",
+      "capability_id": "lut_mapping",
+      "parameter": "asset_id",
+      "parameter_type": "asset",
+      "canonical_value": "fixture:canonical-asset",
+      "status": "supported",
+      "reason": "bound to the tool's exact native local asset selector",
+      "native": {
+        "kind": "asset-picker",
+        "control_locator_id": "NSButton.ChoseLUT",
+        "value": "first-local-free"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:lut_mapping:expanded.ax.json",
+        "sha256": "d7fb2a185c0614ea1e94f785ba5526dd7abb0ad2074e7e476b876254f7fcf554"
+      }
+    },
+    {
+      "matrix_state_id": "tool:color_toning:parameter:amount:modified",
+      "capability_id": "color_toning",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSplitToningEffect.HighlightsSaturation.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:color_toning:expanded.ax.json",
+        "sha256": "50987c590962df7c1d8c2c23d6c5097c1e8bfcf4a97d0527480862fecdb64d5c"
+      }
+    },
+    {
+      "matrix_state_id": "tool:fade:parameter:amount:modified",
+      "capability_id": "fade",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLFadeEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:fade:expanded.ax.json",
+        "sha256": "2aed33e49789da0b116fbb4165365ef2b610e2c495d677bcbd8fa453b430119f"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:amount:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLNewNeonLightEffect.FreeNeonAmount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed",
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:strokes:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "strokes",
+      "parameter_type": "array",
+      "canonical_value": [
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "radius": 0.05,
+          "strength": 1.0
+        }
+      ],
+      "status": "supported",
+      "reason": "bound to the verified normalized preview stroke recipe",
+      "native": {
+        "kind": "stroke",
+        "stroke": [
+          0.25,
+          0.32,
+          0.72,
+          0.62
+        ],
+        "source": null,
+        "apply_locator_id": null,
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:neon_spread:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_spread",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Neon AI slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLNewNeonLightEffect.FreeNeonGlow.Slider",
+        "value": 0.65,
+        "value_space": "native",
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:neon_atmosphere:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_atmosphere",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Neon AI slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLNewNeonLightEffect.FreeCloudsIndent.Slider",
+        "value": 0.65,
+        "value_space": "native",
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:neon_hue:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_hue",
+      "parameter_type": "float",
+      "canonical_value": 234.0,
+      "status": "supported",
+      "reason": "bound to an exact native Neon AI slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLNewNeonLightEffect.FreeNeonHue.Slider",
+        "value": 234.0,
+        "value_space": "native",
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:new_neon_light:parameter:neon_whiteness:modified",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_whiteness",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to an exact native Neon AI slider",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLNewNeonLightEffect.FreeNeonWhiteness.Slider",
+        "value": 0.65,
+        "value_space": "native",
+        "activation_locator_id": "NSButton.Neon.Freeform"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:new_neon_light:expanded.ax.json",
+        "sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5"
+      }
+    },
+    {
+      "matrix_state_id": "tool:radiance:parameter:amount:modified",
+      "capability_id": "radiance",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDepthEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:radiance:expanded.ax.json",
+        "sha256": "379a1d5466eae039ce877b91872f399c9bb616b277e7b664f4e2ccd108efd83c"
+      }
+    },
+    {
+      "matrix_state_id": "tool:glow_orton:parameter:amount:modified",
+      "capability_id": "glow_orton",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLOrtonGlowEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:glow_orton:expanded.ax.json",
+        "sha256": "7df218b0fb53d22dae7a4ef18041df6a0feeb0526f9339b91101b79d304211f0"
+      }
+    },
+    {
+      "matrix_state_id": "tool:blur:parameter:amount:modified",
+      "capability_id": "blur",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLBlurEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:blur:expanded.ax.json",
+        "sha256": "dd35639ced4b9dd4fbccbe8d8c25da960b9a5bf6830f1aefd739b41b3ba25185"
+      }
+    },
+    {
+      "matrix_state_id": "tool:grain:parameter:amount:modified",
+      "capability_id": "grain",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLGrainNewEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:grain:expanded.ax.json",
+        "sha256": "25884b68c29d485a586a92d447ad4fd7bcc80e5093d75b26dcf6f40b10cd47ca"
+      }
+    },
+    {
+      "matrix_state_id": "tool:face_ai:parameter:amount:modified",
+      "capability_id": "face_ai",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLAIFaceDepthEffect.Amount_0.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:face_ai:expanded.ax.json",
+        "sha256": "59ec8cb6362e660fa671f193fc9a4378f8103d7245bb8b8a7c3d096579f2b608"
+      }
+    },
+    {
+      "matrix_state_id": "tool:bokeh_ai:parameter:amount:modified",
+      "capability_id": "bokeh_ai",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLAIBokehNewEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:bokeh_ai:expanded.ax.json",
+        "sha256": "1c113c0299f5b312bc31d3d790709faefac85dd93787ac3e7e4e12421378f799"
+      }
+    },
+    {
+      "matrix_state_id": "tool:bokeh_ai:parameter:bokeh_shape:modified",
+      "capability_id": "bokeh_ai",
+      "parameter": "bokeh_shape",
+      "parameter_type": "enum",
+      "canonical_value": "filled_circle",
+      "status": "supported",
+      "reason": "bound to the exact native Bokeh Shape Adjustments button",
+      "native": {
+        "kind": "button",
+        "section_locator_id": "AdvancedSlider.NSButton.Bokeh Shape Adjustments",
+        "control_locator_id": "NSButton.BokehAI.Shape.FilledCircle",
+        "value": "filled_circle"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:bokeh_ai:expanded.ax.json",
+        "sha256": "1c113c0299f5b312bc31d3d790709faefac85dd93787ac3e7e4e12421378f799"
+      }
+    },
+    {
+      "matrix_state_id": "tool:face_enhancer:parameter:amount:modified",
+      "capability_id": "face_enhancer",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLFaceEnhancer_vn0_Effect.Face Light.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:face_enhancer:expanded.ax.json",
+        "sha256": "ad96c5a76c9e66d12171eee27457edb72c2d0f7ba2882912c1b19556dd680474"
+      }
+    },
+    {
+      "matrix_state_id": "tool:skin_smooth:parameter:amount:modified",
+      "capability_id": "skin_smooth",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSkinFaceSmoothEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:skin_smooth:expanded.ax.json",
+        "sha256": "603cd217dccc22a91515e7e9c38a03f156108815ea1c8fe46a64d5e68a484493"
+      }
+    },
+    {
+      "matrix_state_id": "tool:slim_people:parameter:amount:modified",
+      "capability_id": "slim_people",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSlimPeople_vn0_Effect.Shape.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:slim_people:expanded.ax.json",
+        "sha256": "c969a18e99e8972f532d492cef204df64e1599788486e31d3812610bf5c2e3ea"
+      }
+    },
+    {
+      "matrix_state_id": "tool:high_key:parameter:amount:modified",
+      "capability_id": "high_key",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLHighKeyEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:high_key:expanded.ax.json",
+        "sha256": "c4d566acaf6675cd3ba89dadada983370f6b3f5cc4f4da906078010a9bbc4ba6"
+      }
+    },
+    {
+      "matrix_state_id": "tool:pro_contrast:parameter:amount:modified",
+      "capability_id": "pro_contrast",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLSmartContrastEffect.Highlights.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:pro_contrast:expanded.ax.json",
+        "sha256": "edf1b97b90de0950398e1332e71b90493e2352302708158e642e7f49e1d2d5c6"
+      }
+    },
+    {
+      "matrix_state_id": "tool:color_enhancer:parameter:amount:modified",
+      "capability_id": "color_enhancer",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.3,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLBrillianceWarmthEffect.Vividness.Slider",
+        "value": 0.3,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:color_enhancer:expanded.ax.json",
+        "sha256": "25429ca13882b78f439f0ac3a37ff62b345579a75ec6451735aad329bf706693"
+      }
+    },
+    {
+      "matrix_state_id": "tool:dodge_burn:parameter:amount:modified",
+      "capability_id": "dodge_burn",
+      "parameter": "amount",
+      "parameter_type": "float",
+      "canonical_value": 0.65,
+      "status": "supported",
+      "reason": "bound to the recipe's exact native primary intensity control",
+      "native": {
+        "kind": "slider",
+        "control_locator_id": "Slider.MIPLDodgeAndBurnEffect.Amount.Slider",
+        "value": 0.65,
+        "value_space": "normalized-signed"
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:dodge_burn:expanded.ax.json",
+        "sha256": "066f20ea006fa066e335647606dd7cffe56c68480ff0fe47a8503d9c06523837"
+      }
+    },
+    {
+      "matrix_state_id": "tool:dodge_burn:parameter:strokes:modified",
+      "capability_id": "dodge_burn",
+      "parameter": "strokes",
+      "parameter_type": "array",
+      "canonical_value": [
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "radius": 0.05,
+          "strength": 1.0
+        }
+      ],
+      "status": "supported",
+      "reason": "bound to the verified normalized preview stroke recipe",
+      "native": {
+        "kind": "stroke",
+        "stroke": [
+          0.22,
+          0.22,
+          0.38,
+          0.22
+        ],
+        "source": null,
+        "apply_locator_id": null,
+        "activation_locator_id": null
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:dodge_burn:expanded.ax.json",
+        "sha256": "066f20ea006fa066e335647606dd7cffe56c68480ff0fe47a8503d9c06523837"
+      }
+    },
+    {
+      "matrix_state_id": "tool:clone:parameter:strokes:modified",
+      "capability_id": "clone",
+      "parameter": "strokes",
+      "parameter_type": "array",
+      "canonical_value": [
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "radius": 0.05,
+          "strength": 1.0
+        }
+      ],
+      "status": "supported",
+      "reason": "bound to the verified normalized preview stroke recipe",
+      "native": {
+        "kind": "stroke",
+        "stroke": [
+          0.48,
+          0.28,
+          0.62,
+          0.28
+        ],
+        "source": [
+          0.18,
+          0.2
+        ],
+        "apply_locator_id": null,
+        "activation_locator_id": null
+      },
+      "evidence": {
+        "ax_snapshot": "/Users/iknow/Works/python/zpixel_edit/test_data/outputs/luminar-1.28.0-23071/ui/2880x1800/tool:clone:expanded.ax.json",
+        "sha256": "42e9ea6cf5fa6141213c147732d0c735590d53fa5dc88e9371f4dae470a339c4"
+      }
+    }
+  ]
+}

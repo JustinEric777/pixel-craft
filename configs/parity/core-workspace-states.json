@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "records": [
+    {"id": "workspace:catalog", "workspace": "catalog"},
+    {"id": "workspace:presets", "workspace": "presets"},
+    {"id": "workspace:edit", "workspace": "edit"},
+    {"id": "workspace:layer-stack", "workspace": "layer-stack"},
+    {"id": "workspace:layer-library", "workspace": "layer-library"},
+    {"id": "workspace:tool-expanded", "workspace": "tool-expanded"},
+    {"id": "workspace:edit-history", "workspace": "edit-history"},
+    {"id": "workspace:more-panel", "workspace": "more-panel"},
+    {"id": "workspace:info-panel", "workspace": "info-panel"},
+    {"id": "workspace:edit-collapsed", "workspace": "edit-collapsed"},
+    {"id": "workspace:black-white-before-conversion", "workspace": "black-white-before-conversion"},
+    {"id": "workspace:black-white-after-conversion", "workspace": "black-white-after-conversion"},
+    {"id": "workspace:denoise-level-selected", "workspace": "denoise-level-selected"},
+    {
+      "id": "workspace:export-dialog",
+      "workspace": "export-dialog",
+      "surface_owner": "os",
+      "comparison_mode": "semantic"
+    },
+    {"id": "workspace:multi-image", "workspace": "multi-image"},
+    {"id": "workspace:multi-image-complete", "workspace": "multi-image-complete"}
+  ]
+}

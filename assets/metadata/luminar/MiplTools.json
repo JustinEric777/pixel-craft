@@ -1,0 +1,251 @@
+[
+    {
+        "tool_name": "DefaultEffects",
+        "effects": [
+            "MIPLLensCorrectionEffect",
+            "MIPLRawDevelopEffect",
+            "MIPLBlackWhiteEffect",
+            "MIPLDevelopCommonEffectID",
+            "MIPLDenoiseLaplacianEffect",
+            "MIPLSaturationEffect",
+            "MIPLVibranceEffect",
+            "MIPLSharpenEffect",
+            "MIPLCurveEffect"
+        ]
+    },
+    {
+        "tool_name": "AIEnhanceAdjustmentLayer",
+        "effects": [
+            "MIPLDynamicContrastEffect",
+            "MIPLSkyEnhancerEffect"
+        ]
+    },
+    {
+        "tool_name": "AIStructureEffect",
+        "effects": [
+            "MIPLAIStructureEffect"
+        ]
+    },
+    {
+        "tool_name": "ExtendedColorAdjustmentLayer",
+        "effects": [
+            "MIPLRemoveColorCastEffect",
+            "MIPLSaturationEffect",
+            "MIPLVibranceEffect",
+            "MIPLHueShiftEffect"
+        ]
+    },
+    {
+        "tool_name": "BWChannels_v1_Effect",
+        "effects": [
+            "MIPLBWChannels_v1_Effect"
+        ]
+    },
+    {
+        "tool_name": "DetailsEnhancerAdjustmentLayer",
+        "effects": [
+            "MIPLSharpenEffect",
+            "MIPLDetailsEffect"
+        ]
+    },
+    {
+        "tool_name": "DenoiseLaplacianEffect",
+        "effects": [
+            "MIPLDenoiseLaplacianEffect"
+        ]
+    },
+    {
+        "tool_name": "LandscapeEnhancerAdjustmentLayer",
+        "effects": [
+            "MIPLDehazeEffect",
+            "MIPLWarmSkylight_v1_Effect",
+            "MIPLFoliageEnhanceEffect"
+        ]
+    },
+    {
+        "tool_name": "VignetteAdjustmentLayer",
+        "effects": [
+            "MIPLVignetteEffect"
+        ]
+    },
+    {
+        "tool_name": "SkyReplacementAdjustmentLayer",
+        "effects": [
+            "MIPLSkyReplacementEffect"
+        ]
+    },
+    {
+        "tool_name": "SunLightRaysAdjustmentLayer",
+        "effects": [
+            "MIPLSunLightRaysEffect"
+        ]
+    },
+    {
+        "tool_name": "ComplexBleachAdjustmentLayer",
+        "effects": [
+            "MIPLComplexBleachEffect"
+        ]
+    },
+    {
+        "tool_name": "FadeEffect",
+        "effects": [
+            "MIPLFadeEffect"
+        ]
+    },
+    {
+        "tool_name": "ImageRadianceAdjustmentLayer",
+        "effects": [
+            "MIPLDepthEffect"
+        ]
+    },
+    {
+        "tool_name": "LUTMappingEffect",
+        "effects": [
+            "MIPLLUTMappingEffect"
+        ]
+    },
+    {
+        "tool_name": "GlowOrtonAdjustmentLayer",
+        "effects": [
+            "MIPLOrtonGlowEffect"
+        ]
+    },
+    {
+        "tool_name": "GrainNewAdjustmentLayer",
+        "effects": [
+            "MIPLGrainNewEffect"
+        ]
+    },
+    {
+        "tool_name": "ProContrastAdjustmentLayer",
+        "effects": [
+            "MIPLSmartContrastEffect"
+        ]
+    },
+    {
+        "tool_name": "ColorEnhancerAdjustmentLayer",
+        "effects": [
+            "MIPLContrastColorRangeEffect",
+            "MIPLSplitWarmthEffect",
+            "MIPLBrillianceWarmthEffect"
+        ]
+    },
+    {
+        "tool_name": "ColorToningAdjustmentLayer",
+        "effects": [
+            "MIPLSplitToningEffect"
+        ]
+    },
+    {
+        "tool_name": "SkinSoftenerNNEffect",
+        "effects": [
+            "MIPLSkinDefectsEffect",
+            "MIPLSkinSoftenerNNEffect"
+        ]
+    },
+    {
+        "tool_name": "HighKeyAdjustmentLayer",
+        "effects": [
+            "MIPLHighKeyEffect"
+        ]
+    },
+    {
+        "tool_name": "AIFogEffect",
+        "effects": [
+            "MIPLAIFogEffect"
+        ]
+    },
+    {
+        "tool_name": "AIBokehEffect",
+        "effects": [
+            "MIPLAIBokehEffect"
+        ]
+    },
+    {
+        "tool_name": "VirtualFlashLightEffect",
+        "effects": [
+            "MIPLVirtualFlashLightEffect"
+        ]
+    },
+    {
+        "tool_name": "MagicLightsEffect",
+        "effects": [
+            "MIPLMagicLightsEffect"
+        ]
+    },
+    {
+        "tool_name": "DenoiseAI",
+        "effects": [
+            "MIPLDenoiseAIEffect",
+            "MIPLDenoiseAIRawEffect"
+        ]
+    },
+    {
+        "tool_name": "DeblurAI",
+        "effects": [
+            "MIPLDeblurAIEffect",
+            "MIPLFaceEnhaceAI"
+        ]
+    },
+    {
+        "tool_name": "ERASE",
+        "effects": [
+            "ERASE_MASKED",
+            "ERASE_WIRES",
+            "ERASE_DUST"
+        ]
+    },
+    {
+        "tool_name": "FaceEnhancerEffect",
+        "effects": [
+            "MIPLFaceEnhancerEffect"
+        ]
+    },
+    {
+        "tool_name": "FaceEnhancer_vn0_Effect",
+        "effects": [
+            "MIPLFaceEnhancer_vn0_Effect"
+        ]
+    },
+    {
+        "tool_name": "SlimPeopleEffect",
+        "effects": [
+            "MIPLSlimPeopleEffect"
+        ]
+    },
+    {
+      "tool_name": "SlimPeople_vn0_Effect",
+      "effects": [
+          "MIPLSlimPeople_vn0_Effect"
+        ]
+    },
+    {
+        "tool_name": "DodgeAndBurnEffect",
+        "effects": [
+            "MIPLDodgeAndBurnEffect"
+        ]
+    },
+    {
+        "tool_name" : "UniversalBackgroundRemoval",
+        "effects" : [
+            "MIPLUniversalBackgroundRemoval"
+        ]
+    },
+    {
+        "tool_name" : "UpscaleAI",
+        "effects" : [
+            "MIPLUpscale",
+            "MIPLFaceEnhaceAI"
+        ]
+    },
+    {
+        "tool_name" : "MaskAI",
+        "effects" : "MIPLMaskAI"
+    },
+    {
+        "tool_name": "Classifier",
+        "effects": [
+            "MIPLClassifier"
+        ]
+    }
+]

@@ -1,0 +1,216 @@
+version: "1.0"
+reference:
+  id: luminar-neo-macos-1.28.1-23487
+  app: /Applications/Luminar Neo.app
+automation:
+  retries: 2
+  stable_samples: 3
+  screenshot_mae_max: 0.002
+  preview_change_mae_min: 0.01
+  change_pixel_delta_min: 0.04
+  change_pixel_fraction_min: 0.001
+  preview_export_comparison_size: 128
+  preview_export_rgb_mae_max: 0.03
+  preview_export_luma_mae_max: 0.02
+  export_source_mae_min: 0.01
+  panel_scroll_attempts: 14
+  panel_scroll_lines: 8
+  # Native 58 px previews are compressed; verified target=14.26, wrong item=48.99.
+  overlay_thumbnail_mae_max: 16
+  # High-gradient flares need a perceptual fallback: target=27.94, runner-up=52.55.
+  overlay_thumbnail_mae_hard_max: 32
+  overlay_thumbnail_margin_min: 8
+  timeouts:
+    action_seconds: 30
+    navigation_seconds: 120
+    inference_seconds: 60
+    heavy_inference_seconds: 900
+    export_seconds: 180
+    stable_seconds: 3
+capture:
+  # Fail closed until this evidence records a dedicated display and isolated input.
+  environment_evidence_path: configs/parity/native-capture-environment.json
+  logical_viewport: [1440, 900]
+  native_export_root: test_data/outputs/luminar-1.28.1-23487/native-exports
+  catalog_collection: 夏日户外拍照
+  multi_image_validation_root: test_data/multi_image
+  excluded_feature_groups: [generative-tools, enhancement-tools]
+  excluded_capabilities: [super_resolution]
+  overlay_collection_order:
+    - 698abfac-5ee1-46e5-89e6-b743309a220d
+    - 0e7de55b-4e7d-4054-b3b2-6a03d59620b3
+    - df123927-7334-49d3-a984-94a20b918eb5
+    - b39907b7-367e-4fa2-a59c-d494b2e5aeb8
+  # Current canonical source shared by the validated preset and overlay corpus.
+  canonical_input_sha256:
+    preset: 03764fec9c3e81b054994d6c5c2e2bc9db1da351573e58c5aeca30ece09cddc4
+    overlay: 03764fec9c3e81b054994d6c5c2e2bc9db1da351573e58c5aeca30ece09cddc4
+  export_extension: .jpeg
+  page_order: [catalog, presets, edit]
+  ui_state_pages:
+    catalog: catalog
+    presets: presets
+    edit: edit
+    layer-stack: edit
+    layer-library: edit
+    tool-expanded: edit
+    edit-history: edit
+    more-panel: edit
+    info-panel: edit
+    edit-collapsed: edit
+    black-white-before-conversion: edit
+    black-white-after-conversion: edit
+    denoise-level-selected: edit
+    export-dialog: edit
+    multi-image: catalog
+    multi-image-complete: catalog
+  viewports:
+    - [2880, 1800]
+  ui_states:
+    - catalog
+    - presets
+    - edit
+    - layer-stack
+    - layer-library
+    - tool-expanded
+    - edit-history
+    - more-panel
+    - info-panel
+    - edit-collapsed
+    - black-white-before-conversion
+    - black-white-after-conversion
+    - denoise-level-selected
+    - export-dialog
+    - multi-image
+    - multi-image-complete
+recipes:
+  crop_ai: {locator_id: EditExpandButton_MPCropToolFilter, strategy: panel_only}
+  denoise:
+    locator_id: EditExpandButton_DenoiseAI
+    strategy: primary_slider
+    effective:
+      activation_locator_id: NSButton.Noiseless.Mid
+      heavy_inference: true
+      control_locator_id: Slider.MIPLDenoiseAIEffect.Luminosity Denoise.Slider
+      export_source_mae_min: 0.005
+      value: 100
+  deblur:
+    locator_id: EditExpandButton_DeblurAI
+    strategy: button_choice
+    effective: {control_locator_id: NSButton.Supersharp.Mid, value: 中等}
+  default_effects: {locator_id: EditExpandButton_DefaultEffects, strategy: primary_slider, effective: {control_locator_id: Slider.MIPLDevelopCommonEffectID.Exposure.Slider, value: 1}}
+  ai_enhance: {locator_id: EditExpandButton_AIEnhanceAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  erase:
+    locator_id: EditExpandButton_ERASE
+    strategy: deterministic_stroke
+    effective:
+      stroke: [0.18, 0.18, 0.28, 0.18]
+      apply_locator_id: EraseButton
+  structure_ai: {locator_id: EditExpandButton_AIStructureEffect, strategy: primary_slider, effective: {value: 50}}
+  color_adjustments: {locator_id: EditExpandButton_ExtendedColorAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  bw_channels:
+    locator_id: EditExpandButton_BWChannels_v1_Effect
+    strategy: primary_slider
+    effective:
+      activation_locator_id: NSButton.MIPLBWChannels_v1_Effect.Apply
+      control_locator_id: Slider.MIPLBWChannels_v1_Effect.lRed.Slider
+      export_source_change_required: true
+      value: 100
+  details: {locator_id: EditExpandButton_DetailsEnhancerAdjustmentLayer, strategy: primary_slider, effective: {control_locator_id: Slider.MIPLDetailsEffect.Overall_Small_Detail.Slider, value: 100}}
+  denoise_laplacian: {locator_id: EditExpandButton_DenoiseLaplacianEffect, strategy: primary_slider, effective: {control_locator_id: Slider.MIPLDenoiseLaplacianEffect.Luminosity.Slider, export_source_mae_min: 0.002, value: 100}}
+  vignette: {locator_id: EditExpandButton_VignetteAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  sky_replace:
+    locator_id: EditExpandButton_SkyReplacementAdjustmentLayer
+    strategy: asset_picker
+    effective:
+      asset_policy: first_local_free
+      picker_locator_id: NSButton.TextureButtonSky Selection
+      picker_thumbnail_identifier: _NS:65
+      picker_scrollbar_identifier: _NS:101
+      thumbnail_mae_max: 24
+      thumbnail_margin_min: 3
+  sunrays: {locator_id: EditExpandButton_SunLightRaysAdjustmentLayer, strategy: positioned_effect, effective: {value: 50, position: [0.7, 0.2]}}
+  blue_hour: {locator_id: EditExpandButton_BlueHourEffect, strategy: primary_slider, effective: {value: 50}}
+  fog: {locator_id: EditExpandButton_AIFogEffect, strategy: primary_slider, effective: {value: 50}}
+  landscape_enhancer: {locator_id: EditExpandButton_LandscapeEnhancerAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  water_enhancer: {locator_id: EditExpandButton_WaterAIEffect, strategy: primary_slider, effective: {value: 50}}
+  depth_volume: {locator_id: EditExpandButton_DepthVolumeEffect, strategy: primary_slider, effective: {value: 50}}
+  color_transfer:
+    locator_id: EditExpandButton_ColorTransferEffect
+    strategy: inline_asset_picker
+    effective:
+      picker_locator_id: NSButton.TextureButtonReference Path
+      picker_thumbnail_identifier: _NS:65
+      thumbnail_mae_max: 24
+      thumbnail_margin_min: 3
+  magic_lights: {locator_id: EditExpandButton_MagicLightsEffect, strategy: primary_slider, effective: {control_locator_id: Slider.MIPLMagicLightsEffect.Amount.Slider, value: 100}}
+  complex_bleach: {locator_id: EditExpandButton_ComplexBleachAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  lut_mapping:
+    locator_id: EditExpandButton_LUTMappingEffect
+    strategy: menu_choice
+    effective:
+      control_locator_id: NSButton.ChoseLUT
+      choice_locator_id: Anaheim
+      control_readback: edit_state
+      value: Anaheim
+      slider_locator_id: Slider.MIPLLUTMappingEffect.Amount.Slider
+      slider_value: 100
+  color_toning: {locator_id: EditExpandButton_ColorToningAdjustmentLayer, strategy: primary_slider, effective: {control_locator_id: Slider.MIPLSplitToningEffect.HighlightsSaturation.Slider, value: 100}}
+  fade: {locator_id: EditExpandButton_FadeEffect, strategy: primary_slider, effective: {value: 50}}
+  new_neon_light:
+    locator_id: EditExpandButton_NewNeonLightEffect
+    strategy: positioned_effect
+    effective:
+      activation_locator_id: NSButton.Neon.Freeform
+      control_locator_id: Slider.MIPLNewNeonLightEffect.FreeNeonAmount.Slider
+      stroke: [0.25, 0.32, 0.72, 0.62]
+      value: 100
+      spread: 60
+      atmosphere: 5
+      hue: 270
+      whiteness: 30
+  radiance: {locator_id: EditExpandButton_ImageRadianceAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  glow_orton: {locator_id: EditExpandButton_GlowOrtonAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  blur: {locator_id: EditExpandButton_BlurEffect, strategy: primary_slider, effective: {value: 50}}
+  grain: {locator_id: EditExpandButton_GrainNewAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  face_ai: {locator_id: EditExpandButton_AIFaceDepthEffect, strategy: subject_aware, effective: {value: 50}}
+  bokeh_ai: {locator_id: EditExpandButton_AIBokehNewEffect, strategy: subject_aware, effective: {value: 50}}
+  face_enhancer: {locator_id: EditExpandButton_FaceEnhancer_vn0_EffectNew, strategy: subject_aware, effective: {value: 50}}
+  skin_smooth:
+    locator_id: EditExpandButton_SkinSmoothEffect
+    strategy: subject_aware
+    effective:
+      control_locator_id: Slider.MIPLSkinFaceSmoothEffect.Amount.Slider
+      export_source_mae_min: 0.002
+      value: 100
+  slim_people:
+    locator_id: EditExpandButton_SlimPeople_vn0_Effect
+    strategy: subject_aware
+    effective:
+      control_locator_id: Slider.MIPLSlimPeople_vn0_Effect.Shape.Slider
+      value: 100
+  high_key: {locator_id: EditExpandButton_HighKeyAdjustmentLayer, strategy: primary_slider, effective: {value: 50}}
+  pro_contrast:
+    locator_id: EditExpandButton_ProContrastAdjustmentLayer
+    strategy: primary_slider
+    effective:
+      control_locator_id: Slider.MIPLSmartContrastEffect.Highlights.Slider
+      value: 100
+  color_enhancer:
+    locator_id: EditExpandButton_ColorEnhancerAdjustmentLayer
+    strategy: primary_slider
+    effective:
+      control_locator_id: Slider.MIPLBrillianceWarmthEffect.Vividness.Slider
+      preview_export_rgb_mae_max: 0.035
+      value: 100
+  dodge_burn:
+    locator_id: EditExpandButton_DodgeAndBurnEffect
+    strategy: deterministic_stroke
+    effective:
+      stroke: [0.22, 0.22, 0.38, 0.22]
+  clone:
+    locator_id: EditExpandButton_CLONE
+    strategy: deterministic_stroke
+    effective:
+      source: [0.18, 0.20]
+      stroke: [0.48, 0.28, 0.62, 0.28]

@@ -1,0 +1,19 @@
+{
+  "analysis_only": ["semantic_search", "classifier"],
+  "asset_required": ["sky_replace", "augmented_sky", "lut_mapping", "color_transfer"],
+  "multi_image_only": ["hdr_merge", "focus_stacking", "panorama_stitching"],
+  "image_effect_pipelines": [
+    "sky_replace", "augmented_sky", "bokeh_ai", "skin_ai", "skin_smooth",
+    "face_enhancer", "photo_restoration", "defocus", "deblur",
+    "super_resolution", "denoise", "relight", "fog", "depth_volume",
+    "ai_enhance", "structure_ai", "landscape_enhancer", "sunrays", "water_enhancer",
+    "face_ai", "magic_lights", "color_transfer", "slim_people", "crop_ai"
+  ],
+  "local_effect_pipelines": [
+    "details", "color_adjustments", "bw_channels", "vignette", "color_toning",
+    "color_enhancer", "blue_hour", "complex_bleach", "fade", "radiance",
+    "glow_orton", "grain", "pro_contrast", "high_key", "denoise_laplacian",
+    "blur", "default_effects", "lut_mapping", "erase", "dodge_burn", "clone", "new_neon_light",
+    "luminar_preset"
+  ]
+}

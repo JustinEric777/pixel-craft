@@ -1,0 +1,6462 @@
+{
+  "version": "1.0",
+  "matrix_type": "core-interaction-required-contracts",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "scope": "local-free-core",
+  "logical_viewport": [
+    1440,
+    900
+  ],
+  "device_scale_factor": 2,
+  "physical_viewport": [
+    2880,
+    1800
+  ],
+  "source_fingerprints": {
+    "ui": "24d10460a06ba090474a3908c3e68a1e317ac81d98a3a605fc86b6a8cba34c8e",
+    "schema": "0efdde8b03b712605502c580d44a00f13f03d0c23edd169fff3e314e606f50e8",
+    "contracts": "98814692fe8114d0fe5c70084465a7b36e7482dd839a6ec99b3841b9fc0959a4"
+  },
+  "matrix_fingerprint": "0ebc9f8f010dc634a27ea6052cd944807eb4c42ffa9d5e9ac9b5aff651133732",
+  "workflow_contract_count": 10,
+  "capability_count": 40,
+  "parameter_contract_count": 74,
+  "contract_count": 84,
+  "records": [
+    {
+      "id": "workflow:catalog-photo-context-submenu",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "catalog",
+        "catalog": "single-selected-record"
+      },
+      "events": [
+        {
+          "action": "contextmenu",
+          "target": "selected-catalog-record"
+        },
+        {
+          "action": "hover",
+          "target": "设置评分-submenu"
+        },
+        {
+          "action": "click",
+          "target": "★★★★★"
+        },
+        {
+          "action": "contextmenu",
+          "target": "selected-catalog-record"
+        },
+        {
+          "action": "click",
+          "target": "向右旋转 90°"
+        },
+        {
+          "action": "wait",
+          "condition": "catalog-record-updated"
+        },
+        {
+          "action": "contextmenu",
+          "target": "selected-catalog-record"
+        },
+        {
+          "action": "click",
+          "target": "向左旋转 90°"
+        },
+        {
+          "action": "wait",
+          "condition": "catalog-record-updated"
+        }
+      ],
+      "visible_assertions": [
+        "parent-and-child-menu-visible",
+        "five-star-state-visible",
+        "preview-rotation-visible",
+        "rotation-roundtrip-restored"
+      ],
+      "api_assertions": [
+        "rating-equals-five",
+        "rotation-delta-equals-ninety",
+        "rotation-roundtrip-restores-orientation",
+        "same-asset-id-preserved"
+      ],
+      "final_screenshot_state": "catalog",
+      "allowed_wait_conditions": [
+        "catalog-record-updated"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "catalog-sqlite"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:catalog-folder-context-scroll",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "catalog",
+        "catalog": "long-collection"
+      },
+      "events": [
+        {
+          "action": "contextmenu",
+          "target": "validation-folder"
+        },
+        {
+          "action": "assert",
+          "condition": "导入图片到该文件夹-action-visible"
+        },
+        {
+          "action": "keypress",
+          "target": "escape"
+        },
+        {
+          "action": "click",
+          "target": "existing-catalog-record"
+        },
+        {
+          "action": "scroll",
+          "target": "catalog-grid",
+          "value": "bottom"
+        },
+        {
+          "action": "assert",
+          "condition": "last-catalog-row-visible"
+        },
+        {
+          "action": "scroll",
+          "target": "catalog-grid",
+          "value": "top"
+        },
+        {
+          "action": "assert",
+          "condition": "selected-record-preserved"
+        }
+      ],
+      "visible_assertions": [
+        "folder-context-menu-visible",
+        "import-action-visible",
+        "last-catalog-row-visible",
+        "selection-preserved-after-scroll"
+      ],
+      "api_assertions": [
+        "asset-count-unchanged",
+        "validation-folder-action-resolves-exact-folder",
+        "selected-asset-id-preserved"
+      ],
+      "final_screenshot_state": "catalog",
+      "allowed_wait_conditions": [
+        "catalog-layout-settled"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "catalog-sqlite"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:edit-tool-expand-crop",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "project": "single-image",
+        "tool": "crop_ai"
+      },
+      "events": [
+        {
+          "action": "click",
+          "target": "裁切AI"
+        },
+        {
+          "action": "assert",
+          "condition": "crop-tool-expanded"
+        },
+        {
+          "action": "drag",
+          "target": "crop-frame",
+          "value": "source-ratio-swap-4:3-canonical-box"
+        },
+        {
+          "action": "assert",
+          "condition": "crop-ratio-swap-equals-four-three"
+        },
+        {
+          "action": "click",
+          "target": "水平对齐"
+        },
+        {
+          "action": "drag",
+          "target": "preview-image",
+          "value": {
+            "angle_degrees": 2.5,
+            "length_points": 290
+          }
+        },
+        {
+          "action": "click",
+          "target": "应用"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-image-ready"
+        },
+        {
+          "action": "assert",
+          "condition": "crop-tool-collapsed"
+        }
+      ],
+      "visible_assertions": [
+        "crop-tool-expanded",
+        "crop-ratio-swap-equals-four-three",
+        "crop-overlay-geometry-visible",
+        "crop-tool-auto-collapsed-after-apply"
+      ],
+      "api_assertions": [
+        "one-crop-edit-created",
+        "source-ratio-swap-equals-four-three",
+        "crop-box-equals-canonical-box",
+        "straighten-input-angle-equals-two-point-five",
+        "preview-dimensions-match-crop"
+      ],
+      "final_screenshot_state": "tool-collapsed",
+      "allowed_wait_conditions": [
+        "preview-image-ready",
+        "project-edit-stack-updated"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-json",
+        "execution-trace"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:photo-switch-history",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "projects": [
+          "photo-a",
+          "photo-b"
+        ]
+      },
+      "events": [
+        {
+          "action": "apply",
+          "target": "photo-a-details",
+          "value": 0.35
+        },
+        {
+          "action": "wait",
+          "condition": "project-edit-stack-updated"
+        },
+        {
+          "action": "keypress",
+          "target": "command-z"
+        },
+        {
+          "action": "wait",
+          "condition": "project-edit-stack-updated"
+        },
+        {
+          "action": "keypress",
+          "target": "command-shift-z"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-image-ready"
+        },
+        {
+          "action": "click",
+          "target": "photo-b-filmstrip"
+        },
+        {
+          "action": "apply",
+          "target": "photo-b-vignette",
+          "value": 0.6
+        },
+        {
+          "action": "wait",
+          "condition": "project-edit-stack-updated"
+        },
+        {
+          "action": "click",
+          "target": "photo-a-filmstrip"
+        },
+        {
+          "action": "assert",
+          "condition": "photo-a-edit-history-visible"
+        },
+        {
+          "action": "click",
+          "target": "photo-b-filmstrip"
+        },
+        {
+          "action": "assert",
+          "condition": "photo-b-edit-history-visible"
+        }
+      ],
+      "visible_assertions": [
+        "photo-a-history-restored",
+        "photo-b-history-isolated",
+        "undo-preview-visible",
+        "redo-preview-identical"
+      ],
+      "api_assertions": [
+        "photo-a-edit-id-stable",
+        "photo-b-edit-id-distinct",
+        "history-order-isolated-per-project",
+        "redo-restores-identical-parameters-and-preview-hash"
+      ],
+      "final_screenshot_state": "edit-history",
+      "allowed_wait_conditions": [
+        "project-edit-stack-updated",
+        "preview-image-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-a-json",
+        "project-b-json",
+        "execution-trace"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:preset-import-preview-apply",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "presets",
+        "project": "single-image",
+        "local_presets": []
+      },
+      "events": [
+        {
+          "action": "upload",
+          "target": "添加 Luminar Neo 预设集合",
+          "fixture_file": "canonical-lnp-package"
+        },
+        {
+          "action": "wait",
+          "condition": "local-preset-visible"
+        },
+        {
+          "action": "click",
+          "target": "imported-local-preset"
+        },
+        {
+          "action": "wait",
+          "condition": "preset-preview-ready"
+        },
+        {
+          "action": "click",
+          "target": "应用预设"
+        },
+        {
+          "action": "wait",
+          "condition": "project-edit-stack-updated"
+        },
+        {
+          "action": "restart",
+          "target": "api"
+        },
+        {
+          "action": "wait",
+          "condition": "local-preset-visible-after-restart"
+        }
+      ],
+      "visible_assertions": [
+        "imported-preset-visible",
+        "preset-preview-ready",
+        "busy-state-cleared",
+        "preset-visible-after-api-restart"
+      ],
+      "api_assertions": [
+        "preset-index-created-once",
+        "preset-graph-order-matches-fixture",
+        "preset-applied-once",
+        "preset-persists-after-api-restart"
+      ],
+      "final_screenshot_state": "presets",
+      "allowed_wait_conditions": [
+        "local-preset-visible",
+        "preset-preview-ready",
+        "project-edit-stack-updated",
+        "local-preset-visible-after-restart"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "preset-index-json",
+        "project-json"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:layer-lifecycle",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "project": "single-image",
+        "layers": []
+      },
+      "events": [
+        {
+          "action": "click",
+          "target": "添加图层"
+        },
+        {
+          "action": "click",
+          "target": "内置免费图层素材"
+        },
+        {
+          "action": "wait",
+          "condition": "layer-visible"
+        },
+        {
+          "action": "drag",
+          "target": "layer-order",
+          "value": "top"
+        },
+        {
+          "action": "contextmenu",
+          "target": "overlay-layer"
+        },
+        {
+          "action": "click",
+          "target": "Hide Layer"
+        },
+        {
+          "action": "contextmenu",
+          "target": "overlay-layer"
+        },
+        {
+          "action": "click",
+          "target": "Show Layer"
+        },
+        {
+          "action": "drag",
+          "target": "layer-opacity",
+          "value": 0.5
+        },
+        {
+          "action": "select",
+          "target": "layer-blend",
+          "value": "screen"
+        },
+        {
+          "action": "click",
+          "target": "水平翻转"
+        },
+        {
+          "action": "click",
+          "target": "填充"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-image-ready"
+        },
+        {
+          "action": "contextmenu",
+          "target": "overlay-layer"
+        },
+        {
+          "action": "click",
+          "target": "移除图层"
+        }
+      ],
+      "visible_assertions": [
+        "layer-visible-before-delete",
+        "layer-hidden-and-restored",
+        "layer-opacity-fifty-percent",
+        "screen-blend-selected",
+        "layer-removed"
+      ],
+      "api_assertions": [
+        "layer-created-once",
+        "layer-order-persisted",
+        "layer-visibility-roundtrip",
+        "layer-opacity-equals-half",
+        "layer-transform-and-blend-persisted",
+        "preview-and-export-state-hash-match",
+        "layer-deleted"
+      ],
+      "final_screenshot_state": "layer-stack",
+      "allowed_wait_conditions": [
+        "layer-visible",
+        "project-layer-stack-updated",
+        "preview-image-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-json",
+        "export-file"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:mask-lifecycle",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "project": "one-layer",
+        "masks": []
+      },
+      "events": [
+        {
+          "action": "click",
+          "target": "遮罩-tab"
+        },
+        {
+          "action": "click",
+          "target": "画笔"
+        },
+        {
+          "action": "set",
+          "target": "画笔大小",
+          "value": 80
+        },
+        {
+          "action": "set",
+          "target": "画笔柔和度",
+          "value": 24
+        },
+        {
+          "action": "set",
+          "target": "画笔强度",
+          "value": 70
+        },
+        {
+          "action": "drag",
+          "target": "preview-image",
+          "value": "canonical-mask-stroke"
+        },
+        {
+          "action": "wait",
+          "condition": "mask-preview-ready"
+        },
+        {
+          "action": "keypress",
+          "target": "command-z"
+        },
+        {
+          "action": "keypress",
+          "target": "command-shift-z"
+        },
+        {
+          "action": "wait",
+          "condition": "mask-preview-ready"
+        },
+        {
+          "action": "click",
+          "target": "重置工具遮罩"
+        }
+      ],
+      "visible_assertions": [
+        "mask-preview-visible",
+        "brush-size-eighty",
+        "brush-softness-twenty-four",
+        "brush-strength-seventy",
+        "mask-history-undo-redo-visible",
+        "mask-removed"
+      ],
+      "api_assertions": [
+        "mask-created-once",
+        "mask-brush-parameters-persisted",
+        "mask-history-undo-redo-identical",
+        "preview-and-export-state-hash-match",
+        "mask-deleted"
+      ],
+      "final_screenshot_state": "layer-stack",
+      "allowed_wait_conditions": [
+        "mask-preview-ready",
+        "project-layer-stack-updated",
+        "preview-image-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-json",
+        "mask-png",
+        "export-file"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:compare-zoom-pan",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "project": "one-visible-edit",
+        "zoom": 1.0
+      },
+      "events": [
+        {
+          "action": "mousedown",
+          "target": "前后对比"
+        },
+        {
+          "action": "wait",
+          "condition": "source-image-ready"
+        },
+        {
+          "action": "mouseup",
+          "target": "前后对比"
+        },
+        {
+          "action": "select",
+          "target": "zoom-200-percent"
+        },
+        {
+          "action": "drag",
+          "target": "image-stage",
+          "value": "canonical-pan"
+        },
+        {
+          "action": "assert",
+          "condition": "pan-offset-visible"
+        },
+        {
+          "action": "select",
+          "target": "fit-to-view"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-image-ready"
+        }
+      ],
+      "visible_assertions": [
+        "source-image-visible-during-compare",
+        "edited-preview-restored",
+        "zoom-indicator-two-hundred",
+        "pan-offset-visible",
+        "fit-restores-canvas"
+      ],
+      "api_assertions": [
+        "project-state-hash-unchanged",
+        "no-edit-mutation-request",
+        "preview-hash-restored-after-fit"
+      ],
+      "final_screenshot_state": "edit",
+      "allowed_wait_conditions": [
+        "source-image-ready",
+        "preview-image-ready",
+        "layout-settled"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "execution-trace"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:multi-image-three-workflows",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "catalog",
+        "workflows": [
+          "hdr_merge",
+          "focus_stacking",
+          "panorama_stitching"
+        ]
+      },
+      "events": [
+        {
+          "action": "run-workflow",
+          "target": "HDR 合并",
+          "fixture_file": "hdr-bracket-set"
+        },
+        {
+          "action": "wait",
+          "condition": "hdr-preview-ready"
+        },
+        {
+          "action": "export",
+          "target": "hdr-result"
+        },
+        {
+          "action": "run-workflow",
+          "target": "焦点堆叠",
+          "fixture_file": "focus-stack-set"
+        },
+        {
+          "action": "wait",
+          "condition": "focus-preview-ready"
+        },
+        {
+          "action": "export",
+          "target": "focus-result"
+        },
+        {
+          "action": "run-workflow",
+          "target": "全景拼接",
+          "fixture_file": "panorama-set"
+        },
+        {
+          "action": "wait",
+          "condition": "panorama-preview-ready"
+        },
+        {
+          "action": "export",
+          "target": "panorama-result"
+        }
+      ],
+      "visible_assertions": [
+        "hdr-preview-and-export-complete",
+        "focus-preview-and-export-complete",
+        "panorama-preview-and-export-complete",
+        "all-frame-names-and-order-visible"
+      ],
+      "api_assertions": [
+        "three-workflows-created-once",
+        "all-input-hashes-and-order-persisted",
+        "three-analysis-states-ready",
+        "three-render-hashes-stable",
+        "three-export-hashes-match-preview"
+      ],
+      "final_screenshot_state": "multi-image-complete",
+      "allowed_wait_conditions": [
+        "hdr-preview-ready",
+        "focus-preview-ready",
+        "panorama-preview-ready",
+        "export-response-complete"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "workflow-json",
+        "export-files"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "workflow:export-dialog-file",
+      "kind": "workflow-contract",
+      "capability_id": null,
+      "parameter": null,
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "project": "one-visible-edit",
+        "export_directory": "empty"
+      },
+      "events": [
+        {
+          "action": "click",
+          "target": "导出"
+        },
+        {
+          "action": "wait",
+          "condition": "export-dialog-ready"
+        },
+        {
+          "action": "fill",
+          "target": "export-filename",
+          "value": "canonical-export"
+        },
+        {
+          "action": "select",
+          "target": "export-format",
+          "value": "png"
+        },
+        {
+          "action": "fill",
+          "target": "export-width",
+          "value": 1080
+        },
+        {
+          "action": "select",
+          "target": "export-profile",
+          "value": "sRGB"
+        },
+        {
+          "action": "click",
+          "target": "取消"
+        },
+        {
+          "action": "assert",
+          "condition": "no-export-file-created"
+        },
+        {
+          "action": "click",
+          "target": "导出"
+        },
+        {
+          "action": "click",
+          "target": "确认导出"
+        },
+        {
+          "action": "wait",
+          "condition": "export-response-complete"
+        }
+      ],
+      "visible_assertions": [
+        "export-dialog-ready",
+        "filename-format-size-profile-readable",
+        "cancel-closes-without-output",
+        "export-completes-once"
+      ],
+      "api_assertions": [
+        "cancel-created-zero-files",
+        "one-export-file-created",
+        "export-metadata-matches-dialog",
+        "export-pixel-hash-matches-preview-state",
+        "effect-remains-restorable"
+      ],
+      "final_screenshot_state": "edit",
+      "allowed_wait_conditions": [
+        "export-dialog-ready",
+        "export-response-complete"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "export-file",
+        "export-metadata"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions"
+      ]
+    },
+    {
+      "id": "tool:crop_ai:parameter:crop_box",
+      "kind": "tool-parameter-contract",
+      "capability_id": "crop_ai",
+      "parameter": "crop_box",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "crop_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "crop_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "crop_box"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "redo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "reset",
+          "target": "crop_box"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:crop_ai:parameter:crop_box",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:crop_ai:parameter:crop_ratio",
+      "kind": "tool-parameter-contract",
+      "capability_id": "crop_ai",
+      "parameter": "crop_ratio",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "crop_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "crop_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "crop_ratio"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "redo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "reset",
+          "target": "crop_ratio"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:crop_ai:parameter:crop_ratio",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:crop_ai:parameter:flip_x",
+      "kind": "tool-parameter-contract",
+      "capability_id": "crop_ai",
+      "parameter": "flip_x",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "crop_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "crop_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "flip_x"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "redo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "reset",
+          "target": "flip_x"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:crop_ai:parameter:flip_x",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:crop_ai:parameter:flip_y",
+      "kind": "tool-parameter-contract",
+      "capability_id": "crop_ai",
+      "parameter": "flip_y",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "crop_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "crop_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "flip_y"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "redo",
+          "target": "crop_ai"
+        },
+        {
+          "action": "reset",
+          "target": "flip_y"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:crop_ai:parameter:flip_y",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise"
+        },
+        {
+          "action": "redo",
+          "target": "denoise"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise:parameter:denoise_level",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise",
+      "parameter": "denoise_level",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise"
+        },
+        {
+          "action": "change-parameter",
+          "target": "denoise_level"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise"
+        },
+        {
+          "action": "redo",
+          "target": "denoise"
+        },
+        {
+          "action": "reset",
+          "target": "denoise_level"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise:parameter:denoise_level",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise:parameter:luminosity",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise",
+      "parameter": "luminosity",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise"
+        },
+        {
+          "action": "change-parameter",
+          "target": "luminosity"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise"
+        },
+        {
+          "action": "redo",
+          "target": "denoise"
+        },
+        {
+          "action": "reset",
+          "target": "luminosity"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise:parameter:luminosity",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise:parameter:details",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise",
+      "parameter": "details",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise"
+        },
+        {
+          "action": "change-parameter",
+          "target": "details"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise"
+        },
+        {
+          "action": "redo",
+          "target": "denoise"
+        },
+        {
+          "action": "reset",
+          "target": "details"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise:parameter:details",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise:parameter:sharpness",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise",
+      "parameter": "sharpness",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sharpness"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise"
+        },
+        {
+          "action": "redo",
+          "target": "denoise"
+        },
+        {
+          "action": "reset",
+          "target": "sharpness"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise:parameter:sharpness",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:deblur:parameter:sharp_level",
+      "kind": "tool-parameter-contract",
+      "capability_id": "deblur",
+      "parameter": "sharp_level",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "deblur"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "deblur"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sharp_level"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "deblur"
+        },
+        {
+          "action": "redo",
+          "target": "deblur"
+        },
+        {
+          "action": "reset",
+          "target": "sharp_level"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:deblur:parameter:sharp_level",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:deblur:parameter:face_enhancer_enabled",
+      "kind": "tool-parameter-contract",
+      "capability_id": "deblur",
+      "parameter": "face_enhancer_enabled",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "deblur"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "deblur"
+        },
+        {
+          "action": "change-parameter",
+          "target": "face_enhancer_enabled"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "deblur"
+        },
+        {
+          "action": "redo",
+          "target": "deblur"
+        },
+        {
+          "action": "reset",
+          "target": "face_enhancer_enabled"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:deblur:parameter:face_enhancer_enabled",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:default_effects:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "default_effects",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "default_effects"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "default_effects"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "default_effects"
+        },
+        {
+          "action": "redo",
+          "target": "default_effects"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:default_effects:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:ai_enhance:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "ai_enhance",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "ai_enhance"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "ai_enhance"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "ai_enhance"
+        },
+        {
+          "action": "redo",
+          "target": "ai_enhance"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:ai_enhance:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:erase:parameter:strokes",
+      "kind": "tool-parameter-contract",
+      "capability_id": "erase",
+      "parameter": "strokes",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "erase"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "erase"
+        },
+        {
+          "action": "change-parameter",
+          "target": "strokes"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "erase"
+        },
+        {
+          "action": "redo",
+          "target": "erase"
+        },
+        {
+          "action": "reset",
+          "target": "strokes"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:erase:parameter:strokes",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:structure_ai:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "structure_ai",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "structure_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "structure_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "structure_ai"
+        },
+        {
+          "action": "redo",
+          "target": "structure_ai"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:structure_ai:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:color_adjustments:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "color_adjustments",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "color_adjustments"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "color_adjustments"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "color_adjustments"
+        },
+        {
+          "action": "redo",
+          "target": "color_adjustments"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:color_adjustments:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:bw_channels:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "bw_channels",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "bw_channels"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "bw_channels"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "bw_channels"
+        },
+        {
+          "action": "redo",
+          "target": "bw_channels"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:bw_channels:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:details:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "details",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "details"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "details"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "details"
+        },
+        {
+          "action": "redo",
+          "target": "details"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:details:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:denoise_laplacian:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "denoise_laplacian",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "denoise_laplacian"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "denoise_laplacian"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "denoise_laplacian"
+        },
+        {
+          "action": "redo",
+          "target": "denoise_laplacian"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:denoise_laplacian:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:vignette:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "vignette",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "vignette"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "vignette"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "vignette"
+        },
+        {
+          "action": "redo",
+          "target": "vignette"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:vignette:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:asset_id",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "asset_id",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "asset_id"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "asset_id"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:asset_id",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:horizon_offset",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "horizon_offset",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "horizon_offset"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "horizon_offset"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:horizon_offset",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:vertical_offset",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "vertical_offset",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "vertical_offset"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "vertical_offset"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:vertical_offset",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:horizontal_offset",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "horizontal_offset",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "horizontal_offset"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "horizontal_offset"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:horizontal_offset",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:sky_flip",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "sky_flip",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sky_flip"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "sky_flip"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:sky_flip",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:sky_global",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "sky_global",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sky_global"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "sky_global"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:sky_global",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:fix_gaps",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "fix_gaps",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "fix_gaps"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "fix_gaps"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:fix_gaps",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:edge_refinement",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "edge_refinement",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "edge_refinement"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "edge_refinement"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:edge_refinement",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:foreground_relight",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "foreground_relight",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "foreground_relight"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "foreground_relight"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:foreground_relight",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:relight_saturation",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "relight_saturation",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "relight_saturation"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "relight_saturation"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:relight_saturation",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:relight_human",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "relight_human",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "relight_human"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "relight_human"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:relight_human",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:reflection_blur",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "reflection_blur",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "reflection_blur"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "reflection_blur"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:reflection_blur",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:reflection_amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "reflection_amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "reflection_amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "reflection_amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:reflection_amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:sky_grain",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "sky_grain",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sky_grain"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "sky_grain"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:sky_grain",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:sky_blur",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "sky_blur",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "sky_blur"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "sky_blur"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:sky_blur",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:atmospheric_haze",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "atmospheric_haze",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "atmospheric_haze"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "atmospheric_haze"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:atmospheric_haze",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:temperature",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "temperature",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "temperature"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "temperature"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:temperature",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sky_replace:parameter:brightness",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sky_replace",
+      "parameter": "brightness",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sky_replace"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sky_replace"
+        },
+        {
+          "action": "change-parameter",
+          "target": "brightness"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "redo",
+          "target": "sky_replace"
+        },
+        {
+          "action": "reset",
+          "target": "brightness"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sky_replace:parameter:brightness",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:sunrays:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "sunrays",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "sunrays"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "sunrays"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "sunrays"
+        },
+        {
+          "action": "redo",
+          "target": "sunrays"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:sunrays:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:blue_hour:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "blue_hour",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "blue_hour"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "blue_hour"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "blue_hour"
+        },
+        {
+          "action": "redo",
+          "target": "blue_hour"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:blue_hour:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:fog:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "fog",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "fog"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "fog"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "fog"
+        },
+        {
+          "action": "redo",
+          "target": "fog"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:fog:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:landscape_enhancer:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "landscape_enhancer",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "landscape_enhancer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "landscape_enhancer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "landscape_enhancer"
+        },
+        {
+          "action": "redo",
+          "target": "landscape_enhancer"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:landscape_enhancer:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:water_enhancer:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "water_enhancer",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "water_enhancer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "water_enhancer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "water_enhancer"
+        },
+        {
+          "action": "redo",
+          "target": "water_enhancer"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:water_enhancer:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:depth_volume:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "depth_volume",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "depth_volume"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "depth_volume"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "depth_volume"
+        },
+        {
+          "action": "redo",
+          "target": "depth_volume"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:depth_volume:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:color_transfer:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "color_transfer",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "color_transfer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "color_transfer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "color_transfer"
+        },
+        {
+          "action": "redo",
+          "target": "color_transfer"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:color_transfer:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:color_transfer:parameter:asset_id",
+      "kind": "tool-parameter-contract",
+      "capability_id": "color_transfer",
+      "parameter": "asset_id",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "color_transfer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "color_transfer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "asset_id"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "color_transfer"
+        },
+        {
+          "action": "redo",
+          "target": "color_transfer"
+        },
+        {
+          "action": "reset",
+          "target": "asset_id"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:color_transfer:parameter:asset_id",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:magic_lights:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "magic_lights",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "magic_lights"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "magic_lights"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "magic_lights"
+        },
+        {
+          "action": "redo",
+          "target": "magic_lights"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:magic_lights:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:complex_bleach:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "complex_bleach",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "complex_bleach"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "complex_bleach"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "complex_bleach"
+        },
+        {
+          "action": "redo",
+          "target": "complex_bleach"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:complex_bleach:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:lut_mapping:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "lut_mapping",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "lut_mapping"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "redo",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:lut_mapping:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:lut_mapping:parameter:asset_id",
+      "kind": "tool-parameter-contract",
+      "capability_id": "lut_mapping",
+      "parameter": "asset_id",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "lut_mapping"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "change-parameter",
+          "target": "asset_id"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "redo",
+          "target": "lut_mapping"
+        },
+        {
+          "action": "reset",
+          "target": "asset_id"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:lut_mapping:parameter:asset_id",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:color_toning:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "color_toning",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "color_toning"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "color_toning"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "color_toning"
+        },
+        {
+          "action": "redo",
+          "target": "color_toning"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:color_toning:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:fade:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "fade",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "fade"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "fade"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "fade"
+        },
+        {
+          "action": "redo",
+          "target": "fade"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:fade:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:strokes",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "strokes",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "strokes"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "strokes"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:strokes",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:neon_spread",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_spread",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "neon_spread"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "neon_spread"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:neon_spread",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:neon_atmosphere",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_atmosphere",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "neon_atmosphere"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "neon_atmosphere"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:neon_atmosphere",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:neon_hue",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_hue",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "neon_hue"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "neon_hue"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:neon_hue",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:new_neon_light:parameter:neon_whiteness",
+      "kind": "tool-parameter-contract",
+      "capability_id": "new_neon_light",
+      "parameter": "neon_whiteness",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "new_neon_light"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "change-parameter",
+          "target": "neon_whiteness"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "redo",
+          "target": "new_neon_light"
+        },
+        {
+          "action": "reset",
+          "target": "neon_whiteness"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:new_neon_light:parameter:neon_whiteness",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:radiance:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "radiance",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "radiance"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "radiance"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "radiance"
+        },
+        {
+          "action": "redo",
+          "target": "radiance"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:radiance:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:glow_orton:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "glow_orton",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "glow_orton"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "glow_orton"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "glow_orton"
+        },
+        {
+          "action": "redo",
+          "target": "glow_orton"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:glow_orton:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:blur:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "blur",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "blur"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "blur"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "blur"
+        },
+        {
+          "action": "redo",
+          "target": "blur"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:blur:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:grain:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "grain",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "grain"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "grain"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "grain"
+        },
+        {
+          "action": "redo",
+          "target": "grain"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:grain:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:face_ai:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "face_ai",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "face_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "face_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "face_ai"
+        },
+        {
+          "action": "redo",
+          "target": "face_ai"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:face_ai:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:bokeh_ai:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "bokeh_ai",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "bokeh_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "redo",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:bokeh_ai:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:bokeh_ai:parameter:bokeh_shape",
+      "kind": "tool-parameter-contract",
+      "capability_id": "bokeh_ai",
+      "parameter": "bokeh_shape",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "bokeh_ai"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "change-parameter",
+          "target": "bokeh_shape"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "redo",
+          "target": "bokeh_ai"
+        },
+        {
+          "action": "reset",
+          "target": "bokeh_shape"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:bokeh_ai:parameter:bokeh_shape",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:face_enhancer:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "face_enhancer",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "face_enhancer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "face_enhancer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "face_enhancer"
+        },
+        {
+          "action": "redo",
+          "target": "face_enhancer"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:face_enhancer:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:skin_smooth:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "skin_smooth",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "skin_smooth"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "skin_smooth"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "skin_smooth"
+        },
+        {
+          "action": "redo",
+          "target": "skin_smooth"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:skin_smooth:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:slim_people:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "slim_people",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "slim_people"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "slim_people"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "slim_people"
+        },
+        {
+          "action": "redo",
+          "target": "slim_people"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:slim_people:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:high_key:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "high_key",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "high_key"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "high_key"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "high_key"
+        },
+        {
+          "action": "redo",
+          "target": "high_key"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:high_key:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:pro_contrast:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "pro_contrast",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "pro_contrast"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "pro_contrast"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "pro_contrast"
+        },
+        {
+          "action": "redo",
+          "target": "pro_contrast"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:pro_contrast:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:color_enhancer:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "color_enhancer",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "color_enhancer"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "color_enhancer"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "color_enhancer"
+        },
+        {
+          "action": "redo",
+          "target": "color_enhancer"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:color_enhancer:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:dodge_burn:parameter:amount",
+      "kind": "tool-parameter-contract",
+      "capability_id": "dodge_burn",
+      "parameter": "amount",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "dodge_burn"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "change-parameter",
+          "target": "amount"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "redo",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "reset",
+          "target": "amount"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:dodge_burn:parameter:amount",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:dodge_burn:parameter:strokes",
+      "kind": "tool-parameter-contract",
+      "capability_id": "dodge_burn",
+      "parameter": "strokes",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "dodge_burn"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "change-parameter",
+          "target": "strokes"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "redo",
+          "target": "dodge_burn"
+        },
+        {
+          "action": "reset",
+          "target": "strokes"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:dodge_burn:parameter:strokes",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    },
+    {
+      "id": "tool:clone:parameter:strokes",
+      "kind": "tool-parameter-contract",
+      "capability_id": "clone",
+      "parameter": "strokes",
+      "initial_fixture": {
+        "reset": true,
+        "workspace": "edit",
+        "tool": "clone"
+      },
+      "events": [
+        {
+          "action": "open-tool",
+          "target": "clone"
+        },
+        {
+          "action": "change-parameter",
+          "target": "strokes"
+        },
+        {
+          "action": "wait",
+          "condition": "preview-ready"
+        },
+        {
+          "action": "undo",
+          "target": "clone"
+        },
+        {
+          "action": "redo",
+          "target": "clone"
+        },
+        {
+          "action": "reset",
+          "target": "strokes"
+        },
+        {
+          "action": "export",
+          "target": "current-image"
+        }
+      ],
+      "visible_assertions": [
+        "tool-expanded",
+        "parameter-value-changed",
+        "preview-updated",
+        "undo-restored-preview",
+        "redo-restored-preview",
+        "reset-restored-default",
+        "export-completed"
+      ],
+      "api_assertions": [
+        "parameter-state-changed-once",
+        "undo-restored-state",
+        "redo-restored-state",
+        "reset-restored-default",
+        "export-used-current-state"
+      ],
+      "final_screenshot_state": "tool:clone:parameter:strokes",
+      "allowed_wait_conditions": [
+        "preview-ready",
+        "export-ready"
+      ],
+      "failure_artifacts": [
+        "screenshot",
+        "console",
+        "network",
+        "project-state"
+      ],
+      "required_evidence": [
+        "native-observation",
+        "browser-current-build",
+        "visible-assertions",
+        "state-assertions",
+        "preview-export-parity"
+      ]
+    }
+  ]
+}

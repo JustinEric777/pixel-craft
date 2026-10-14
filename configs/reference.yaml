@@ -1,0 +1,33 @@
+version: "1.0"
+active_reference: luminar-neo-macos-1.28.1-23487
+references:
+  luminar-neo-macos-1.28.1-23487:
+    product: Luminar Neo
+    version: 1.28.1
+    build: "23487"
+    bundle_id: com.skylum.luminarneo
+    locale: zh-Hans
+    platform: macOS
+    cases_path: test_data/parity/references/luminar-1.28.1-23487/cases.json
+    matrix_path: test_data/parity/references/luminar-1.28.1-23487/reference-matrix.json
+    manifest_path: test_data/parity/references/luminar-1.28.1-23487/manifest.json
+    capture_root: test_data/outputs/luminar-1.28.1-23487/captures
+    ui_reference_root: test_data/outputs/luminar-1.28.1-23487/ui
+    observations_root: test_data/outputs/luminar-1.28.1-23487/observations
+    diagnostics_root: test_data/outputs/luminar-1.28.1-23487/diagnostics
+    exact_gate_enabled: false
+  luminar-neo-macos-1.28.0-23071:
+    product: Luminar Neo
+    version: 1.28.0
+    build: "23071"
+    bundle_id: com.skylum.luminarneo
+    locale: zh-Hans
+    platform: macOS
+    cases_path: test_data/parity/references/luminar-1.28.0-23071/cases.json
+    matrix_path: test_data/parity/references/luminar-1.28.0-23071/reference-matrix.json
+    manifest_path: test_data/parity/references/luminar-1.28.0-23071/manifest.json
+    capture_root: test_data/outputs/luminar-1.28.0-23071/captures
+    ui_reference_root: test_data/outputs/luminar-1.28.0-23071/ui
+    observations_root: test_data/outputs/luminar-1.28.0-23071/observations
+    diagnostics_root: test_data/outputs/luminar-1.28.0-23071/diagnostics
+    exact_gate_enabled: true

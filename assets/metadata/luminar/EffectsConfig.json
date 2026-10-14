@@ -1,0 +1,2747 @@
+{
+    "MIPLAdjustableGraduated_v1_Effect" : {
+        "ContrastB" : {
+            "historyPrefix" : "Bottom",
+            "name" : "Contrast"
+        },
+        "ContrastT" : {
+            "historyPrefix" : "Top",
+            "name" : "Contrast"
+        },
+        "ExposureB" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            },
+            "historyPrefix" : "Bottom",
+            "name" : "Exposure"
+        },
+        "ExposureT" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            },
+            "historyPrefix" : "Top",
+            "name" : "Exposure"
+        },
+        "HighlightsBottom" : {
+            "historyPrefix" : "Bottom",
+            "name" : "Highlights"
+        },
+        "HighlightsTop" : {
+            "historyPrefix" : "Top",
+            "name" : "Highlights"
+        },
+        "ShadowsBottom" : {
+            "historyPrefix" : "Bottom",
+            "name" : "Shadows"
+        },
+        "ShadowsTop" : {
+            "historyPrefix" : "Top",
+            "name" : "Shadows"
+        },
+        "VibranceB" : {
+            "gradientColors" : {
+                "default" : [
+                    "#3b3b3b",
+                    "#313831",
+                    "#8db94b",
+                    "#2d18d3",
+                    "#c81bab",
+                    "#ea0b12"
+                ]
+            },
+            "historyPrefix" : "Bottom",
+            "name" : "Vibrance"
+        },
+        "VibranceT" : {
+            "gradientColors" : {
+                "default" : [
+                    "#3b3b3b",
+                    "#313831",
+                    "#8db94b",
+                    "#2d18d3",
+                    "#c81bab",
+                    "#ea0b12"
+                ]
+            },
+            "historyPrefix" : "Top",
+            "name" : "Vibrance"
+        },
+        "WarmthB" : {
+            "gradientColors" : {
+                "default" : [
+                    "#003fff",
+                    "#ffd900"
+                ]
+            },
+            "historyPrefix" : "Bottom",
+            "name" : "Warmth"
+        },
+        "WarmthT" : {
+            "gradientColors" : {
+                "default" : [
+                    "#003fff",
+                    "#ffd900"
+                ]
+            },
+            "historyPrefix" : "Top",
+            "name" : "Warmth"
+        }
+    },
+    "MIPLAIBokehEffect" : {
+        "Dehalo" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Edges Correction"
+        },
+        "Exposure" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Brightness"
+        },
+        "FocusPos" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Depth Correction"
+        },
+        "Lightness" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Highlights Glow"
+        },
+        "Warmth" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#003fff",
+                    "#ffd900"
+                ]
+            }
+        }
+    },
+    "MIPLAIFogEffect" : {
+        "Mode" : {
+            "discreteValues" : [
+                "Fog",
+                "Layered Fog",
+                "Mist",
+                "Haze"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLAugmentedSkyEffect" : {
+        "Amount" : {
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "FlipH" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Flip Object",
+            "type" : "Checkbox"
+        },
+        "Haze" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Relight"
+        },
+        "SkyBlur" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Defocus"
+        },
+        "SkyGlobal" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Mask Refinement"
+        },
+        "Temperature" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "gradientColors" : {
+                "default" : [
+                    "#4B85FF",
+                    "#FFFFFF",
+                    "#FFD400"
+                ]
+            },
+            "name" : "Warmth"
+        },
+        "Texture" : {
+            "name" : "Object Selection",
+            "type" : "TextureButton"
+        },
+        "UseCorners" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Place Object"
+        }
+    },
+    "MIPLBlackWhiteEffect" : {
+        "Blacks" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            }
+        },
+        "Whites" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            }
+        }
+    },
+    "MIPLBrillianceWarmthEffect" : {
+        "Vividness" : {
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            },
+            "name" : "Brilliance"
+        },
+        "Warmth" : {
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        }
+    },
+    "MIPLBWChannels_v1_Effect" : {
+        "Apply" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "name" : "Convert to B&W",
+            "type" : "ToggleButton"
+        },
+        "lBlue" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B597F",
+                    "#436BD2"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Blue"
+        },
+        "lCyan" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B8079",
+                    "#43D2B8"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Cyan"
+        },
+        "lGreen" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B7F5C",
+                    "#46D243"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Green"
+        },
+        "lRed" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#725147",
+                    "#EA2525"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Red"
+        },
+        "lViolet" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#6A4478",
+                    "#9F42C0"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Magenta"
+        },
+        "lYellow" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#807D4B",
+                    "#D2CC43"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Yellow"
+        },
+        "sBlue" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B597F",
+                    "#436BD2"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Blue"
+        },
+        "sCyan" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B8079",
+                    "#43D2B8"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Cyan"
+        },
+        "sGreen" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#4B7F5C",
+                    "#46D243"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Green"
+        },
+        "sRed" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#725147",
+                    "#EA2525"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Red"
+        },
+        "sViolet" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#6A4478",
+                    "#9F42C0"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Magenta"
+        },
+        "sYellow" : {
+            "disableCondition" : "SELF.'Apply.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#807D4B",
+                    "#D2CC43"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Yellow"
+        }
+    },
+    "MIPLChannelsEffect" : {
+        "hAqua" : {
+            "gradientColors" : {
+                "default" : [
+                    "#68AD5D",
+                    "#4182E3"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Cyan"
+        },
+        "hBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#5CADA9",
+                    "#6141E3"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Blue"
+        },
+        "hGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#A4AF5E",
+                    "#3BBEC6"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Green"
+        },
+        "hMagenta" : {
+            "gradientColors" : {
+                "default" : [
+                    "#935CAD",
+                    "#AD5CA0",
+                    "#DA4545"
+                ],
+                "positions" : [
+                    0,
+                    0.42709999999999998,
+                    1
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Magenta"
+        },
+        "hOrange" : {
+            "gradientColors" : {
+                "default" : [
+                    "#C74E4E",
+                    "#EA9B25"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Orange"
+        },
+        "hPurple" : {
+            "gradientColors" : {
+                "default" : [
+                    "#5942E3",
+                    "#9F5CAA"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Purple"
+        },
+        "hRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#B94EC7",
+                    "#EA6025"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Red"
+        },
+        "hYellow" : {
+            "gradientColors" : {
+                "default" : [
+                    "#C97B4E",
+                    "#A2C63B"
+                ]
+            },
+            "historyPrefix" : "Hue",
+            "name" : "Yellow"
+        },
+        "lAqua" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#BDF6E8"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Cyan"
+        },
+        "lBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#BDD3F6"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Blue"
+        },
+        "lGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#CBF6BD"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Green"
+        },
+        "lMagenta" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#F1BDF6"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Magenta"
+        },
+        "lOrange" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#F8BB99"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Orange"
+        },
+        "lPurple" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#B0A0E0"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Purple"
+        },
+        "lRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#FF9C9C"
+                ],
+                "positions" : [
+                    0.091800000000000007,
+                    1
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Red"
+        },
+        "lYellow" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#FFF0C0"
+                ]
+            },
+            "historyPrefix" : "Luminance",
+            "name" : "Yellow"
+        },
+        "sAqua" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#518578",
+                    "#39CAA6"
+                ],
+                "positions" : [
+                    0.14580000000000001,
+                    0.63539999999999996,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Cyan"
+        },
+        "sBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#647898",
+                    "#508DEE"
+                ],
+                "positions" : [
+                    0.1615,
+                    0.59370000000000001,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Blue"
+        },
+        "sGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#659456",
+                    "#58DF2C"
+                ],
+                "positions" : [
+                    0.15620000000000001,
+                    0.66149999999999998,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Green"
+        },
+        "sMagenta" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#88688B",
+                    "#E861DA"
+                ],
+                "positions" : [
+                    0.13539999999999999,
+                    0.55730000000000002,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Magenta"
+        },
+        "sOrange" : {
+            "gradientColors" : {
+                "default" : [
+                    "#756E6C",
+                    "#C3805A",
+                    "#EA6C25"
+                ],
+                "positions" : [
+                    0.30209999999999998,
+                    0.67710000000000004,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Orange"
+        },
+        "sPurple" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#656498",
+                    "#8350EE"
+                ],
+                "positions" : [
+                    0.1615,
+                    0.59370000000000001,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Purple"
+        },
+        "sRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#756E6C",
+                    "#C35A5A",
+                    "#EA2525"
+                ],
+                "positions" : [
+                    0.30209999999999998,
+                    0.67710000000000004,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Red"
+        },
+        "sYellow" : {
+            "gradientColors" : {
+                "default" : [
+                    "#565656",
+                    "#A89A50",
+                    "#F4D533"
+                ],
+                "positions" : [
+                    0.15620000000000001,
+                    0.57809999999999995,
+                    1
+                ]
+            },
+            "historyPrefix" : "Saturation",
+            "name" : "Yellow"
+        }
+    },
+    "MIPLColorBalanceEffect" : {
+        "HBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#EBC335",
+                    "#2299DC"
+                ]
+            },
+            "historyPrefix" : "Highlights",
+            "name" : "Yellow-Blue"
+        },
+        "HGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#C82FCB",
+                    "#41E351"
+                ]
+            },
+            "historyPrefix" : "Highlights",
+            "name" : "Magenta-Green"
+        },
+        "HRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#20D7CC",
+                    "#DF4040"
+                ]
+            },
+            "historyPrefix" : "Highlights",
+            "name" : "Cyan-Red"
+        },
+        "MBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#EBC335",
+                    "#2299DC"
+                ]
+            },
+            "historyPrefix" : "Midtones",
+            "name" : "Yellow-Blue"
+        },
+        "MGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#C82FCB",
+                    "#41E351"
+                ]
+            },
+            "historyPrefix" : "Midtones",
+            "name" : "Magenta-Green"
+        },
+        "MRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#20D7CC",
+                    "#DF4040"
+                ]
+            },
+            "historyPrefix" : "Midtones",
+            "name" : "Cyan-Red"
+        },
+        "SBlue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#EBC335",
+                    "#2299DC"
+                ]
+            },
+            "historyPrefix" : "Shadows",
+            "name" : "Yellow-Blue"
+        },
+        "SGreen" : {
+            "gradientColors" : {
+                "default" : [
+                    "#C82FCB",
+                    "#41E351"
+                ]
+            },
+            "historyPrefix" : "Shadows",
+            "name" : "Magenta-Green"
+        },
+        "SRed" : {
+            "gradientColors" : {
+                "default" : [
+                    "#20D7CC",
+                    "#DF4040"
+                ]
+            },
+            "historyPrefix" : "Shadows",
+            "name" : "Cyan-Red"
+        }
+    },
+    "MIPLComplexBleachEffect" : {
+        "Brightness" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Local Contrast" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Saturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        }
+    },
+    "MIPLContrastColorRangeEffect" : {
+        "Color Contrast" : {
+            "name" : "Amount"
+        },
+        "Hue" : {
+            "disableCondition" : "SELF.'Color Contrast.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            }
+        }
+    },
+    "MIPLCurveEffect" : {
+        "B" : {
+            "historySuffix" : ": Curve Modified",
+            "name" : "Blue"
+        },
+        "G" : {
+            "historySuffix" : ": Curve Modified",
+            "name" : "Green"
+        },
+        "R" : {
+            "historySuffix" : ": Curve Modified",
+            "name" : "Red"
+        },
+        "RGB" : {
+            "historySuffix" : ": Curve Modified"
+        }
+    },
+    "MIPLDehazeEffect" : {
+        "Amount" : {
+            "name" : "Dehaze"
+        }
+    },
+    "MIPLDenoiseLaplacianEffect" : {
+        "Boost" : {
+            "disableCondition" : "Luminosity.value = 0"
+        },
+        "Color" : {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "name" : "Color"
+        },
+        "Luminosity" : {
+            "name" : "Luminosity"
+        }
+    },
+    "MIPLDepthEffect" : {
+        "Shadows Repair" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            },
+            "name" : "Shadows"
+        },
+        "Smoothness" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Vividness" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            },
+            "name" : "Saturation"
+        },
+        "Warmth" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        }
+    },
+    "MIPLDetailsEffect" : {
+        "HighlightsProtection" : {
+            "disableCondition" : "(Overall_Large_Detail.value = 0) && (Overall_Medium_Detail.value = 0) && (Overall_Small_Detail.value = 0)",
+            "name" : "Details Protection",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Masking" : {
+            "disableCondition" : "(Overall_Large_Detail.value = 0) && (Overall_Medium_Detail.value = 0) && (Overall_Small_Detail.value = 0)",
+            "name" : "Details Masking",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Overall_Large_Detail" : {
+            "name" : "Large Details",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Overall_Medium_Detail" : {
+            "name" : "Medium Details",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Overall_Small_Detail" : {
+            "name" : "Small Details",
+            "skipUpdateLowResOnChange" : true
+        }
+    },
+    "MIPLDevelopCommonEffectID" : {
+        "Contrast" : {
+            "name" : "Smart Contrast"
+        },
+        "Exposure" : {
+            "numberFormat" : "0.00",
+            "visualValues" : {
+                "visualMinValue" : -5,
+                "visualMaxValue" : 5
+            }
+        },
+        "Temperature" : {
+            "gradientColors" : {
+                "default" : [
+                    "#4B85FF",
+                    "#FFFFFF",
+                    "#FFD400"
+                ]
+            }
+        },
+        "Tint" : {
+            "gradientColors" : {
+                "default" : [
+                    "#57A741",
+                    "#BCBCBC",
+                    "#A24AA9"
+                ]
+            }
+        }
+    },
+    "MIPLDynamicContrastEffect" : {
+        "Boost" : {
+            "name" : "AI Accent"
+        }
+    },
+    "MIPLExposureEffect" : {
+        "Exposure" : {
+            "numberFormat" : "0.00"
+        }
+    },
+    "MIPLFaceEnhancerEffect" : {
+        "Eyebrow Improve" : {
+            "name" : "Improve Eyebrows"
+        },
+        "Teeth whitening" : {
+            "name" : "Teeth Whitening"
+        },
+        "TextureIris" : {
+            "discreteValues" : [
+                "Original",
+                "Blue",
+                "Brown",
+                "Green",
+                "Grey",
+                "Hazel",
+                "Cat",
+                "Honey",
+                "Mint",
+                "Owl"
+            ],
+            "name" : "Iris",
+            "type" : "Combobox"
+        }
+    },
+    "MIPLFaceEnhancer_vn0_Effect" : {
+        "Eyebrow Improve" : {
+            "name" : "Improve Eyebrows"
+        },
+        "Teeth whitening" : {
+            "name" : "Teeth Whitening"
+        },
+        "TextureIris" : {
+            "discreteValues" : [
+                "Original",
+                "Blue",
+                "Brown",
+                "Green",
+                "Grey",
+                "Hazel",
+                "Cat",
+                "Honey",
+                "Mint",
+                "Owl"
+            ],
+            "name" : "Iris",
+            "type" : "Combobox"
+        }
+    },
+    "MIPLFadeEffect" : {
+        "Contrast" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Fade" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Saturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#5D5F73",
+                    "#5069AB",
+                    "#5D8241",
+                    "#DBC13A",
+                    "#F14397"
+                ],
+                "positions" : [
+                    0.1552,
+                    0.44269999999999998,
+                    0.625,
+                    0.79210000000000003,
+                    0.95409999999999995
+                ]
+            },
+            "name" : "Vividness"
+        },
+        "ToningHue" : {
+            "disableCondition" : "(Amount.value = 0) || (ToningRange.value = 0)",
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            },
+            "name" : "Hue"
+        },
+        "ToningRange" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Range"
+        },
+        "ToningSaturation" : {
+            "disableCondition" : "(Amount.value = 0) || (ToningRange.value = 0)",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            },
+            "name" : "Saturation"
+        }
+    },
+    "MIPLFogFilterEffect" : {
+        "FogType" : {
+            "discreteValues" : [
+                "Light Fog",
+                "Dark Fog"
+            ],
+            "historyName" : "Type",
+            "name" : "Type",
+            "type" : "Combobox"
+        }
+    },
+    "MIPLFoliageEnhanceEffect" : {
+        "Amount" : {
+            "gradientColors" : {
+                "default" : [
+                    "#717D71",
+                    "#59783A"
+                ],
+                "positions" : [
+                    0.17330000000000001,
+                    1
+                ]
+            },
+            "name" : "Foliage Enhancer"
+        },
+        "Shift" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            },
+            "name" : "Foliage Hue"
+        }
+    },
+    "MIPLGrainNewEffect" : {
+        "Amount" : {
+            "skipUpdateLowResOnChange" : true
+        },
+        "Roughness" : {
+            "disableCondition" : "Amount.value = 0",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Size" : {
+            "disableCondition" : "Amount.value = 0",
+            "skipUpdateLowResOnChange" : true
+        }
+    },
+    "MIPLHighKeyEffect" : {
+        "Blacks" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Contrast" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Dynamic High Key" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Glow" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Saturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        },
+        "Standard High Key" : {
+            "disableCondition" : "Amount.value = 0"
+        }
+    },
+    "MIPLHighlightsEffect" : {
+        "Highlights" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            }
+        },
+        "Shadows" : {
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            }
+        }
+    },
+    "MIPLHueShiftEffect" : {
+        "Hue" : {
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            },
+            "name" : "Hue Shift"
+        }
+    },
+    "MIPLLensCorrectionEffect" : {
+        "AutoCameraTransformCorrectionOn" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "icon" : "auto_camera_correction_icon",
+            "type" : "ToggleButton",
+            "name" : ""
+        },
+        "AutoLensCorrectionOn" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "name" : "Auto Distortion Corrections",
+            "skipUpdateLowResOnChange" : false,
+            "type" : "Checkbox"
+        },
+        "ChromaticAberrationOn" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "name" : "Auto Fix Chromatic Aberrations",
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "skipUpdateLowResOnChange" : true,
+            "type" : "Checkbox"
+        },
+        "DefringeOn" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "name" : "Auto Defringe",
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "skipUpdateLowResOnChange" : true,
+            "type" : "Checkbox"
+        },
+        "Distortion" : {
+            "name" : "Lens Distortion"
+        },
+        "Vignette" : {
+            "name" : "Devignette"
+        },
+        "Vignette Midpoint" : {
+            "name" : "Devignette Midpoint"
+        },
+        "Vertical" : {
+            "name" : "Vertical"
+        },
+        "Horizontal" : {
+            "name" : "Horizontal"
+        },
+        "Aspect" : {
+            "name" : "Aspect"
+        }
+    },
+    "MIPLLUTMappingEffect" : {
+        "Texture" : {
+            "name" : "Choose LUT",
+            "type" : "TextureButton"
+        }
+    },
+    "MIPLOrtonGlowEffect" : {
+        "Type" : {
+            "discreteValues" : [
+                "Soft Focus",
+                "Glow",
+                "Orton Effect",
+                "Orton Effect Soft"
+            ],
+            "name" : "Type",
+            "type" : "Combobox"
+        },
+        "Softness" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Brightness" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#404243",
+                    "#c3c3c3"
+                ]
+            }
+        },
+        "Contrast" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Warmth" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        }
+    },
+    "MIPLPhotoFilterEffect" : {
+        "Hue" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "PreserveLuminosity" : {
+            "disableCondition" : "Amount.value = 0",
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "name" : "Preserve Luminosity",
+            "type" : "Checkbox"
+        },
+        "Saturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#3b3b3b",
+                    "#313831",
+                    "#8db94b",
+                    "#2d18d3",
+                    "#c81bab",
+                    "#ea0b12"
+                ]
+            }
+        }
+    },
+    "MIPLRawDevelopEffect" : {
+        "Contrast" : {
+            "name" : "Smart Contrast"
+        },
+        "Exposure" : {
+            "numberFormat" : "0.00",
+            "visualValues" : {
+                "visualMinValue" : -5,
+                "visualMaxValue" : 5
+            }
+        },
+        "Temperature" : {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "gradientColors" : {
+                "default" : [
+                    "#1B3882",
+                    "#50859D",
+                    "#9A9A9A",
+                    "#C59240",
+                    "#C3691E"
+                ]
+            },
+            "nonlinearForRaw" : true,
+            "nonlinearForRawDefaultValue" : 6500,
+            "whiteBalanceStringValues" : [
+                "Daylight",
+                "Cloudy",
+                "Shade",
+                "Tungsten",
+                "Fluorescent",
+                "Flash"
+            ],
+            "whiteBalanceValues" : [
+                5500,
+                6500,
+                7500,
+                2850,
+                3450,
+                5000
+            ]
+        },
+        "Tint" : {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "gradientColors" : {
+                "default" : [
+                    "#57A741",
+                    "#BCBCBC",
+                    "#A24AA9"
+                ]
+            },
+            "whiteBalanceStringValues" : [
+                "Daylight",
+                "Cloudy",
+                "Shade",
+                "Tungsten",
+                "Fluorescent",
+                "Flash"
+            ],
+            "whiteBalanceValues" : [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "Denoise_Luminosity" : {
+            "name" : "Luminosity Denoise"
+        },
+        "Denoise_Color" : {
+            "name" : "Color Denoise"
+        },
+        "Denoise_Boost" : {
+            "name" : "Boost"
+        }
+    },
+    "MIPLRemoveColorCastEffect" : {
+        "Amount" : {
+            "name" : "Remove Color Cast"
+        }
+    },
+    "MIPLSaturationEffect" : {
+        "Saturation" : {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        }
+    },
+    "MIPLSegmentationEffect" : {
+        "ShowTrimap" : {
+            "name" : "ShowTrimap"
+        },
+        "Object" : {
+            "discreteValues" : [
+                "None",
+                "Sky For Enhancer",
+                "Sky Segmentation",
+                "Sky In Water",
+                "Water",
+                "Trees",
+                "Mountains",
+                "Man Ground",
+                "Nature Ground",
+                "Transport",
+                "Architecture",
+                "Combined Segmentation",
+                "Depth",
+                "Saliency Map",
+                "Hair",
+                "Skin",
+                "Defects",
+                "Faces NN",
+                "Eye segmentation",
+                "Iris Points",
+                "Human from segmentation",
+                "Human",
+                "Human Boxes",
+                "Human Points",
+                "LSA Matting",
+                "Lights Detection",
+                "Face Boxes",
+                "Transport Boxes",
+                "Face Depth"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLDenoiseAIRawEffect": {
+        "Color Denoise": {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true"
+        }
+    },
+    "MIPLMagicLightsEffect" : {
+        "Amount" : {
+            "name" : "Intensity"
+        }
+    },
+    "MIPLSharpenEffect" : {
+        "Amount" : {
+            "name" : "Sharpen",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Masking" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Masking",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Radius" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Radius",
+            "skipUpdateLowResOnChange" : true
+        }
+    },
+    "MIPLSkinDefectsEffect" : {
+        "RemoveDefects" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 10,
+            "name" : "AI Skin Defects Removal",
+            "type" : "Checkbox"
+        }
+    },
+    "MIPLSkinSoftenerNNEffect" : {
+        "ShineRemoval" : {
+            "name" : "Shine Removal"
+        }
+    },
+    "MIPLSkinFaceDefectsEffect" : {
+        "Amount" : {
+            "name" : "Blemish Removal"
+        },
+        "Freckles" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Freckles Removal"
+        },
+        "Details" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Details"
+        },
+        "Dark Circle" : {
+            "name" : "Dark Circles Removal"
+        },
+        "Debug" : {
+            "discreteValues" : [
+                "None",
+                "Segmentation",
+                "Low Pass",
+                "High Pass",
+                "Hight Pass With Defects",
+                "Feathered Skin Mask",
+                "Defects",
+                "Freckles",
+                "Smooth Mask"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLSkyEnhancerEffect" : {
+        "Amount" : {
+            "name" : "AI Sky Enhancer"
+        }
+    },
+    "MIPLSkyReplacementEffect" : {
+        "FixGaps" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Close Gaps"
+        },
+        "Horizon" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Horizon Position"
+        },
+        "Relight Human" : {
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "Relighting" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Relight Strength"
+        },
+        "Relighting Saturation" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Relight Saturation"
+        },
+        "Sigma" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Fix Details"
+        },
+        "Sky Grain" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Grain",
+            "skipUpdateLowResOnChange" : true
+        },
+        "Sky Horizontal Offset" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Horizontal Position"
+        },
+        "Sky Vertical Offset" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Vertical Position"
+        },
+        "SkyBlur" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Defocus"
+        },
+        "SkyExposure" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Brightness"
+        },
+        "SkyFlip" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Flip",
+            "type" : "Checkbox"
+        },
+        "SkyGlobal" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Global"
+        },
+        "Temperature" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Warmth"
+        },
+        "Texture" : {
+            "name" : "Sky Selection",
+            "type" : "TextureButton"
+        },
+        "Water" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Reflection Amount"
+        },
+        "WaterBlur" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Water Blur"
+        },
+        "White" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Atmospheric Haze"
+        }
+    },
+    "MIPLSmartContrastEffect" : {
+        "Highlights" : {
+            "name" : "Highlights Contrast"
+        },
+        "MiddleH" : {
+            "disableCondition" : "Highlights.value = 0",
+            "name" : "Highlights Balance"
+        },
+        "MiddleM" : {
+            "disableCondition" : "Midtones.value = 0",
+            "name" : "Midtones Balance"
+        },
+        "MiddleS" : {
+            "disableCondition" : "Shadows.value = 0",
+            "name" : "Shadows Balance"
+        },
+        "Midtones" : {
+            "name" : "Midtones Contrast"
+        },
+        "Shadows" : {
+            "name" : "Shadows Contrast"
+        }
+    },
+    "MIPLSplitToningEffect" : {
+        "Balance" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "HighlightsHue" : {
+            "disableCondition" : "(Amount.value = 0) || (HighlightsSaturation.value = 0)",
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            },
+            "historyPrefix" : "Highlights",
+            "name" : "Hue"
+        },
+        "HighlightsSaturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "historyPrefix" : "Highlights",
+            "name" : "Saturation"
+        },
+        "ShadowsHue" : {
+            "disableCondition" : "(Amount.value = 0) || (ShadowsSaturation.value = 0)",
+            "gradientColors" : {
+                "default" : [
+                    "#EE3C3C",
+                    "#D3CE48",
+                    "#41AF3F",
+                    "#447477",
+                    "#4458BE",
+                    "#C348D7",
+                    "#FA3131"
+                ],
+                "positions" : [
+                    0,
+                    0.15820000000000001,
+                    0.30819999999999997,
+                    0.46650000000000003,
+                    0.64580000000000004,
+                    0.81930000000000003,
+                    1
+                ]
+            },
+            "historyPrefix" : "Shadows",
+            "name" : "Hue"
+        },
+        "ShadowsSaturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "historyPrefix" : "Shadows",
+            "name" : "Saturation"
+        }
+    },
+    "MIPLSplitWarmthEffect" : {
+        "Cool Colors" : {
+            "gradientColors" : {
+                "default" : [
+                    "#46AD95",
+                    "#A13DEF"
+                ]
+            },
+            "name" : "Cool"
+        },
+        "Warm Colors" : {
+            "gradientColors" : {
+                "default" : [
+                    "#64B546",
+                    "#EFB33D"
+                ]
+            },
+            "name" : "Warm"
+        }
+    },
+    "MIPLSunLightRaysEffect" : {
+        "X" : {
+            "visualValues" : {
+                "visualMinValue" : 0,
+                "visualMaxValue" : 100
+            }
+        },
+        "Y" : {
+            "visualValues" : {
+                "visualMinValue" : 0,
+                "visualMaxValue" : 100
+            }
+        },
+        "Look" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "name" : "Overall Look"
+        },
+        "Randomize" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0"
+        },
+        "Rays Length" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "name" : "Sunrays Length"
+        },
+        "Rays Number" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "name" : "Number of Sunrays"
+        },
+        "Rays Opacity" : {
+            "name" : "Amount"
+        },
+        "Rays Warmth" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#A8A8A7",
+                    "#A39151"
+                ]
+            },
+            "name" : "Sunrays Warmth"
+        },
+        "Sun Glow Amount" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0"
+        },
+        "Sun Glow Radius" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0"
+        },
+        "Sun Penetration" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "name" : "Penetration"
+        },
+        "Sun Radius" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0"
+        },
+        "Sun Warmth" : {
+            "disableCondition" : "SELF.'Rays Opacity.value' = 0",
+            "gradientColors" : {
+                "default" : [
+                    "#A8A8A7",
+                    "#A39151"
+                ]
+            }
+        }
+    },
+    "MIPLTextureOverlay_v1_Effect" : {
+        "Amount" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Opacity"
+        },
+        "Brightness" : {
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "Contrast" : {
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "Hue Shift" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            },
+            "name" : "Hue"
+        },
+        "Saturation" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        },
+        "Texture" : {
+            "name" : "Texture Selection",
+            "type" : "TextureButton"
+        },
+        "UseCorners" : {
+            "disableCondition" : "Texture.hasChanges = false",
+            "name" : "Place Texture"
+        }
+    },
+    "MIPLVibranceEffect" : {
+        "Vibrance" : {
+            "disableCondition" : "$isMonochrome == true && $isRaw == true",
+            "gradientColors" : {
+                "default" : [
+                    "#5D5F73",
+                    "#5069AB",
+                    "#5D8241",
+                    "#DBC13A",
+                    "#F14397"
+                ],
+                "positions" : [
+                    0.25519999999999998,
+                    0.44269999999999998,
+                    0.625,
+                    0.79210000000000003,
+                    0.95409999999999995
+                ]
+            }
+        }
+    },
+    "MIPLVignetteEffect" : {
+        "Offset X" : {
+            "visualValues" : {
+                "visualMinValue" : -100,
+                "visualMaxValue" : 100
+            }
+        },
+        "Offset Y" : {
+            "visualValues" : {
+                "visualMinValue" : -100,
+                "visualMaxValue" : 100
+            }
+        },
+        "CropMode" : {
+            "disableCondition" : "Amount.value = 0",
+            "discreteValues" : [
+                "Post-crop",
+                "Pre-crop"
+            ],
+            "name" : "Mode",
+            "type" : "Combobox"
+        },
+        "Feather" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Inner Light" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Roundness" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Vignette Size" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Size"
+        }
+    },
+    "MIPLBlurEffect" : {
+        "X" : {
+            "disableCondition" : "BlurType.value = 0 || BlurType.value = 10",
+            "visualValues" : {
+                "visualMinValue" : -1,
+                "visualMaxValue" : 1
+            }
+        },
+        "Y" : {
+            "disableCondition" : "BlurType.value = 0 || BlurType.value = 10",
+            "visualValues" : {
+                "visualMinValue" : -1,
+                "visualMaxValue" : 1
+            }
+        },
+        "Amount" : {
+            "name" : "Amount"
+        },
+        "Rotation" : {
+            "name" : "Angle",
+            "disableCondition" : "BlurType.value = 0 || BlurType.value = 30"
+        },
+        "BlurType" : {
+            "discreteValues" : [
+                "Normal",
+                "Motion",
+                "Radial"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLNewNeonLightEffect" : {
+        "Amount" : {
+            "name" : "Amount"
+        },
+        "NeonAmount" : {
+            "name" : "Amount"
+        },
+        "FreeNeonAmount" : {
+            "name" : "Amount"
+        },
+        "NeonThickness" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Thickness"
+        },
+        "NeonGlow" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Spread"
+        },
+        "FreeNeonGlow" : {
+            "disableCondition" : "FreeNeonAmount.value = 0",
+            "name" : "Spread"
+        },
+        "NeonIndent" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Indent"
+        },
+        "NeonHue" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "FreeNeonHue" : {
+            "disableCondition" : "FreeNeonAmount.value = 0",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "NeonWhiteness" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Whiteness",
+            "gradientColors" : {
+                "default" : [
+                    "#005FFF",
+                    "#ffffff"
+                ]
+            }
+        },
+        "FreeNeonWhiteness" : {
+            "disableCondition" : "FreeNeonAmount.value = 0",
+            "name" : "Whiteness",
+            "gradientColors" : {
+                "default" : [
+                    "#005FFF",
+                    "#ffffff"
+                ]
+            }
+        },
+        "CloudsAmount" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "CloudsAmount"
+        },
+        "CloudsIndent" : {
+            "disableCondition" : "NeonAmount.value = 0",
+            "name" : "Atmosphere"
+        },
+        "FreeCloudsIndent" : {
+            "disableCondition" : "FreeNeonAmount.value = 0",
+            "name" : "Atmosphere"
+        },
+        "GlowAmount" : {
+            "name" : "Amount"
+        },
+        "GlowSize" : {
+            "disableCondition" : "GlowAmount.value = 0",
+            "name" : "Size"
+        },
+        "GlowHue" : {
+            "disableCondition" : "GlowAmount.value = 0",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "GlowWhiteness" : {
+            "disableCondition" : "GlowAmount.value = 0",
+            "name" : "Whiteness",
+            "gradientColors" : {
+                "default" : [
+                    "#005FFF",
+                    "#ffffff"
+                ]
+            }
+        },
+        "ObjectAmount" : {
+            "name" : "Amount"
+        },
+        "ObjectHue" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "ObjectWhiteness" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "Whiteness",
+            "gradientColors" : {
+                "default" : [
+                    "#005FFF",
+                    "#ffffff"
+                ]
+            }
+        },
+        "ObjectExposure" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "Brightness"
+        },
+        "ObjectContrast" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "Contrast"
+        },
+        "ObjectDnB" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "ObjectDnB"
+        },
+        "ObjectDnBRadius" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "ObjectDnBRadius"
+        },
+        "ObjectDnBContrast" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "ObjectDnBContrast"
+        },
+        "StarsAmount" : {
+            "name" : "Amount"
+        },
+        "StarsOnObjectAmount" : {
+            "disableCondition" : "StarsAmount.value = 0",
+            "name" : "StarsOnObjectAmount"
+        },
+        "StarsSoftness" : {
+            "disableCondition" : "StarsAmount.value = 0",
+            "name" : "StarsSoftness"
+        },
+        "StarsHue" : {
+            "disableCondition" : "StarsAmount.value = 0",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "StarsIndent" : {
+            "disableCondition" : "StarsAmount.value = 0",
+            "name" : "Spread"
+        },
+        "Background" : {
+            "disableCondition" : "ObjectAmount.value = 0",
+            "name" : "Background"
+        }
+    },
+    "MIPLColorTransferEffect" : {
+        "Texture" : {
+            "name" : "Reference Path",
+            "type" : "TextureButton"
+        },
+        "Amount" : {
+            "name" : "Amount",
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "Amount Color" : {
+            "name" : "Color Intensity",
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "Amount Luminocity" : {
+            "name" : "Luminosity Intensity",
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "FilterR" : {
+            "name": "Transition Smoothing",
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "FilterEps" : {
+            "name": "Color Smoothing",
+            "disableCondition" : "Texture.hasChanges = false"
+        },
+        "UseSemanticMasks" : {
+            "name" : "Match Similar Objects’ Colors",
+            "disableCondition" : "Texture.hasChanges = false",
+            "discreteValues" : [
+                "no",
+                "AI Masking mapping",
+            ],
+            "type" : "Checkbox"
+        }
+    },
+    "MIPLWaterAIEffect" : {
+        "Amount" : {
+            "name" : "Amount"
+        },
+        "Blue" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Blue"
+        },
+        "Green" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Green"
+        },
+        "OriginalColor" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Original Color"
+        },
+        "Brightness" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Brightness"
+        },
+        "Contrast" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Contrast"
+        },
+        "Depth" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Depth"
+        },
+        "Mask Feather" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Mask Feather"
+        }
+    },
+    "MIPLVirtualFlashLightEffect" : {
+        "Mask" : {
+            "discreteValues" : [
+                "Strong",
+                "Normal",
+                "Loose",
+                "Weak"
+            ],
+            "type" : "Combobox"
+        },
+        "AlphaMattingType" : {
+            "discreteValues" : [
+                "FBA",
+                "GCA",
+                "Guided"
+            ],
+            "name" : "Mask Quality",
+            "type" : "Combobox"
+        },
+        "Amount" : {
+            "name" : "Brightness Near"
+        },
+        "Amount Far" : {
+            "name" : "Brightness Far"
+        },
+        "Warmth" : {
+            "name" : "Warmth Near",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        },
+        "Warmth Far Plane" : {
+            "name" : "Warmth Far",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        }
+    },
+    "MIPLWarmSkylight_v1_Effect" : {
+        "Amount" : {
+            "gradientColors" : {
+                "default" : [
+                    "#AE9E90",
+                    "#DA9B3D"
+                ],
+                "positions" : [
+                    0.1406,
+                    1
+                ]
+            },
+            "name" : "Golden Hour"
+        }
+    },
+    "MIPLDeblurAIEffect" : {
+        "DeblurType" : {
+            "discreteValues" : [
+                "Universal",
+                "Motion Blur"
+            ],
+            "historyName" : "Deblur",
+            "name" : "Type",
+            "type" : "Combobox"
+        },
+        "Level" : {
+            "discreteValues" : [
+                "None",
+                "Low",
+                "Middle",
+                "High"
+            ],
+            "historyName" : "DeblurLevel",
+            "name" : "Level",
+            "type" : "Combobox"
+        },
+        "FaceEnhance" : {
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "historyName" : "FaceEnhance",
+            "name" : "Face Enhance",
+            "type" : "Checkbox"
+        }
+    },
+    "MIPLAIFaceDepthEffect" : {
+        "#Count" : {
+            "count" : 5,
+            "params" : [
+                "AngleV",
+                "AngleH",
+                "Pattern",
+                "TurnOn",
+                "Amount",
+                "Hue",
+                "Saturation",
+                "Depth",
+                "TextureOn",
+                "Texture",
+                "Pattern",
+                "TextureScale",
+                "TextureAngleV",
+                "TextureAngleH"
+            ]
+        },
+        "AngleV" : {
+            "visualValues" : {
+                "visualMinValue" : -180,
+                "visualMaxValue" : 180
+            }
+        },
+        "AngleH" : {
+            "visualValues" : {
+                "visualMinValue" : -180,
+                "visualMaxValue" : 180
+            }
+        },
+        "Pattern" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "discreteValues" : [
+                "None",
+                "Strips",
+                "Dots"
+            ],
+            "type" : "Combobox"
+        },
+        "Texture" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "name" : "Choose Texture",
+            "type" : "TextureButton"
+        },
+        "TurnOn" : {
+            "discreteValues" : [
+                "On",
+                "Hided"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "name" : "Turn On",
+            "type" : "Combobox"
+        },
+        "TextureOn" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "discreteValues" : [
+                "No",
+                "Yes"
+            ],
+            "discreteValuesMultiplier" : 100,
+            "name" : "Light Customization",
+            "type" : "Switcher"
+        },
+        "FilterRadius" : {
+            "disableCondition" : "Order.optionalData.numberValues.@count = 1 && Amount_0.value = 0 && Amount_1.value = 0 && Amount_2.value = 0 && Amount_3.value = 0 && Amount_4.value = 0",
+            "name" : "Smoothness"
+        },
+        "Amount" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "name" : "Amount"
+        },
+        "Hue" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "name" : "Hue",
+            "gradientColors" : {
+                "default" : [
+                    "#ff0000",
+                    "#fffd00",
+                    "#3dcf55",
+                    "#00e7ff",
+                    "#0900ff",
+                    "#ff21e0",
+                    "#ff0000"
+                ]
+            }
+        },
+        "Saturation" : {
+            "name" : "Saturation",
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        },
+        "Depth" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "name" : "Depth"
+        },
+        "TextureScale" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "name" : "Scale"
+        },
+        "TextureAngleV" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "visualValues" : {
+                "visualMinValue" : -180,
+                "visualMaxValue" : 180
+            }
+        },
+        "TextureAngleH" : {
+            "disableCondition" : "TurnOn_$index.value = 10",
+            "visualValues" : {
+                "visualMinValue" : -180,
+                "visualMaxValue" : 180
+            }
+        },
+        "Exposure" : {
+            "disableCondition" : "Order.optionalData.numberValues.@count = 1 && Amount_0.value = 0 && Amount_1.value = 0 && Amount_2.value = 0 && Amount_3.value = 0 && Amount_4.value = 0",
+            "name" : "Brightness"
+        },
+        "Light Contrast" : {
+            "disableCondition" : "Order.optionalData.numberValues.@count = 1 && Amount_0.value = 0 && Amount_1.value = 0 && Amount_2.value = 0 && Amount_3.value = 0 && Amount_4.value = 0",
+            "name" : "Light Contrast"
+        }
+    },
+    "MIPLBlueHourEffect" :
+    {
+        "Amount" : {
+            "name" : "Amount"
+        },
+        "SkyExposure" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Exposure"
+        },
+        "Temperature" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Temperature",
+            "gradientColors" : {
+                "default" : [
+                    "#0246CA",
+                    "#E8D599",
+                    "#EDD81A"
+                ]
+            }
+        },
+        "Tint" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Tint",
+            "gradientColors" : {
+                "default" : [
+                    "#419E7D",
+                    "#863A8C"
+                ]
+            }
+        },
+        "DawnAmount" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Amount"
+        },
+        "DawnSize" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Size"
+        },
+        "DawnTemperature" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Temperature",
+            "gradientColors" : {
+                "default" : [
+                    "#0246CA",
+                    "#E8D599",
+                    "#EDD81A"
+                ]
+            }
+        },
+        "DawnTint" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Tint",
+            "gradientColors" : {
+                "default" : [
+                    "#419E7D",
+                    "#863A8C"
+                ]
+            }
+        },
+        "DawnExpAmount" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Exposure"
+        },
+        "SceneShade" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Shade"
+        },
+        "Relighting Saturation" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Saturation",
+            "gradientColors" : {
+                "default" : [
+                    "#7D7D7D",
+                    "#71AD41",
+                    "#567FE7",
+                    "#C247A7",
+                    "#EA2121"
+                ],
+                "positions" : [
+                    0.1406,
+                    0.38019999999999998,
+                    0.59370000000000001,
+                    0.78210000000000002,
+                    1
+                ]
+            }
+        },
+        "Feathering" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Feathering"
+        },
+        "Water" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Amount"
+        },
+        "WaterBlur" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Blur"
+        },
+        "Horizon" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Sky Horizon"
+        },
+        "Relight Human" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "SkyGlobal" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Sky Global"
+        },
+        "FixGaps" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Fix Gaps"
+        },
+        "Sigma" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Blur"
+        },
+    },
+    "MIPLDepthVolumeEffect":
+    {
+        "Amount" : {
+            "name" : "Amount"
+        },
+        "Middle": {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Sigma" : {
+            "name" : "Softness",
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Temperature2": {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Warmth",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        },
+        "Temperature1": {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Warmth Near",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        },
+        "Temperature3": {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Warmth Far",
+            "gradientColors" : {
+                "default" : [
+                    "#315DFA",
+                    "#EFC83D"
+                ]
+            }
+        },
+        "Brightness1" : {
+            "name" : "Brightness Near",
+            "disableCondition" : "Amount.value = 0"
+        },
+        "Brightness3" : {
+            "name" : "Brightness Far",
+            "disableCondition" : "Amount.value = 0"
+        }
+    },
+    "MIPLAIBokehNewEffect" : {
+        "Amount" : {
+            "name" : "Blur"
+        },
+        "Shape" : {
+            "disableCondition" : "Amount.value = 0"
+        },
+        "FocusPos" : {
+            "name" : "Focus Distance",
+            "disableCondition" : "Amount.value = 0"
+        }
+    },
+    "MIPLSkinFaceSmoothEffect" : {
+        "Amount" : {
+            "name" : "Face Smoothing"
+        },
+        "Details" : {
+            "name" : "Details"
+        },
+        "Debug" : {
+            "discreteValues" : [
+                "None",
+                "Segmentation",
+                "Low Pass",
+                "High Pass",
+                "Smooth Guide",
+                "Feathered Skin Mask"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLSkinBodySmoothEffect" : {
+        "Amount" : {
+            "name" : "Body Smoothing"
+        },
+        "Details" : {
+            "disableCondition" : "Amount.value = 0",
+            "name" : "Details"
+        },
+        "Debug" : {
+            "discreteValues" : [
+                "None",
+                "Segmentation",
+                "Low Pass",
+                "High Pass",
+                "Smooth Guide",
+                "Feathered Skin Mask"
+            ],
+            "type" : "Combobox"
+        }
+    },
+    "MIPLSkinFaceDarkCirclesEffect" : {
+        "Dark Circle" : {
+            "name" : "Dark Circles Removal"
+        }
+    }
+}

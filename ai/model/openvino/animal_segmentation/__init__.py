@@ -1,0 +1,1 @@
+"""Animal segmentation OpenVINO wrappers."""

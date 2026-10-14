@@ -1,0 +1,730 @@
+{
+  "version": "0.2.0",
+  "family_counts": {
+    "atmosphere": 4,
+    "camera_profile": 889,
+    "color_transfer": 5,
+    "contact_lens": 9,
+    "face_relight": 10,
+    "face_zones": 3,
+    "overlay": 234,
+    "raw_profile": 1,
+    "sky": 43,
+    "makeup": 10,
+    "shader": 5
+  },
+  "mappings": [
+    {
+      "capability_id": "ai_enhance",
+      "original_effect_id": "AIEnhanceAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "mask_ai",
+      "original_effect_id": "MaskingTool",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "crop_ai",
+      "original_effect_id": "MPCropToolFilter",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "layers",
+      "original_effect_id": "MPLayerProperties",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "erase",
+      "original_effect_id": "ERASE",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "structure_ai",
+      "original_effect_id": "AIStructureEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "color_adjustments",
+      "original_effect_id": "ExtendedColorAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "bw_channels",
+      "original_effect_id": "BWChannels_v1_Effect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "default_effects",
+      "original_effect_id": "DefaultEffects",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "raw_default_effects",
+      "original_effect_id": "DefaultEffectsRAW",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "details",
+      "original_effect_id": "DetailsEnhancerAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "denoise",
+      "original_effect_id": "DenoiseLaplacianEffect",
+      "families": [
+        {
+          "family": "overlay",
+          "available_count": 234
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "landscape_enhancer",
+      "original_effect_id": "LandscapeEnhancerAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "vignette",
+      "original_effect_id": "VignetteAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "sky_replace",
+      "original_effect_id": "SkyReplacementAdjustmentLayer",
+      "families": [
+        {
+          "family": "sky",
+          "available_count": 43
+        },
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        }
+      ],
+      "asset_requirement": "required",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "augmented_sky",
+      "original_effect_id": "AugmentedSkyEffect",
+      "families": [
+        {
+          "family": "sky",
+          "available_count": 43
+        },
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        }
+      ],
+      "asset_requirement": "required",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "fog",
+      "original_effect_id": "AIFogEffect",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "sunrays",
+      "original_effect_id": "SunLightRaysAdjustmentLayer",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "complex_bleach",
+      "original_effect_id": "ComplexBleachAdjustmentLayer",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "lut_mapping",
+      "original_effect_id": "LUTMappingEffect",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "required",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "color_toning",
+      "original_effect_id": "ColorToningAdjustmentLayer",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "fade",
+      "original_effect_id": "FadeEffect",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "radiance",
+      "original_effect_id": "ImageRadianceAdjustmentLayer",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "glow_orton",
+      "original_effect_id": "GlowOrtonAdjustmentLayer",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "grain",
+      "original_effect_id": "GrainNewAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "bokeh_ai",
+      "original_effect_id": "BlurEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "new_neon_light",
+      "original_effect_id": "NewNeonLightEffect",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "color_transfer",
+      "original_effect_id": "ColorTransferEffect",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "required",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "water_enhancer",
+      "original_effect_id": "WaterAIEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "blue_hour",
+      "original_effect_id": "BlueHourEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "virtual_flash",
+      "original_effect_id": "VirtualFlashLightEffect",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "magic_lights",
+      "original_effect_id": "MagicLightsEffect",
+      "families": [
+        {
+          "family": "atmosphere",
+          "available_count": 4
+        },
+        {
+          "family": "overlay",
+          "available_count": 234
+        },
+        {
+          "family": "shader",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "bokeh_ai",
+      "original_effect_id": "AIBokehEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "face_enhancer",
+      "original_effect_id": "FaceEnhancer_vn0_Effect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "face_enhancer",
+      "original_effect_id": "FaceEnhancer_vn0_EffectNew",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "face_enhancer",
+      "original_effect_id": "FaceEnhancerEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "skin_smooth",
+      "original_effect_id": "SkinSoftenerNNEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "skin_smooth",
+      "original_effect_id": "SkinSmoothEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "slim_people",
+      "original_effect_id": "SlimPeopleEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "slim_people",
+      "original_effect_id": "SlimPeople_vn0_Effect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "high_key",
+      "original_effect_id": "HighKeyAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "pro_contrast",
+      "original_effect_id": "ProContrastAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "color_enhancer",
+      "original_effect_id": "ColorEnhancerAdjustmentLayer",
+      "families": [
+        {
+          "family": "lut",
+          "available_count": 0
+        },
+        {
+          "family": "color_transfer",
+          "available_count": 5
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "missing-family-assets"
+    },
+    {
+      "capability_id": "dodge_burn",
+      "original_effect_id": "DodgeBurnAdjustmentLayer",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "clone",
+      "original_effect_id": "CLONE",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "dodge_burn",
+      "original_effect_id": "DodgeAndBurnEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "denoise",
+      "original_effect_id": "DenoiseAI",
+      "families": [
+        {
+          "family": "overlay",
+          "available_count": 234
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "ai_enhance",
+      "original_effect_id": "AI Adjustments",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "deblur",
+      "original_effect_id": "DeblurAI",
+      "families": [
+        {
+          "family": "overlay",
+          "available_count": 234
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "depth_volume",
+      "original_effect_id": "AIFaceDepthEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "depth_volume",
+      "original_effect_id": "DepthVolumeEffect",
+      "families": [],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    },
+    {
+      "capability_id": "bokeh_ai",
+      "original_effect_id": "AIBokehNewEffect",
+      "families": [
+        {
+          "family": "face_relight",
+          "available_count": 10
+        },
+        {
+          "family": "face_zones",
+          "available_count": 3
+        },
+        {
+          "family": "makeup",
+          "available_count": 10
+        },
+        {
+          "family": "contact_lens",
+          "available_count": 9
+        }
+      ],
+      "asset_requirement": "optional",
+      "status": "mapped"
+    }
+  ]
+}

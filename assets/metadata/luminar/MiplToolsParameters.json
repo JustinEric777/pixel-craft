@@ -1,0 +1,510 @@
+[
+    {
+        "tool_name": "DefaultEffects",
+        "parameters": {
+            "MIPLRawDevelopEffect": [
+                "Autodevelop_enabled",
+                "Texture",
+                "Exposure",
+                "Contrast",
+                "Highlights",
+                "Shadows",
+                "Temperature",
+                "Tint"
+            ],
+            "MIPLDevelopCommonEffectID": [
+                "Autodevelop_enabled"
+                "Exposure",
+                "Contrast",
+                "Highlights",
+                "Shadows",
+                "Temperature",
+                "Tint"
+            ],
+            "MIPLBlackWhiteEffect": [
+                "Whites",
+                "Blacks"
+            ],
+            "MIPLSaturationEffect": [
+                "Saturation"
+            ],
+            "MIPLVibranceEffect": [
+                "Vibrance"
+            ],
+            "MIPLSharpenEffect": [
+                "Amount",
+                "Radius",
+                "Masking"
+            ],
+            "MIPLDenoiseLaplacianEffect": [
+                "Luminosity",
+                "Color",
+                "Boost"
+            ],
+            "MIPLLensCorrectionEffect": [
+                "AutoLensCorrectionOn",
+                "ChromaticAberrationOn",
+                "DefringeOn",
+                "Distortion",
+                "Vignette",
+                "Vignette Midpoint",
+                "Vertical",
+                "Horizontal",
+                "Aspect"
+            ]
+        }
+    },
+    {
+        "tool_name": "AIEnhanceAdjustmentLayer",
+        "parameters": {
+            "MIPLDynamicContrastEffect": [
+                "Boost"
+            ],
+            "MIPLSkyEnhancerEffect": [
+                "Amount"
+            ]
+        }
+    },
+    {
+        "tool_name": "AIStructureEffect",
+        "parameters": {
+            "MIPLAIStructureEffect": [
+                "Amount",
+                "Boost"
+            ]
+        }
+    },
+    {
+        "tool_name": "ExtendedColorAdjustmentLayer",
+        "parameters": {
+            "MIPLSaturationEffect": [
+                "Saturation"
+            ],
+            "MIPLVibranceEffect": [
+                "Vibrance"
+            ],
+            "MIPLRemoveColorCastEffect": [
+                "Amount"
+            ],
+            "MIPLHueShiftEffect": [
+                "Hue"
+            ]
+        }
+    },
+    {
+        "tool_name": "BWChannels_v1_Effect",
+        "parameters": {
+            "MIPLBWChannels_v1_Effect": [
+                "Apply"
+            ]
+        }
+    },
+    {
+        "tool_name": "DetailsEnhancerAdjustmentLayer",
+        "parameters": {
+            "MIPLDetailsEffect": [
+                "Overall_Small_Detail",
+                "Overall_Medium_Detail",
+                "Overall_Large_Detail",
+                "HighlightsProtection",
+                "Masking"
+            ],
+            "MIPLSharpenEffect": [
+                "Amount",
+                "Radius",
+                "Masking"
+            ]
+        }
+    },
+    {
+        "tool_name": "DenoiseLaplacianEffect",
+        "parameters": {
+            "MIPLDenoiseLaplacianEffect": [
+                "Luminosity",
+                "Color",
+                "Boost"
+            ]
+        }
+    },
+    {
+        "tool_name": "LandscapeEnhancerAdjustmentLayer",
+        "parameters": {
+            "MIPLDehazeEffect": [
+                "Amount"
+            ],
+            "MIPLWarmSkylight_v1_Effect": [
+                "Amount"
+            ],
+            "MIPLFoliageEnhanceEffect": [
+                "Amount",
+                "Shift"
+            ]
+        }
+    },
+    {
+        "tool_name": "VignetteAdjustmentLayer",
+        "parameters": {
+            "MIPLVignetteEffect": [
+                "Amount",
+                "Vignette Size",
+                "Roundness",
+                "Feather",
+                "Inner Light"
+            ]
+        }
+    },
+    {
+        "tool_name": "SkyReplacementAdjustmentLayer",
+        "parameters": {
+            "MIPLSkyReplacementEffect": [
+                "Texture",
+                "Texture",
+                "Horizon",
+                "Sky Vertical Offset",
+                "Sky Horizontal Offset",
+                "SkyFlip",
+                "SkyGlobal",
+                "FixGaps",
+                "Sigma",
+                "Relighting",
+                "Relighting Saturation",
+                "Relight Human",
+                "Water",
+                "WaterBlur",
+                "SkyBlur",
+                "Sky Grain",
+                "White",
+                "Temperature",
+                "SkyExposure"
+            ]
+        }
+    },
+    {
+        "tool_name": "SunLightRaysAdjustmentLayer",
+        "parameters": {
+            "MIPLSunLightRaysEffect": [
+                "Rays Opacity",
+                "Look",
+                "Rays Length",
+                "Sun Penetration",
+                "Sun Radius",
+                "Sun Glow Radius",
+                "Sun Glow Amount",
+                "Rays Number",
+                "Randomize",
+                "Sun Warmth",
+                "Rays Warmth"
+            ]
+        }
+    },
+    {
+        "tool_name": "ComplexBleachAdjustmentLayer",
+        "parameters": {
+            "MIPLComplexBleachEffect": [
+                "Amount",
+                "Local Contrast",
+                "Brightness",
+                "Saturation"
+            ]
+        }
+    },
+    {
+        "tool_name": "FadeEffect",
+        "parameters": {
+            "MIPLFadeEffect": [
+                "Amount",
+                "Fade",
+                "Contrast",
+                "Saturation",
+                "ToningRange",
+                "ToningHue",
+                "ToningSaturation"
+            ]
+        }
+    },
+    {
+        "tool_name": "ImageRadianceAdjustmentLayer",
+        "parameters": {
+            "MIPLDepthEffect": [
+                "Amount",
+                "Shadows Repair",
+                "Smoothness",
+                "Vividness",
+                "Warmth"
+            ]
+        }
+    },
+    {
+        "tool_name": "LUTMappingEffect",
+        "parameters": {
+            "MIPLLUTMappingEffect": [
+                "Texture",
+                "Amount",
+                "Contrast",
+                "Saturation"
+            ]
+        }
+    },
+    {
+        "tool_name": "GlowOrtonAdjustmentLayer",
+        "parameters": {
+            "MIPLOrtonGlowEffect": [
+                "Type",
+                "Amount",
+                "Softness",
+                "Brightness",
+                "Contrast",
+                "Warmth"
+            ]
+        }
+    },
+    {
+        "tool_name": "GrainNewAdjustmentLayer",
+        "parameters": {
+            "MIPLGrainNewEffect": [
+                "Amount",
+                "Size",
+                "Roughness"
+            ]
+        }
+    },
+    {
+        "tool_name": "ProContrastAdjustmentLayer",
+        "parameters": {
+            "MIPLSmartContrastEffect": [
+                "Highlights",
+                "MiddleH",
+                "Midtones",
+                "MiddleM",
+                "Shadows",
+                "MiddleS"
+            ]
+        }
+    },
+    {
+        "tool_name": "ColorEnhancerAdjustmentLayer",
+        "parameters": {
+            "MIPLBrillianceWarmthEffect": [
+                "Vividness",
+                "Warmth"
+            ],
+            "MIPLContrastColorRangeEffect": [
+                "Color Contrast",
+                "Hue"
+            ],
+            "MIPLSplitWarmthEffect": [
+                "Warm Colors",
+                "Cool Colors"
+            ]
+        }
+    },
+    {
+        "tool_name": "ColorToningAdjustmentLayer",
+        "parameters": {
+            "MIPLSplitToningEffect": [
+                "Amount",
+                "Balance"
+            ]
+        }
+    },
+    {
+        "tool_name": "SkinSoftenerNNEffect",
+        "parameters": {
+            "MIPLSkinSoftenerNNEffect": [
+                "Amount",
+                "ShineRemoval"
+            ],
+            "MIPLSkinDefectsEffect": [
+                "RemoveDefects"
+            ]
+        }
+    },
+    {
+        "tool_name": "SkinSmoothEffect",
+        "parameters": {
+            
+            "MIPLSkinFaceSmoothEffect": [
+                "Amount"
+            ],
+            "MIPLSkinBodySmoothEffect": [
+                "Amount"
+            ],
+            "MIPLSkinSoftenerNNEffect": [
+                "ShineRemoval"
+            ],
+            "MIPLSkinFaceDefectsEffect": [
+                "Amount"
+            ]
+        }
+    },
+    {
+        "tool_name": "FaceEnhancerEffect",
+        "parameters": {
+            "MIPLFaceEnhancerEffect": [
+                "Face Light",
+                "Slim Face",
+                "TextureIris",
+                "Iris Visibility",
+                "Iris Flare",
+                "Enlarge Eyes",
+                "Eye Whitening",
+                "Eye Enhancer",
+                "Red Eye Removal",
+                "Dark Circles Removal",
+                "Eyebrow Improve",
+                "Lips Saturation",
+                "Lips Redness",
+                "Lips Darkening",
+                "Teeth whitening"
+            ]
+        }
+    },
+    {
+        "tool_name": "FaceEnhancer_vn0_Effect",
+        "parameters": {
+            "MIPLFaceEnhancer_vn0_Effect": [
+                "Face Light",
+                "Slim Face",
+                "TextureIris",
+                "Iris Visibility",
+                "Iris Flare",
+                "Enlarge Eyes",
+                "Eye Whitening",
+                "Eye Enhancer",
+                "Red Eye Removal",
+                "Dark Circles Removal",
+                "Eyebrow Improve",
+                "Lips Saturation",
+                "Lips Redness",
+                "Lips Darkening",
+                "Teeth whitening"
+            ]
+        }
+    },
+    {
+        "tool_name": "FaceEnhancer_vn0_EffectNew",
+        "parameters": {
+            "MIPLFaceEnhancer_vn0_Effect": [
+                "Face Light",
+                "Slim Face",
+                "TextureIris",
+                "Iris Visibility",
+                "Iris Flare",
+                "Enlarge Eyes",
+                "Eye Whitening",
+                "Eye Enhancer",
+                "Red Eye Removal",
+                "Eyebrow Improve",
+                "Lips Saturation",
+                "Lips Redness",
+                "Lips Darkening",
+                "Teeth whitening"
+            ],
+            "MIPLSkinFaceDarkCirclesEffect": [
+                "Dark Circle"
+            ]
+        }
+    },
+    {
+        "tool_name": "HighKeyAdjustmentLayer",
+        "parameters": {
+            "MIPLHighKeyEffect": [
+                "Amount",
+                "Standard High Key",
+                "Dynamic High Key",
+                "Blacks",
+                "Glow",
+                "Contrast",
+                "Saturation"
+            ]
+        }
+    },
+    {
+        "tool_name": "SlimPeopleEffect",
+        "parameters": {
+            "MIPLSlimPeopleEffect": [
+                "Shape",
+                "Abdomen"
+            ]
+        }
+    },
+    {
+        "tool_name": "SlimPeople_vn0_Effect",
+        "parameters": {
+            "MIPLSlimPeople_vn0_Effect": [
+                "Shape",
+                "Abdomen"
+            ]
+        }
+    },
+    {
+        "tool_name": "AIFogEffect",
+        "parameters": {
+            "MIPLAIFogEffect": [
+                "Mode",
+                "Amount",
+                "Depth",
+                "Lightness"
+            ]
+        }
+    },
+    {
+        "tool_name": "AIBokehEffect",
+        "parameters": {
+            "MIPLAIBokehEffect": [
+                "Amount",
+                "Exposure",
+                "Lightness",
+                "Warmth",
+                "FocusPos",
+                "Dehalo"
+            ]
+        }
+    },
+    {
+        "tool_name": "VirtualFlashLightEffect",
+        "parameters": {
+            "MIPLVirtualFlashLightEffect": [
+                "Amount",
+                "Amount Far",
+                "Depth",
+                "Dehalo",
+                "Warmth",
+                "Warmth Far Plane"
+            ]
+        }
+    },
+    {
+        "tool_name": "MagicLightsEffect",
+        "parameters": {
+            "MIPLMagicLightsEffect": [
+                "Amount",
+                "Threshold",
+                "Rays",
+                "Clearness",
+                "Falloff",
+                "Streetlights",
+                "Transport",
+                "Altitude"
+            ]
+        }
+    },
+    {
+        "tool_name": "ERASE",
+        "parameters": {
+            "ERASE": [
+                "ERASE_MASKED",
+                "ERASE_WIRES",
+                "ERASE_DUST"
+            ]
+        }
+    },
+    {
+        "tool_name": "DodgeAndBurnEffect",
+        "parameters": {
+            "MIPLDodgeAndBurnEffect": [
+                "Amount"
+            ]
+        }
+    }
+]

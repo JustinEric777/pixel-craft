@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "execution_mode": "development",
+  "model_cache_mb": 2048,
+  "openvino": "auto",
+  "log_level": "INFO"
+}

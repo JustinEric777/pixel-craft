@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "default_policy": "local-research-only-until-authorized",
+  "families": {
+    "sky": {"redistributable": false, "status": "unknown"},
+    "atmosphere": {"redistributable": false, "status": "unknown"},
+    "face_relight": {"redistributable": false, "status": "unknown"},
+    "face_zones": {"redistributable": false, "status": "unknown"},
+    "makeup": {"redistributable": false, "status": "unknown"},
+    "contact_lens": {"redistributable": false, "status": "unknown"},
+    "overlay": {"redistributable": false, "status": "unknown"},
+    "lut": {"redistributable": false, "status": "unknown"},
+    "camera_profile": {"redistributable": false, "status": "unknown"},
+    "color_transfer": {"redistributable": false, "status": "unknown"},
+    "shader": {"redistributable": false, "status": "unknown"},
+    "raw_profile": {"redistributable": false, "status": "unknown"}
+  },
+  "notes": "Populate per-asset authorization before publishing or redistributing this project."
+}

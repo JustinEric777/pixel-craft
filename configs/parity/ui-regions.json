@@ -1,0 +1,5482 @@
+{
+  "version": "2.0",
+  "reference_id": "luminar-neo-macos-1.28.0-23071",
+  "matrix_fingerprint": "51715c84dc437f2bf5bd00a2f60b429c00e58d3fa96ff881f91fd3dd8e806ce0",
+  "coordinate_space": "physical-pixels",
+  "records": [
+    {
+      "state": "workspace:catalog",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:catalog.ax.json",
+      "reference_ax_sha256": "8414f54d2dcfb37eae2c575b2e7c4499038e8207f37b7cf5fd7ad62c60381865",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "tutorial",
+          "bounds": [
+            40,
+            1504,
+            110,
+            40
+          ],
+          "native_ax_selector": {
+            "description": "教程"
+          },
+          "scope_reason": "用户明确排除教程功能。"
+        },
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:presets",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:presets.ax.json",
+      "reference_ax_sha256": "0d325b315e0e4990b7a9d092e729d41408e3c0a7908cb648df1581295c6f1a8b",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "purchased-entry",
+          "bounds": [
+            2120,
+            562,
+            602,
+            106
+          ],
+          "native_ax_selector": {
+            "value": "已购买"
+          },
+          "scope_reason": "用户明确排除付费相关入口；仅排除 Native AX 标识的已购买标题栏。"
+        },
+        {
+          "id": "market-promotion",
+          "bounds": [
+            2148,
+            1152,
+            542,
+            648
+          ],
+          "native_ax_selector": {
+            "value": "新品上市"
+          },
+          "scope_reason": "用户明确排除商店和推广；该区域由 Native AX 的新品上市标题及可见购物车卡片界定。"
+        },
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:edit",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:edit.ax.json",
+      "reference_ax_sha256": "5120ab354142168a5ffd245e9421fd16147b0b6c804ec7864ae9a8edc2981afc",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:layer-stack",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:layer-stack.ax.json",
+      "reference_ax_sha256": "079f4fad9a9185d8c853a8419d643cf9082b8b0ac23dfc25889b800be290fb93",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:layer-library",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:layer-library.ax.json",
+      "reference_ax_sha256": "4cc155f43d8257484408660644b251facd062d5c35697d6dfb68ad2192f3d92a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:tool-expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:tool-expanded.ax.json",
+      "reference_ax_sha256": "1ce7a56307df45dfda9e56597166019f4a3803a5f4bc81e292a5202a4ee2abea",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:edit-history",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:edit-history.ax.json",
+      "reference_ax_sha256": "646c7988ed23f034856a6cfb9fc2ebee0e901c60c07ea96012db1fe69bb70334",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:more-panel",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:more-panel.ax.json",
+      "reference_ax_sha256": "48ac845e66931131978e273687c980e3638d524a6bd7528c4caf63af94caa3e2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:info-panel",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:info-panel.ax.json",
+      "reference_ax_sha256": "b84815c068ba8b787d4d266828a98d3fa1bfdee1f8e4037e44af94dbc1969628",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:edit-collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:edit-collapsed.ax.json",
+      "reference_ax_sha256": "702f069bba349c3553712ea7f928db7bab01cb0794d6b2c2e474981cc0f00475",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:black-white-before-conversion",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:black-white-before-conversion.ax.json",
+      "reference_ax_sha256": "d3bfaad2957328257dc5eee8dd5a38165a3c987e2fd6af7fdccc77015d912726",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:black-white-after-conversion",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:black-white-after-conversion.ax.json",
+      "reference_ax_sha256": "38d6e6940c776c32f951dee6f00e2481a7d7675313d56d94c35bbca591d65dad",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:denoise-level-selected",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:denoise-level-selected.ax.json",
+      "reference_ax_sha256": "525e69b2eaafe42d387940ef64b59203f0932e11e7fe243853ddf2538d57bfd9",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:multi-image",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:multi-image.ax.json",
+      "reference_ax_sha256": "7c45a458ccf2b650f7a4e392e8318caf6b345f98608579d6a8f00dbb9ccad452",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "tutorial",
+          "bounds": [
+            40,
+            1504,
+            110,
+            40
+          ],
+          "native_ax_selector": {
+            "description": "教程"
+          },
+          "scope_reason": "用户明确排除教程功能。"
+        },
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "workspace:multi-image-complete",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/workspace:multi-image-complete.ax.json",
+      "reference_ax_sha256": "9bb91d8e8a6e66e46ef7ddd375b462a35e2a663661d3115176ff77765dd27644",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "tutorial",
+          "bounds": [
+            40,
+            1504,
+            110,
+            40
+          ],
+          "native_ax_selector": {
+            "description": "教程"
+          },
+          "scope_reason": "用户明确排除教程功能。"
+        },
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:collapsed.ax.json",
+      "reference_ax_sha256": "6d155f3a4417a30532c1e087b10f15d17269ffe8f079a9c1888794b7e0be6bfc",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:expanded.ax.json",
+      "reference_ax_sha256": "20b70275b12aa78f7a2c2dc80ae8871683379ce36b873911776f7290ac7e6123",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:parameter:crop_box:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:parameter:crop_box:modified.ax.json",
+      "reference_ax_sha256": "4bdc9c765def1e870e95c581704588e422fe74ed00f7f69772906dd67ec80137",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:parameter:crop_ratio:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:parameter:crop_ratio:modified.ax.json",
+      "reference_ax_sha256": "a204878fe9b259781cc2796c372dc43dc8f05153e5c117af75a85b2a6f9c09ab",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:parameter:flip_x:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:parameter:flip_x:modified.ax.json",
+      "reference_ax_sha256": "d090eb0a46b6e9c98d0c62de7b6e520a4644210a5c9935a1a757b3ff4169c052",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:crop_ai:parameter:flip_y:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:crop_ai:parameter:flip_y:modified.ax.json",
+      "reference_ax_sha256": "07c12253d7c704d5e063a070d78eb57b753fe4ae3e587b89ca7d303d690da83a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:expanded.ax.json",
+      "reference_ax_sha256": "5c4e2b1d435fdadddb1bd2e882f9599f471b865b97d9108d3c156f66f540f87d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "e38ac1d78e8791922e42f63629b1b6eee5bbdb226418a2b73b7e1472359f619c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:parameter:denoise_level:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:parameter:denoise_level:modified.ax.json",
+      "reference_ax_sha256": "5b4cdf1043b6fa26fe37e5b700a70e6ae04551edd89dab75829e8a131ca29952",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:parameter:luminosity:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:parameter:luminosity:modified.ax.json",
+      "reference_ax_sha256": "7f281fd779441a9877530def4adbd2bb8817611a4810b65d2d3c774071aabf88",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:parameter:details:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:parameter:details:modified.ax.json",
+      "reference_ax_sha256": "9c5d5ab597f4f17411c6d7f4958bc1833b513a9494c09fb3380c412a2f9ad28f",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise:parameter:sharpness:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise:parameter:sharpness:modified.ax.json",
+      "reference_ax_sha256": "c41101ad1d34d0692abb14c0b4fe3599a6b96be8f013336a9e2ba4fdaf8494dd",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:deblur:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:deblur:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:deblur:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:deblur:expanded.ax.json",
+      "reference_ax_sha256": "99edb2c0340ca4704a556c666fc06fe0ead76180ccf867d7e79d1b67a2de288e",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:deblur:parameter:sharp_level:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:deblur:parameter:sharp_level:modified.ax.json",
+      "reference_ax_sha256": "28e8ca7f47547ce373a3afe8db2f7e8b447e59581ae4fd4369d8410693500b36",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:deblur:parameter:face_enhancer_enabled:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:deblur:parameter:face_enhancer_enabled:modified.ax.json",
+      "reference_ax_sha256": "8cc004b5aba025e161aa97af191304ae301480dd19d5234581222ba2f2e461e0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:default_effects:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:default_effects:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:default_effects:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:default_effects:expanded.ax.json",
+      "reference_ax_sha256": "d2f2842bb520b7f83d43d576e8a3dc9102b995e24ffce4207f6d212c2801e861",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:default_effects:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:default_effects:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "138afabadf08344883aa83bb00bff366dcafa9e1d10f68a99ea09782ab4c2aac",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:ai_enhance:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:ai_enhance:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:ai_enhance:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:ai_enhance:expanded.ax.json",
+      "reference_ax_sha256": "7bebae2d58617ab5218bfc341bd26983791b30f2982bd747dc340c79acbbbaa9",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:ai_enhance:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:ai_enhance:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "e8548ddecceb84092189ee17e33cdb6499ddec583fe969c5750b211d87623a08",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:erase:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:erase:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:erase:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:erase:expanded.ax.json",
+      "reference_ax_sha256": "e979fdfae4f5e8b867723413ebdb6e73e4e68d260122cf357f422e95fbc608c1",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:erase:parameter:strokes:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:erase:parameter:strokes:modified.ax.json",
+      "reference_ax_sha256": "1ce80569ae6d50f7315cd66cb7df54bf45ffef080662245ea1a2c3fe0797c61a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:structure_ai:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:structure_ai:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:structure_ai:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:structure_ai:expanded.ax.json",
+      "reference_ax_sha256": "df570208c1db34fbf64161668466cbffa7f4448f4fe41e6401f59294725ff51d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:structure_ai:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:structure_ai:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "650f9b968a8e12c35d57d894ffc96e7a8098ae1198e9671425c9e0a26bfbe212",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_adjustments:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_adjustments:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_adjustments:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_adjustments:expanded.ax.json",
+      "reference_ax_sha256": "4e4ea713d5dd61ec85f8019b5bf6cf3e1f134042c4a2cc51b18481c31e974837",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_adjustments:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_adjustments:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "49a11b7dbeaf3d1efe81d5ec5c20451330b2c97ffb68a14ceedeaa8ae5496ba2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bw_channels:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bw_channels:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bw_channels:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bw_channels:expanded.ax.json",
+      "reference_ax_sha256": "6ce05158de3b77385d3f9f0cb1be8ca601d9c50ec69965a0edb572d78578709a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bw_channels:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bw_channels:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "b536549b3be251cca3b9ea23b965b888677abb1eba6797fdb21dc2060f11eb1e",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:details:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:details:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:details:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:details:expanded.ax.json",
+      "reference_ax_sha256": "cf47731df383314f4d91776b5c4afe65190d1a430fab41cfc420d4f275723464",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:details:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:details:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "7f4baf450d7680f1995b367ab332094e256430e9f4c8eaa6753d5382c83aca90",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise_laplacian:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise_laplacian:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise_laplacian:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise_laplacian:expanded.ax.json",
+      "reference_ax_sha256": "62f53cb0f7e4ae41148a8a18544f00511dbf990b8aea4b43ffec6a9157bc20ad",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:denoise_laplacian:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:denoise_laplacian:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "08da797c04baae8e6ea3015c9c11a8cbc41f07fafd42256ca9a8f75da17bcd87",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:vignette:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:vignette:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:vignette:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:vignette:expanded.ax.json",
+      "reference_ax_sha256": "159a73d85ed36cd79cc43c8897a0fc9fac96e2b0131bb333091a8af878f84b4a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:vignette:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:vignette:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "e502b1afacc8b775b2390248c59fda6eac587f2ad80c9bd709add7983a9df75c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:expanded.ax.json",
+      "reference_ax_sha256": "7a9926e46867912f64068174be02d2d82e1a23c8babe9b146e5d71eecd2ea504",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:asset_id:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:asset_id:modified.ax.json",
+      "reference_ax_sha256": "52814100ed835258dea3c70023e9c870ae917d3c2e60407c659f380a9d6edd74",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:horizon_offset:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:horizon_offset:modified.ax.json",
+      "reference_ax_sha256": "8ad1099b16413f9d40cbcf52651327cf44f708e49a812a8eb42b50ba8b55f1e1",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:vertical_offset:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:vertical_offset:modified.ax.json",
+      "reference_ax_sha256": "5d35c940837cbbf3fc8772525f9e7d54518cc44b495a720db3aff66b0d5fb8b8",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:horizontal_offset:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:horizontal_offset:modified.ax.json",
+      "reference_ax_sha256": "f75d06f78483f3357766a0872ffb675e98157b1f592f98e66a0c35cef95ae96b",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:sky_flip:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:sky_flip:modified.ax.json",
+      "reference_ax_sha256": "ef62003b884eac2a42a23411c046d9b7bad52015ed9cfcc7f73fc5b3eee68776",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:sky_global:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:sky_global:modified.ax.json",
+      "reference_ax_sha256": "b0b22e6cd7183c7875d9b4d4714e44aea62149fc4872c9a53b4e621d0d7511ac",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:fix_gaps:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:fix_gaps:modified.ax.json",
+      "reference_ax_sha256": "9af2ed0bc3c5d54e2987a46c7fb9573392c9498a5c8cd379a9f45d3f6cca9fbf",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:edge_refinement:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:edge_refinement:modified.ax.json",
+      "reference_ax_sha256": "121b063f11c0320c2262ebe11c59b13f70677d3867203f8c27b6d3c9fdd71db1",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:foreground_relight:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:foreground_relight:modified.ax.json",
+      "reference_ax_sha256": "e1b067dbfe0ba01a04ebc25ee6c38b16b73614b57a407bd99f8dea2b2ac6aa84",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:relight_saturation:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:relight_saturation:modified.ax.json",
+      "reference_ax_sha256": "7899eb8a7f2e32eb84fa44f2e98d6156d0ade96363a0dd71e04d425107b43ae9",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:relight_human:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:relight_human:modified.ax.json",
+      "reference_ax_sha256": "ffaf37bec7cac5a993bf29e397ad0553ccd718a6ee77fd1cf7f608f314405bd6",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:reflection_blur:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:reflection_blur:modified.ax.json",
+      "reference_ax_sha256": "3b9bfb6aba043c11642578887e44483277ebe05010d8df4d1c1e73711f488af9",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:reflection_amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:reflection_amount:modified.ax.json",
+      "reference_ax_sha256": "609a337d3ccad499db5e5b9c9b6a1e14ecba2a43dbe0934055ee26f612a6a48d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:sky_grain:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:sky_grain:modified.ax.json",
+      "reference_ax_sha256": "cc6936e40997a789d433fba13c0d26955219dd2ced7e9b13a9e2497e3210c8eb",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:sky_blur:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:sky_blur:modified.ax.json",
+      "reference_ax_sha256": "bf01d42a4c49cee60bf181257f5298799ff22ce4b23be48c2d3234c65594ddb8",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:atmospheric_haze:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:atmospheric_haze:modified.ax.json",
+      "reference_ax_sha256": "1897e63adb125198d8f5c67344b97fbe4b91f574ba19d912b82dc17e06b2b8d2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:temperature:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:temperature:modified.ax.json",
+      "reference_ax_sha256": "8277cb2b681c2c944e015686c2443f18745a9a7410ff50a7cad7ba076d6e8d80",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sky_replace:parameter:brightness:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sky_replace:parameter:brightness:modified.ax.json",
+      "reference_ax_sha256": "aef1182192b9fc5e36f55cc02b4d4538abba0ad4064464f1b0f4619ee9e09b48",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sunrays:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sunrays:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sunrays:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sunrays:expanded.ax.json",
+      "reference_ax_sha256": "7d463f0147a28371512e6af1a2976704e3c92992aa1ab52edf6db5246c388bae",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:sunrays:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:sunrays:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "71d67ceda22256c12b2b219fa51438af4f4afb464ee02c9f642406d865b1ed98",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blue_hour:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blue_hour:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blue_hour:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blue_hour:expanded.ax.json",
+      "reference_ax_sha256": "4d1103d6e98982bb3ee28c8102cbbbefa8785e8fa8033375dd144f2f19867342",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blue_hour:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blue_hour:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "8ed50a0edbd2d2ab51a98cad26073b7547abfed59f34248d82c7776b8d4a3eac",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fog:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fog:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fog:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fog:expanded.ax.json",
+      "reference_ax_sha256": "5991f092fbacf904710062f44d6c1f8dbf8701d3040fdb9e3ae3505d5f678327",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fog:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fog:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "f2d07f311c8d61fc4f455e228090a0805acc1cc43ab63ea6325309e898fe5928",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:landscape_enhancer:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:landscape_enhancer:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:landscape_enhancer:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:landscape_enhancer:expanded.ax.json",
+      "reference_ax_sha256": "9442814c6405ff12c13f2da2170b5712f5e55fc728303b4ba655cd80bbebbc26",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:landscape_enhancer:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:landscape_enhancer:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "a1a64f44e8d451e04106c9194f265bb0153b4786cb4b4a8b396687716cfeff08",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:water_enhancer:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:water_enhancer:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:water_enhancer:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:water_enhancer:expanded.ax.json",
+      "reference_ax_sha256": "1a724d5c74378c137d0fa60b5f64aa73230fa0230bf9f21960bed3a417faea2c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:water_enhancer:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:water_enhancer:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "a25ceac2574ae7741bd747e5a5c9c3b8915d8d9e441d6aa0e345f66deada20e2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:depth_volume:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:depth_volume:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:depth_volume:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:depth_volume:expanded.ax.json",
+      "reference_ax_sha256": "bebd354ee4f055c7c5613af1fbb0fc75a73d7cb790f72d73dbda566ff6799379",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:depth_volume:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:depth_volume:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "c0901e156391b095737315a9b7df28aca32d560a1ad473d7092f3efc159993cd",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_transfer:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_transfer:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_transfer:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_transfer:expanded.ax.json",
+      "reference_ax_sha256": "7fb56fddd5883ce9ee37ffca5585e58d2ebe6a3f083af39ff66f28143211da59",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_transfer:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_transfer:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "f0d0035cfc157c287f9412ccdc3ada59005ef4d9582a19e017c9a5f0105aa5ec",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_transfer:parameter:asset_id:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_transfer:parameter:asset_id:modified.ax.json",
+      "reference_ax_sha256": "1d4cf0ddf63df692ed38922eaa6adef40039662234bf10db5149bf3a0086c8c7",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:magic_lights:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:magic_lights:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:magic_lights:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:magic_lights:expanded.ax.json",
+      "reference_ax_sha256": "246937233dd9f36fedb05823f84f4532758c71008162f5333f286268db85ad09",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:magic_lights:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:magic_lights:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "5a540c3cf04f3f788ab679560c622341c02a2b28de9e8c69096c68ebd2940133",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:complex_bleach:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:complex_bleach:collapsed.ax.json",
+      "reference_ax_sha256": "d4883024367d6be59687c2517973494d37de5c8a417e58b2f3e6f243fc2bec7d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:complex_bleach:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:complex_bleach:expanded.ax.json",
+      "reference_ax_sha256": "11e4ba93425ed59f6b28b9559d652d92776157f3c30cc20e055bd903f51cebb2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:complex_bleach:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:complex_bleach:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "64864996a7efee85a188e61b0d0f1e425bfdb40952315418fcb9c3d489e2a764",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:lut_mapping:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:lut_mapping:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:lut_mapping:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:lut_mapping:expanded.ax.json",
+      "reference_ax_sha256": "d7fb2a185c0614ea1e94f785ba5526dd7abb0ad2074e7e476b876254f7fcf554",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:lut_mapping:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:lut_mapping:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "079747f4765046c750f9e8c86c65b9f01a71d037aaaa10ae55ecb45ab2eee2a0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:lut_mapping:parameter:asset_id:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:lut_mapping:parameter:asset_id:modified.ax.json",
+      "reference_ax_sha256": "d4250c77f9db4c91d5de5d4ccec12552e48c44118ce99d9ec886ea4cc64bcdab",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_toning:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_toning:collapsed.ax.json",
+      "reference_ax_sha256": "63f948b3c00d9f323eed59c29914324772919cb1a0efe8214c5b7ad0b54f42fc",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_toning:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_toning:expanded.ax.json",
+      "reference_ax_sha256": "50987c590962df7c1d8c2c23d6c5097c1e8bfcf4a97d0527480862fecdb64d5c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_toning:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_toning:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "e6f34ff360ff9580cd859bd866462f869c6d150128c38a407fabb278653600a3",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fade:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fade:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fade:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fade:expanded.ax.json",
+      "reference_ax_sha256": "2aed33e49789da0b116fbb4165365ef2b610e2c495d677bcbd8fa453b430119f",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:fade:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:fade:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "f0154548ccb379d443285b1a68f4ef36a8da9ec02f962397ffdaf79fa6bb1ac7",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:expanded.ax.json",
+      "reference_ax_sha256": "36e38c2311109675ea59dc37f6d8098c2cf7c7af70989741de45bc467838a5d5",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "2247cc0e0fecc298e699f772d2c33ebea465ae83ee97dd238984a4c3c9ec2859",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:strokes:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:strokes:modified.ax.json",
+      "reference_ax_sha256": "daf376a3b6ad0d51439ae933d807486a0893b9321907282ebf02a30727deaf60",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:neon_spread:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:neon_spread:modified.ax.json",
+      "reference_ax_sha256": "3a030a051f7b4656293d65a7fe36ca9d66baa33d7885cb1e5ca041abafaf0110",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:neon_atmosphere:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:neon_atmosphere:modified.ax.json",
+      "reference_ax_sha256": "09715ece32bcd0110ed7d41c1cdc2ac1c4df3f4dcf2ba8214584aee5e4e3c6a9",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:neon_hue:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:neon_hue:modified.ax.json",
+      "reference_ax_sha256": "2162f179a58aeda93232c97045f2b8e13371e1f1d4a3da38473c53b2e40bf99a",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:new_neon_light:parameter:neon_whiteness:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:new_neon_light:parameter:neon_whiteness:modified.ax.json",
+      "reference_ax_sha256": "82522aac59407d12a4953ffda689c1f98daff719fecfb8ce1bc529bce8adc62c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:radiance:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:radiance:collapsed.ax.json",
+      "reference_ax_sha256": "2e89aa6feeeaa85c4576b1072443fb1cd150f6839fba476bd10a9651dac073ac",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:radiance:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:radiance:expanded.ax.json",
+      "reference_ax_sha256": "379a1d5466eae039ce877b91872f399c9bb616b277e7b664f4e2ccd108efd83c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:radiance:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:radiance:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "1a9e753d4f8a819d94350258b6dc387604c0d5ffa5754dd36d5ed1e952c24fb1",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:glow_orton:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:glow_orton:collapsed.ax.json",
+      "reference_ax_sha256": "72109cd0bf273b82e505c4285c15dc76d49de09467d1570c3cdf0733154648f0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:glow_orton:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:glow_orton:expanded.ax.json",
+      "reference_ax_sha256": "7df218b0fb53d22dae7a4ef18041df6a0feeb0526f9339b91101b79d304211f0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:glow_orton:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:glow_orton:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "b0a3ab5dda21e55b11ba0c991f23fa293aad2d1eb3e67580cc1595aac7755d37",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blur:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blur:collapsed.ax.json",
+      "reference_ax_sha256": "dbebf6cf7eb7f9d3361aa47776de8f3ead95496feb8990472d1e30c51a6a5e0d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blur:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blur:expanded.ax.json",
+      "reference_ax_sha256": "dd35639ced4b9dd4fbccbe8d8c25da960b9a5bf6830f1aefd739b41b3ba25185",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:blur:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:blur:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "53d148a5d99dd9276260298ddd617a72128b06924684af4cbdc162132b52d5be",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:grain:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:grain:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:grain:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:grain:expanded.ax.json",
+      "reference_ax_sha256": "25884b68c29d485a586a92d447ad4fd7bcc80e5093d75b26dcf6f40b10cd47ca",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:grain:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:grain:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "a59f363e10dfef41e7dbb9dc6e97bd81f797dff15b7fb7b4fc2a2a407b94c77f",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_ai:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_ai:collapsed.ax.json",
+      "reference_ax_sha256": "72109cd0bf273b82e505c4285c15dc76d49de09467d1570c3cdf0733154648f0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_ai:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_ai:expanded.ax.json",
+      "reference_ax_sha256": "59ec8cb6362e660fa671f193fc9a4378f8103d7245bb8b8a7c3d096579f2b608",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_ai:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_ai:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "f8815e3bcf2261861367d720dfb841921ca28c3da55ace7064978317fe64bd81",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bokeh_ai:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bokeh_ai:collapsed.ax.json",
+      "reference_ax_sha256": "72109cd0bf273b82e505c4285c15dc76d49de09467d1570c3cdf0733154648f0",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bokeh_ai:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bokeh_ai:expanded.ax.json",
+      "reference_ax_sha256": "1c113c0299f5b312bc31d3d790709faefac85dd93787ac3e7e4e12421378f799",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bokeh_ai:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bokeh_ai:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "50377e664fb5dead0f7d09bbc54643762852cefd92ce4cb4087595e9c4d70f42",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:bokeh_ai:parameter:bokeh_shape:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:bokeh_ai:parameter:bokeh_shape:modified.ax.json",
+      "reference_ax_sha256": "43354919a5d9dab271eee6e3b501607f0b208c46a73efa17e8fa64a216509b3f",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_enhancer:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_enhancer:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_enhancer:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_enhancer:expanded.ax.json",
+      "reference_ax_sha256": "ad96c5a76c9e66d12171eee27457edb72c2d0f7ba2882912c1b19556dd680474",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:face_enhancer:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:face_enhancer:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "091123f7ca6110ce5549fde1c35d2bb86744a2a1e846b82641e271c940d96302",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:skin_smooth:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:skin_smooth:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:skin_smooth:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:skin_smooth:expanded.ax.json",
+      "reference_ax_sha256": "603cd217dccc22a91515e7e9c38a03f156108815ea1c8fe46a64d5e68a484493",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:skin_smooth:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:skin_smooth:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "836e9a58c3e2e32e8156ad29e970e84e5618ee1916a0e654f49bf96529a5e835",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:slim_people:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:slim_people:collapsed.ax.json",
+      "reference_ax_sha256": "ebda53fb457106c6ebfd5ae5c13819a00849509dbd3eae125458e519857adc44",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:slim_people:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:slim_people:expanded.ax.json",
+      "reference_ax_sha256": "c969a18e99e8972f532d492cef204df64e1599788486e31d3812610bf5c2e3ea",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:slim_people:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:slim_people:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "f89e25e9815292da4c06a786bd32685dcade4596aaa6a1980f73853a4127dcfd",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:high_key:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:high_key:collapsed.ax.json",
+      "reference_ax_sha256": "d8075f14827f4d559379024e63fb4df159273fd9051932a254321070905ce176",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:high_key:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:high_key:expanded.ax.json",
+      "reference_ax_sha256": "c4d566acaf6675cd3ba89dadada983370f6b3f5cc4f4da906078010a9bbc4ba6",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:high_key:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:high_key:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "91f4c61da83d8896e08f2b7c92097133c507c9a3096c0cea6c2e75be1e63985c",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:pro_contrast:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:pro_contrast:collapsed.ax.json",
+      "reference_ax_sha256": "088fd3ce21a608cb99bdea18e65ea54fdd8b0dca3b82331e47a54fcdea5f7a3b",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:pro_contrast:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:pro_contrast:expanded.ax.json",
+      "reference_ax_sha256": "edf1b97b90de0950398e1332e71b90493e2352302708158e642e7f49e1d2d5c6",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:pro_contrast:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:pro_contrast:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "841694bdcfe20331f3105e704966045b75e4f94e8f744b60f99eb5f2e9095056",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_enhancer:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_enhancer:collapsed.ax.json",
+      "reference_ax_sha256": "d4883024367d6be59687c2517973494d37de5c8a417e58b2f3e6f243fc2bec7d",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_enhancer:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_enhancer:expanded.ax.json",
+      "reference_ax_sha256": "25429ca13882b78f439f0ac3a37ff62b345579a75ec6451735aad329bf706693",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:color_enhancer:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:color_enhancer:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "5f7a6b6074af4587e76d831a791f3a6a691c58796526853534c0cde4aae7cb72",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:dodge_burn:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:dodge_burn:collapsed.ax.json",
+      "reference_ax_sha256": "93ed16e8744297c17d7651d1e72494900359e076f7895b59fc545b6bcd5f84b2",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:dodge_burn:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:dodge_burn:expanded.ax.json",
+      "reference_ax_sha256": "066f20ea006fa066e335647606dd7cffe56c68480ff0fe47a8503d9c06523837",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:dodge_burn:parameter:amount:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:dodge_burn:parameter:amount:modified.ax.json",
+      "reference_ax_sha256": "ea9d1521055ac807c2c53ff9a050ef35d9962c75e8b08ec2855c5aaad4f5507b",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:dodge_burn:parameter:strokes:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:dodge_burn:parameter:strokes:modified.ax.json",
+      "reference_ax_sha256": "bede36cc25b20dfc12ad5dc9c7e8f96d64dfb49fc0a8b44e67ddc55a9f00e713",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:clone:collapsed",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:clone:collapsed.ax.json",
+      "reference_ax_sha256": "6509b0cdd28585eb49a90f9273fe39e55e3aae4f769fa5436b0f8a678ad73d4f",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:clone:expanded",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:clone:expanded.ax.json",
+      "reference_ax_sha256": "42e9ea6cf5fa6141213c147732d0c735590d53fa5dc88e9371f4dae470a339c4",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    },
+    {
+      "state": "tool:clone:parameter:strokes:modified",
+      "viewport": [
+        2880,
+        1800
+      ],
+      "reference_ax": "2880x1800/tool:clone:parameter:strokes:modified.ax.json",
+      "reference_ax_sha256": "8a25eceb352f23a7419f81b9dff1ea28f19affc9eea8c27baf5a9ab369e5c4e8",
+      "include": [
+        [
+          0,
+          0,
+          2880,
+          1800
+        ]
+      ],
+      "exclude": [
+        {
+          "id": "help",
+          "bounds": [
+            2776,
+            1544,
+            48,
+            48
+          ],
+          "native_ax_selector": {
+            "identifier": "NavigationPanel.Tab.Help"
+          },
+          "scope_reason": "用户明确排除帮助功能。"
+        }
+      ]
+    }
+  ],
+  "content_sha256": "12ce782d57173780d5716432fdac78fdbe24cde5f8a8d67552b43dbd37fffbcb"
+}

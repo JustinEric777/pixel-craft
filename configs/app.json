@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "paths": {
+    "data_root": "data",
+    "asset_root": "assets",
+    "model_root": "models",
+    "parameter_schema": "configs/capabilities/parameter-schema.json",
+    "model_manifest": "configs/model.yaml",
+    "capability_manifest": "configs/capabilities/registry.json"
+  }
+}

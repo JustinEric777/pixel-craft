@@ -1,0 +1,46 @@
+[project]
+name = "zpixel-edit"
+version = "0.1.0"
+description = "Local AI-assisted non-destructive photo editing engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "pydantic>=2.7",
+  "PyYAML>=6.0",
+  "onnxruntime>=1.18,<1.24",
+  "fastapi>=0.115",
+  "python-multipart>=0.0.9",
+  "uvicorn[standard]>=0.30",
+]
+
+[project.optional-dependencies]
+runtime-openvino = [
+  "openvino>=2025.0,<2026",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5",
+  "httpx>=0.27",
+  "onnx>=1.16",
+]
+conversion = [
+  "openvino2onnx>=1.1,<2",
+  "onnx>=1.17,<1.18",
+]
+
+[tool.uv]
+cache-dir = ".uv-cache"
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".agents", ".uv-cache", ".venv", "frontend/node_modules"]

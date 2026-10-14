@@ -1,0 +1,240 @@
+{
+    "AIEnhanceAdjustmentLayer": {
+        "title": "Enhance AI",
+        "iconName": "Enhance AI",
+        "disabledInLite": true
+    },
+    "MaskingTool": {
+        "title": "Masking",
+        "iconName": "masking"
+    },
+    "MPCropToolFilter": {
+        "title": "Crop AI",
+        "iconName": "cropai"
+    },
+    "MPLayerProperties": {
+        "title": "Layer Properties",
+        "iconName": "layer",
+        "purchaseMaskIDs": [
+            "AIBgRemoval"
+        ]
+    },
+    "ERASE": {
+        "title": "Erase",
+        "iconName": "erase"
+    },
+    "AIStructureEffect": {
+        "title": "Structure AI",
+        "iconName": "structureai",
+        "disabledInLite": true
+    },
+    "ExtendedColorAdjustmentLayer": {
+        "title": "Color",
+        "iconName": "color"
+    },
+    "BWChannels_v1_Effect": {
+        "title": "Black & White",
+        "iconName": "black&white"
+    },
+    "DefaultEffects": {
+        "title": "Develop",
+        "iconName": "develop"
+    },
+    "DefaultEffectsRAW": {
+        "title": "Develop RAW",
+        "iconName": "develop"
+    },
+    "DetailsEnhancerAdjustmentLayer": {
+        "title": "Details",
+        "iconName": "details"
+    },
+    "DenoiseLaplacianEffect": {
+        "title": "Denoise",
+        "iconName": "denoise"
+    },
+    "LandscapeEnhancerAdjustmentLayer": {
+        "title": "Landscape",
+        "iconName": "landscape",
+        "disabledInLite": true
+    },
+    "VignetteAdjustmentLayer": {
+        "title": "Vignette",
+        "iconName": "vignette"
+    },
+    "SkyReplacementAdjustmentLayer": {
+        "title": "Sky AI",
+        "iconName": "skyai"
+    },
+    "AugmentedSkyEffect": {
+        "title": "Augmented Sky AI",
+        "iconName": "augmentedskyai"
+    },
+    "AIFogEffect": {
+        "title": "Atmosphere AI",
+        "iconName": "atmosphereai",
+        "disabledInLite": true
+    },
+    "SunLightRaysAdjustmentLayer": {
+        "title": "Sunrays",
+        "iconName": "sunrays",
+        "disabledInLite": true
+    },
+    "ComplexBleachAdjustmentLayer": {
+        "title": "Dramatic",
+        "iconName": "dramatic"
+    },
+    "LUTMappingEffect": {
+        "title": "Mood",
+        "iconName": "mood"
+    },
+    "ColorToningAdjustmentLayer": {
+        "title": "Toning",
+        "iconName": "toning"
+    },
+    "FadeEffect": {
+        "title": "Matte",
+        "iconName": "matte"
+    },
+    "ImageRadianceAdjustmentLayer": {
+        "title": "Mystical",
+        "iconName": "mystical"
+    },
+    "GlowOrtonAdjustmentLayer": {
+        "title": "Glow",
+        "iconName": "glow"
+    },
+    "GrainNewAdjustmentLayer": {
+        "title": "Film Grain",
+        "iconName": "filmgrain"
+    },
+    "BlurEffect": {
+        "title": "Blur",
+        "iconName": "blur"
+    },
+    "NewNeonLightEffect": {
+        "title": "Neon & Glow",
+        "iconName": "neon",
+        "purchaseID": "NeonGlow",
+        "isFeature": true
+    },
+    "ColorTransferEffect": {
+        "title": "Color Transfer",
+        "iconName": "colortransferai",
+        "isNewTool": true,
+        "purchaseID" : "ColorTransfer",
+        "disabledInLite" : true
+    },
+    "WaterAIEffect": {
+        "title": "Water Enhancer AI",
+        "iconName": "waterai",
+        "disabledInLite": true,
+        "isNewTool": false
+    },
+    "BlueHourEffect": {
+        "title": "Twilight Enhancer AI",
+        "iconName": "bluehourai",
+        "disabledInLite": true,
+        "isNewTool": false
+    },
+    "VirtualFlashLightEffect": {
+        "title": "Relight AI",
+        "iconName": "relightai",
+        "disabledInLite": true
+    },
+    "MagicLightsEffect": {
+        "title": "Magic Light AI",
+        "iconName": "magiclightai",
+        "purchaseID": "MagicLightAI"
+    },
+    "AIBokehEffect": {
+        "title": "Portrait Bokeh AI",
+        "iconName": "portraitbokehai",
+        "disabledInLite": true
+    },
+    "FaceEnhancer_vn0_Effect": {
+        "title": "Face AI",
+        "iconName": "faceai",
+        "disabledInLite": true
+    },
+    "FaceEnhancer_vn0_EffectNew": {
+        "title": "Face AI",
+        "iconName": "faceai",
+        "disabledInLite": true
+    },
+    "FaceEnhancerEffect": {
+        "title": "Face AI",
+        "iconName": "faceai"
+    },
+    "SkinSoftenerNNEffect": {
+        "title": "Skin AI",
+        "iconName": "skinai"
+    },
+    "SkinSmoothEffect": {
+        "title": "Skin AI",
+        "iconName": "skinai"
+    },
+    "SlimPeopleEffect": {
+        "title": "Body AI",
+        "iconName": "bodyai",
+        "disabledInLite": true
+    },
+    "SlimPeople_vn0_Effect": {
+        "title": "Body AI",
+        "iconName": "bodyai",
+        "disabledInLite": true
+    },
+    "HighKeyAdjustmentLayer": {
+        "title": "High Key",
+        "iconName": "highkey"
+    },
+    "ProContrastAdjustmentLayer": {
+        "title": "Supercontrast",
+        "iconName": "supercontrast",
+        "disabledInLite": true
+    },
+    "ColorEnhancerAdjustmentLayer": {
+        "title": "Color Harmony",
+        "iconName": "colorharmony",
+        "disabledInLite": true
+    },
+    "DodgeBurnAdjustmentLayer": {
+        "title": "Dodge & Burn",
+        "iconName": "dodge&burn"
+    },
+    "CLONE": {
+        "title": "Clone",
+        "iconName": "clone"
+    },
+    "DodgeAndBurnEffect": {
+        "title": "Dodge & Burn",
+        "iconName": "dodge&burn"
+    },
+    "DenoiseAI": {
+        "iconName": "denoiseai",
+        "purchaseID": "Noiseless"
+    },
+    "AI Adjustments": {
+        "title": "Luminar AI Adjustments",
+        "iconName": "aiAdjustments"
+    },
+    "DeblurAI": {
+        "title": "Supersharp AI",
+        "iconName": "deblurai",
+        "purchaseID": "SupersharpAI"
+    },
+    "AIFaceDepthEffect": {
+        "title": "Studio Light",
+        "iconName": "studio_light",
+        "purchaseID": "StudioLight",
+        "isFeature": true
+    },
+    "DepthVolumeEffect": {
+        "title": "Light Depth",
+        "iconName": "light_depth",
+        "disabledInLite": true
+    },
+    "AIBokehNewEffect": {
+        "title": "Bokeh AI",
+        "iconName": "portrait_bokeh"
+    }
+}

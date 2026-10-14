@@ -1,0 +1,282 @@
+{
+    "MPLayerProperties" : {
+        "videoName": "layer properties.mp4",
+        "Hint" : "Separate image elements for flexible editing. Use multiple RAW files as layers, apply any tool in any order with unique masks, and adjust settings like resize, opacity, and blend modes.",
+        "Link" : "http://fx.macphun.com/FA"
+    },
+    "MPCropToolFilter" : {
+        "videoName": "crop.mp4",
+        "Hint" : "Automatically improve composition and crop with AI. Change aspect ratio, straighten the horizon, and fine-tune manually.",
+        "Link" : "http://fx.macphun.com/FA?c_url=1"
+    },
+    "AIEnhanceAdjustmentLayer" : {
+        "videoName": "enhance.mp4",
+        "Hint" : "Improve your photo instantly with AI. Expand dynamic range softly and darken the sky with adjustable controls.",
+        "Link" : "http://fx.macphun.com/FA?c_url=2"
+    },
+    "SkyReplacementAdjustmentLayer" : {
+        "videoName": "sky.mp4",
+        "Hint" : "Replace flat or blown-out skies using AI, automatically detecting sky position, adjusting lighting, and adding reflections on water for a realistic result.",
+        "Link" : "http://fx.macphun.com/FA?c_url=3"
+    },
+    "DeblurAI" : {
+        "videoName": "supersharp_1.mp4",
+        "Hint" : "Restore sharpness with AI by fixing motion blur, missed focus, and camera shake for clearer details.",
+        "Link" : "http://fx.macphun.com/FA?c_url=4"
+    },
+    "AIFaceDepthEffect" : {
+        "videoName": "studio light.mp4",
+        "Hint" : "Simulate studio lighting by adding extra light sources for professional portrait effects.",
+        "Link" : "http://fx.macphun.com/FA?c_url=5"
+    },
+    "MagicLightsEffect" : {
+        "videoName": "magic light.mp4",
+        "Hint" : "Enhance and add glow to street lights, bulbs, and decorative lights using AI for a cosy lighting effect.",
+        "Link" : "http://fx.macphun.com/FA?c_url=6"
+    },
+    "DenoiseAI" : {
+        "videoName": "noiseless.mp4",
+        "Hint" : "Reduce noise with AI for cleaner, sharper photos. Works best on RAW, but supports all formats.",
+        "Link" : "http://fx.macphun.com/FA?c_url=7"
+    },
+    "DefaultEffects" : {
+        "videoName": "develop.mp4",
+        "Hint" : "Adjust exposure, white balance, saturation, sharpness, and perspective. Fine-tune with curves and lens correction to set the foundation for all edits.",
+        "Link" : "http://fx.macphun.com/FA?c_url=8"
+    },
+    "DefaultEffectsRAW" : {
+        "videoName": "develop.mp4",
+        "Hint" : "Adjust exposure, white balance, saturation, sharpness, and perspective. Fine-tune with curves and lens correction to set the foundation for all edits.",
+        "Link" : "http://fx.macphun.com/FA?c_url=9"
+    },
+    "ERASE" : {
+        "videoName": "erase.mp4",
+        "Hint" : "Remove unwanted elements in a few clicks. Automatically erase power lines and sensor dust for a cleaner photo.",
+        "Link" : "http://fx.macphun.com/FA?c_url=10"
+    },
+    "AIStructureEffect" : {
+        "videoName": "structure.mp4",
+        "Hint" : "Increase or reduce clarity to reveal more detail or create a smoother look.",
+        "Link" : "http://fx.macphun.com/FA?c_url=11"
+    },
+    "ExtendedColorAdjustmentLayer" : {
+        "videoName": "color.mp4",
+        "Hint" : "Control overall color intensity or adjust individual hues with precision for balanced, vibrant results.",
+        "Link" : "http://fx.macphun.com/FA?c_url=12"
+    },
+    "BWChannels_v1_Effect" : {
+        "videoName": "b&w.mp4",
+        "Hint" : "Convert photos to black & white and adjust brightness of individual colors for a refined monochrome look.",
+        "Link" : "http://fx.macphun.com/FA?c_url=13"
+    },
+    "DetailsEnhancerAdjustmentLayer" : {
+        "videoName": "details.mp4",
+        "Hint" : "Enhance sharpness with precision. Adjust fine, medium, and large details for crisp, dramatic photos.",
+        "Link" : "http://fx.macphun.com/FA?c_url=14"
+    },
+    "DenoiseLaplacianEffect" : {
+        "videoName": "denoise.mp4",
+        "Hint" : "Remove digital noise caused by high ISO, long exposure, or underexposure for cleaner images.",
+        "Link" : "http://fx.macphun.com/FA?c_url=15"
+    },
+    "LandscapeEnhancerAdjustmentLayer" : {
+        "videoName": "landscape.mp4",
+        "Hint" : "Enhance landscapes, real estate, and travel photos by boosting greenery, adding golden hour tones, and reducing haze for vibrant, natural results.",
+        "Link" : "http://fx.macphun.com/FA?c_url=16"
+    },
+    "VignetteAdjustmentLayer" : {
+        "videoName": "vignette.mp4",
+        "Hint" : "Darken or lighten photo edges to draw focus toward the center of the image.",
+        "Link" : "http://fx.macphun.com/FA?c_url=17"
+    },
+    "VirtualFlashLightEffect" : {
+        "videoName": "relight.mp4",
+        "Hint" : "Adjust foreground and background brightness and warmth separately with AI for creative or corrective lighting improvements.",
+        "Link" : "http://fx.macphun.com/FA?c_url=18"
+    },
+    "AIFogEffect" : {
+        "videoName": "atmosphere.mp4",
+        "Hint" : "Add fog, mist, or haze with depth-aware AI, keeping subjects clear while creating a realistic atmospheric effect.",
+        "Link" : "http://fx.macphun.com/FA?c_url=19"
+    },
+    "SunLightRaysAdjustmentLayer" : {
+        "videoName": "sunrays.mp4",
+        "Hint" : "Add realistic sunrays with adjustable position, warmth, and glow for subtle or dramatic lighting effects.",
+        "Link" : "http://fx.macphun.com/FA?c_url=20"
+    },
+    "ComplexBleachAdjustmentLayer" : {
+        "videoName": "dramatic.mp4",
+        "Hint" : "Create a cinematic, high-contrast look with muted, bleach-bypass–style colors.",
+        "Link" : "http://fx.macphun.com/FA?c_url=21"
+    },
+    "LUTMappingEffect" : {
+        "videoName": "mood.mp4",
+        "Hint" : "Apply ready-made LUTs to quickly set the color mood and tone of your photo.",
+        "Link" : "http://fx.macphun.com/FA?c_url=22"
+    },
+    "ColorToningAdjustmentLayer" : {
+        "videoName": "toning.mp4",
+        "Hint" : "Adjust highlights and shadows separately to achieve balanced tonal harmony in your photo.",
+        "Link" : "http://fx.macphun.com/FA?c_url=23"
+    },
+    "FadeEffect" : {
+        "videoName": "matte.mp4",
+        "Hint" : "Add a soft, film-like matte effect with gentle shadows for a nostalgic, cinematic feel.",
+        "Link" : "http://fx.macphun.com/FA?c_url=24"
+    },
+    "ImageRadianceAdjustmentLayer" : {
+        "videoName": "mystical.mp4",
+        "Hint" : "Give photos a soft, dreamy look by enhancing glow in light areas and deepening colors and contrast.",
+        "Link" : "http://fx.macphun.com/FA?c_url=25"
+    },
+    "GlowOrtonAdjustmentLayer" : {
+        "videoName": "glow.mp4",
+        "Hint" : "Add glow to highlights for a stylized lighting effect, perfect for bright areas like streetlights or the sky.",
+        "Link" : "http://fx.macphun.com/FA?c_url=26"
+    },
+    "GrainNewAdjustmentLayer" : {
+        "videoName": "film grain.mp4",
+        "Hint" : "Add film-like grain to give color or black-and-white photos an authentic analog feel.",
+        "Link" : "http://fx.macphun.com/FA?c_url=27"
+    },
+    "AIBokehEffect" : {
+        "videoName": "bokeh ai.mp4",
+        "Hint" : "Blur backgrounds, emphasize the subject, and add depth, even on photos shot without a fast lens.",
+        "Link" : "http://fx.macphun.com/FA?c_url=28"
+    },
+    "AIBokehNewEffect" : {
+        "videoName": "bokeh ai.mp4",
+        "Hint" : "Blur backgrounds, emphasize the subject, and add depth, even on photos shot without a fast lens.",
+        "Link" : "http://fx.macphun.com/FA?c_url=28"
+    },
+    "FaceEnhancer_vn0_Effect" : {
+        "videoName": "face.mp4",
+        "Hint" : "Quickly enhance eyes, lips, and facial features without manual masking.",
+        "Link" : "http://fx.macphun.com/FA?c_url=29"
+    },
+    "FaceEnhancer_vn0_EffectNew" : {
+        "videoName": "face.mp4",
+        "Hint" : "Quickly enhance eyes, lips, and facial features without manual masking.",
+        "Link" : "http://fx.macphun.com/FA?c_url=29"
+    },
+    "FaceEnhancerEffect" : {
+        "videoName": "face.mp4",
+        "Hint" : "Quickly enhance eyes, lips, and facial features without manual masking.",
+        "Link" : "http://fx.macphun.com/FA?c_url=30"
+    },
+    "SkinSmoothEffect" : {
+        "videoName": "skin.mp4",
+        "Hint" : "Automatically smooth skin and remove imperfections for quick, precise retouching when needed.",
+        "Link" : "http://fx.macphun.com/FA?c_url=31"
+    },
+    "SlimPeopleEffect" : {
+        "videoName": "body.mp4",
+        "Hint" : "Adjust proportions by shaping a subject’s torso and abdomen for natural-looking results.",
+        "Link" : "http://fx.macphun.com/FA?c_url=32"
+    },
+    "SlimPeople_vn0_Effect" : {
+        "videoName": "body.mp4",
+        "Hint" : "Adjust proportions by shaping a subject’s torso and abdomen for natural-looking results.",
+        "Link" : "http://fx.macphun.com/FA?c_url=33"
+    },
+    "HighKeyAdjustmentLayer" : {
+        "videoName": "high key.mp4",
+        "Hint" : "Quickly create high key style photos for fashion or beauty looks.",
+        "Link" : "http://fx.macphun.com/FA?c_url=34"
+    },
+    "ProContrastAdjustmentLayer" : {
+        "videoName": "supercontrast_v2.mp4",
+        "Hint" : "Adjust contrast separately in highlights, midtones, and shadows for precise control over depth and tonal balance.",
+        "Link" : "http://fx.macphun.com/FA?c_url=35"
+    },
+    "ColorEnhancerAdjustmentLayer" : {
+        "videoName": "color harmony.mp4",
+        "Hint" : "Access advanced controls to fine-tune and balance the colors in your image.",
+        "Link" : "http://fx.macphun.com/FA?c_url=36"
+    },
+    "DodgeBurnAdjustmentLayer" : {
+        "videoName": "dodge and burn.mp4",
+        "Hint" : "Lighten or darken specific areas to emphasize shapes and add depth to your photo.",
+        "Link" : "http://fx.macphun.com/FA?c_url=37"
+    },
+    "DodgeAndBurnEffect" : {
+        "videoName": "dodge and burn.mp4",
+        "Hint" : "Lighten or darken specific areas to emphasize shapes and add depth to your photo.",
+        "Link" : "http://fx.macphun.com/FA?c_url=38"
+    },
+    "CLONE" : {
+        "videoName": "clone_1.mp4",
+        "Hint" : "Remove unwanted elements by replacing them with pixels from a chosen clean area.",
+        "Link" : "http://fx.macphun.com/FA?c_url=39"
+    },
+    "BlurEffect" : {
+        "videoName": "blur.mp4",
+        "Hint" : "Apply blur to the whole image or specific areas, using styles like gaussian, motion, or twisted for creative effects.",
+        "Link" : "http://fx.macphun.com/FA?c_url=40"
+    },
+    "NewNeonLightEffect" : {
+        "videoName": "neon.mp4",
+        "Hint" : "Add glow or neon effects to objects and edges for a creative, eye-catching look.",
+        "Link" : "http://fx.macphun.com/FB"
+    },
+    "GenErase" : {
+        "videoName": "GenErase.mp4",
+        "Hint" : "Remove unwanted elements while seamlessly filling gaps with textures that match the surrounding area.",
+        "Link" : "http://fx.macphun.com/FB?c_url=1"
+    },
+    "GenSwap" : {
+        "videoName": "GenSwap.mp4",
+        "Hint" : "Swap objects for AI-generated elements that naturally blend into your photo using prompts.",
+        "Link" : "http://fx.macphun.com/FB?c_url=2"
+    },
+    "GenExpand" : {
+        "videoName": "GenExpand.mp4",
+        "Hint" : "Extend photo boundaries and add AI-generated areas to change aspect ratios or enhance composition.",
+        "Link" : "http://fx.macphun.com/FB?c_url=3"
+    },
+    "WaterAIEffect" : {
+        "videoName": "water enhancer.mp4",
+        "Hint" : "Makes water deeper, clearer, and more vibrant with AI while enhancing reflections for lifelike aquatic scenes.",
+        "Link" : "http://fx.macphun.com/FB?c_url=4"
+    },
+    "BlueHourEffect" : {
+        "videoName": "Twilight Enhancer.mp4",
+        "Hint" : "Use AI to mimic golden and blue hour lighting. Automatically detect the horizon and adjust warmth, brightness, and reflections for a natural glow.",
+        "Link" : "http://fx.macphun.com/FB?c_url=5"
+    },
+    "ColorTransferEffect": {
+        "videoName": "color transfer.mp4",
+        "Hint" : "Transfer the color mood from one photo to another, matching hues like sky, foliage, or buildings.",
+        "Link" : "http://fx.macphun.com/FB?c_url=6"
+    },
+    "DepthVolumeEffect": {
+        "videoName": "light depth.mp4",
+        "Hint" : "Create dimensional lighting with AI, refine warmth tones, and balance brightness separately front to back.",
+        "Link" : "http://fx.macphun.com/FB?c_url=11"
+    },
+    "HDRMerge" : {
+        "videoName": "hdr.mp4",
+        "Hint" : "Combine photos with different exposures into a single image with extended dynamic range and enhanced detail.",
+        "Link" : "http://fx.macphun.com/FB?c_url=7"
+    },
+    "FocusStacking" : {
+        "videoName": "focus.mp4",
+        "Hint" : "Merge images with different focus points to achieve maximum depth of field.",
+	"Link" : "http://fx.macphun.com/FB?c_url=9"
+    },
+    "PanoramaStitching" : {
+        "videoName": "panorama.mp4",
+        "Hint" : "Stitch multiple photos together to create wide, seamless panoramas.",
+        "Link" : "http://fx.macphun.com/FB?c_url=8"
+    },
+    "UpscaleAI" : {
+        "videoName": "upscale.mp4",
+        "Hint" : "Increase image resolution without losing detail using AI-powered enhancement.",
+        "Link" : "http://fx.macphun.com/FB?c_url=10"
+    },
+    "PhotoRestoration" : {
+        "videoName": "photo restoration.mp4",
+        "Hint" : "Restore old photos by removing scratches and damage, with optional colorization using AI.",
+        "Link" : "http://fx.macphun.com/FB?c_url=12"
+    },
+}

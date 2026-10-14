@@ -1,0 +1,157 @@
+{
+  "version": "0.2.0",
+  "records": [
+    {
+      "original_tool_name": "DefaultEffects",
+      "capability_id": "default_effects"
+    },
+    {
+      "original_tool_name": "AIEnhanceAdjustmentLayer",
+      "capability_id": "ai_enhance"
+    },
+    {
+      "original_tool_name": "AIStructureEffect",
+      "capability_id": "structure_ai"
+    },
+    {
+      "original_tool_name": "ExtendedColorAdjustmentLayer",
+      "capability_id": "color_adjustments"
+    },
+    {
+      "original_tool_name": "BWChannels_v1_Effect",
+      "capability_id": "bw_channels"
+    },
+    {
+      "original_tool_name": "DetailsEnhancerAdjustmentLayer",
+      "capability_id": "details"
+    },
+    {
+      "original_tool_name": "DenoiseLaplacianEffect",
+      "capability_id": "denoise"
+    },
+    {
+      "original_tool_name": "LandscapeEnhancerAdjustmentLayer",
+      "capability_id": "landscape_enhancer"
+    },
+    {
+      "original_tool_name": "VignetteAdjustmentLayer",
+      "capability_id": "vignette"
+    },
+    {
+      "original_tool_name": "SkyReplacementAdjustmentLayer",
+      "capability_id": "sky_replace"
+    },
+    {
+      "original_tool_name": "SunLightRaysAdjustmentLayer",
+      "capability_id": "sunrays"
+    },
+    {
+      "original_tool_name": "ComplexBleachAdjustmentLayer",
+      "capability_id": "complex_bleach"
+    },
+    {
+      "original_tool_name": "FadeEffect",
+      "capability_id": "fade"
+    },
+    {
+      "original_tool_name": "ImageRadianceAdjustmentLayer",
+      "capability_id": "radiance"
+    },
+    {
+      "original_tool_name": "LUTMappingEffect",
+      "capability_id": "lut_mapping"
+    },
+    {
+      "original_tool_name": "GlowOrtonAdjustmentLayer",
+      "capability_id": "glow_orton"
+    },
+    {
+      "original_tool_name": "GrainNewAdjustmentLayer",
+      "capability_id": "grain"
+    },
+    {
+      "original_tool_name": "ProContrastAdjustmentLayer",
+      "capability_id": "pro_contrast"
+    },
+    {
+      "original_tool_name": "ColorEnhancerAdjustmentLayer",
+      "capability_id": "color_enhancer"
+    },
+    {
+      "original_tool_name": "ColorToningAdjustmentLayer",
+      "capability_id": "color_toning"
+    },
+    {
+      "original_tool_name": "SkinSoftenerNNEffect",
+      "capability_id": "skin_smooth"
+    },
+    {
+      "original_tool_name": "HighKeyAdjustmentLayer",
+      "capability_id": "high_key"
+    },
+    {
+      "original_tool_name": "AIFogEffect",
+      "capability_id": "fog"
+    },
+    {
+      "original_tool_name": "AIBokehEffect",
+      "capability_id": "bokeh_ai"
+    },
+    {
+      "original_tool_name": "VirtualFlashLightEffect",
+      "capability_id": "virtual_flash"
+    },
+    {
+      "original_tool_name": "MagicLightsEffect",
+      "capability_id": "magic_lights"
+    },
+    {
+      "original_tool_name": "DenoiseAI",
+      "capability_id": "denoise"
+    },
+    {
+      "original_tool_name": "DeblurAI",
+      "capability_id": "deblur"
+    },
+    {
+      "original_tool_name": "ERASE",
+      "capability_id": "erase"
+    },
+    {
+      "original_tool_name": "FaceEnhancerEffect",
+      "capability_id": "face_enhancer"
+    },
+    {
+      "original_tool_name": "FaceEnhancer_vn0_Effect",
+      "capability_id": "face_enhancer"
+    },
+    {
+      "original_tool_name": "SlimPeopleEffect",
+      "capability_id": "slim_people"
+    },
+    {
+      "original_tool_name": "SlimPeople_vn0_Effect",
+      "capability_id": "slim_people"
+    },
+    {
+      "original_tool_name": "DodgeAndBurnEffect",
+      "capability_id": "dodge_burn"
+    },
+    {
+      "original_tool_name": "UniversalBackgroundRemoval",
+      "capability_id": null
+    },
+    {
+      "original_tool_name": "UpscaleAI",
+      "capability_id": "super_resolution"
+    },
+    {
+      "original_tool_name": "MaskAI",
+      "capability_id": null
+    },
+    {
+      "original_tool_name": "Classifier",
+      "capability_id": null
+    }
+  ]
+}

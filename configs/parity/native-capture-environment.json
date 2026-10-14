@@ -1,0 +1,28 @@
+{
+  "version": "2.0",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "app": {
+    "bundle_id": "com.skylum.luminarneo",
+    "version": "1.28.1",
+    "build": "23487",
+    "locale": "zh-Hans"
+  },
+  "logical_viewport": [1440, 900],
+  "physical_viewport": [2880, 1800],
+  "capture_mode": "local-physical-display",
+  "display_session_verified": true,
+  "automation_input_verified": true,
+  "user_authorized_local_capture": true,
+  "verification": {
+    "provider": "native-preflight:macos-accessibility+screencapture",
+    "session_id": "luminar-57922-20260919T011804+0800",
+    "verified_at": "2026-09-19T01:18:04+08:00",
+    "evidence": {
+      "screenshot": "test_data/outputs/luminar-1.28.1-23487/diagnostics/environment-verification/20260919T011804+0800/window.png",
+      "screenshot_sha256": "deb8012c4315b340c9d9baecefd578eb3497598f5c283080a7f60ab6b046bd20",
+      "accessibility_snapshot": "test_data/outputs/luminar-1.28.1-23487/diagnostics/environment-verification/20260919T011804+0800/window.ax.json",
+      "accessibility_sha256": "5352e9a99063fb71f997d0ea4c1074d8b1a7a8a39de23392ce0f95962530a3c0"
+    }
+  },
+  "status": "verified"
+}

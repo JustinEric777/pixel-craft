@@ -1,0 +1,2877 @@
+{
+  "version": "1.0",
+  "matrix_type": "core-ui-required-states",
+  "reference_id": "luminar-neo-macos-1.28.1-23487",
+  "scope": "local-free-core",
+  "source_fingerprints": {
+    "ui": "24d10460a06ba090474a3908c3e68a1e317ac81d98a3a605fc86b6a8cba34c8e",
+    "schema": "0efdde8b03b712605502c580d44a00f13f03d0c23edd169fff3e314e606f50e8",
+    "workspace_states": "8edcccb77dfdc81c5dea52ae6536415cf60d913b299561b6bb0500a61aef7af5",
+    "inventory": "f3f6ccfaa2b88eed605e6db70754402ed27401116ef73e6d68f4758c6105c080"
+  },
+  "matrix_fingerprint": "51715c84dc437f2bf5bd00a2f60b429c00e58d3fa96ff881f91fd3dd8e806ce0",
+  "workspace_state_count": 16,
+  "capability_count": 40,
+  "parameter_state_count": 74,
+  "state_count": 170,
+  "records": [
+    {
+      "id": "workspace:catalog",
+      "kind": "workspace-state",
+      "workspace": "catalog",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:presets",
+      "kind": "workspace-state",
+      "workspace": "presets",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:edit",
+      "kind": "workspace-state",
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:layer-stack",
+      "kind": "workspace-state",
+      "workspace": "layer-stack",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:layer-library",
+      "kind": "workspace-state",
+      "workspace": "layer-library",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:tool-expanded",
+      "kind": "workspace-state",
+      "workspace": "tool-expanded",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:edit-history",
+      "kind": "workspace-state",
+      "workspace": "edit-history",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:more-panel",
+      "kind": "workspace-state",
+      "workspace": "more-panel",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:info-panel",
+      "kind": "workspace-state",
+      "workspace": "info-panel",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:edit-collapsed",
+      "kind": "workspace-state",
+      "workspace": "edit-collapsed",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:black-white-before-conversion",
+      "kind": "workspace-state",
+      "workspace": "black-white-before-conversion",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:black-white-after-conversion",
+      "kind": "workspace-state",
+      "workspace": "black-white-after-conversion",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:denoise-level-selected",
+      "kind": "workspace-state",
+      "workspace": "denoise-level-selected",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:export-dialog",
+      "kind": "workspace-state",
+      "workspace": "export-dialog",
+      "surface_owner": "os",
+      "comparison_mode": "semantic",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "semantic-parity"
+      ]
+    },
+    {
+      "id": "workspace:multi-image",
+      "kind": "workspace-state",
+      "workspace": "multi-image",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "id": "workspace:multi-image-complete",
+      "kind": "workspace-state",
+      "workspace": "multi-image-complete",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "capability_id": null,
+      "parameter": null,
+      "native_tool": null,
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ]
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:parameter:crop_box:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "crop_box"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:parameter:crop_ratio:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "crop_ratio"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:parameter:flip_x:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "flip_x"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "common",
+      "capability_id": "crop_ai",
+      "native_tool": "MPCropToolFilter",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:crop_ai:parameter:flip_y:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "flip_y"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:parameter:denoise_level:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "denoise_level"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:parameter:luminosity:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "luminosity"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:parameter:details:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "details"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "denoise",
+      "native_tool": "DenoiseAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise:parameter:sharpness:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sharpness"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "deblur",
+      "native_tool": "DeblurAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:deblur:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "deblur",
+      "native_tool": "DeblurAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:deblur:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "deblur",
+      "native_tool": "DeblurAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:deblur:parameter:sharp_level:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sharp_level"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "extensions",
+      "capability_id": "deblur",
+      "native_tool": "DeblurAI",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:deblur:parameter:face_enhancer_enabled:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "face_enhancer_enabled"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "default_effects",
+      "native_tool": "DefaultEffects",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:default_effects:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "default_effects",
+      "native_tool": "DefaultEffects",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:default_effects:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "default_effects",
+      "native_tool": "DefaultEffects",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:default_effects:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "ai_enhance",
+      "native_tool": "AIEnhanceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:ai_enhance:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "ai_enhance",
+      "native_tool": "AIEnhanceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:ai_enhance:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "ai_enhance",
+      "native_tool": "AIEnhanceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:ai_enhance:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "erase",
+      "native_tool": "ERASE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:erase:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "erase",
+      "native_tool": "ERASE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:erase:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "erase",
+      "native_tool": "ERASE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:erase:parameter:strokes:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "strokes"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "structure_ai",
+      "native_tool": "AIStructureEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:structure_ai:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "structure_ai",
+      "native_tool": "AIStructureEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:structure_ai:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "structure_ai",
+      "native_tool": "AIStructureEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:structure_ai:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "color_adjustments",
+      "native_tool": "ExtendedColorAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_adjustments:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "color_adjustments",
+      "native_tool": "ExtendedColorAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_adjustments:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "color_adjustments",
+      "native_tool": "ExtendedColorAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_adjustments:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "bw_channels",
+      "native_tool": "BWChannels_v1_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bw_channels:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "bw_channels",
+      "native_tool": "BWChannels_v1_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bw_channels:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "bw_channels",
+      "native_tool": "BWChannels_v1_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bw_channels:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "details",
+      "native_tool": "DetailsEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:details:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "details",
+      "native_tool": "DetailsEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:details:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "details",
+      "native_tool": "DetailsEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:details:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "denoise_laplacian",
+      "native_tool": "DenoiseLaplacianEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise_laplacian:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "denoise_laplacian",
+      "native_tool": "DenoiseLaplacianEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise_laplacian:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "denoise_laplacian",
+      "native_tool": "DenoiseLaplacianEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:denoise_laplacian:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "vignette",
+      "native_tool": "VignetteAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:vignette:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "vignette",
+      "native_tool": "VignetteAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:vignette:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "essentials",
+      "capability_id": "vignette",
+      "native_tool": "VignetteAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:vignette:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:asset_id:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "asset_id"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:horizon_offset:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "horizon_offset"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:vertical_offset:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "vertical_offset"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:horizontal_offset:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "horizontal_offset"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:sky_flip:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sky_flip"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:sky_global:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sky_global"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:fix_gaps:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "fix_gaps"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:edge_refinement:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "edge_refinement"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:foreground_relight:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "foreground_relight"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:relight_saturation:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "relight_saturation"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:relight_human:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "relight_human"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:reflection_blur:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "reflection_blur"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:reflection_amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "reflection_amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:sky_grain:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sky_grain"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:sky_blur:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "sky_blur"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:atmospheric_haze:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "atmospheric_haze"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:temperature:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "temperature"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sky_replace",
+      "native_tool": "SkyReplacementAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sky_replace:parameter:brightness:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "brightness"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sunrays",
+      "native_tool": "SunLightRaysAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sunrays:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sunrays",
+      "native_tool": "SunLightRaysAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sunrays:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "sunrays",
+      "native_tool": "SunLightRaysAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:sunrays:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "blue_hour",
+      "native_tool": "BlueHourEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blue_hour:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "blue_hour",
+      "native_tool": "BlueHourEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blue_hour:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "blue_hour",
+      "native_tool": "BlueHourEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blue_hour:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "fog",
+      "native_tool": "AIFogEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fog:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "fog",
+      "native_tool": "AIFogEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fog:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "fog",
+      "native_tool": "AIFogEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fog:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "landscape_enhancer",
+      "native_tool": "LandscapeEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:landscape_enhancer:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "landscape_enhancer",
+      "native_tool": "LandscapeEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:landscape_enhancer:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "landscape_enhancer",
+      "native_tool": "LandscapeEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:landscape_enhancer:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "water_enhancer",
+      "native_tool": "WaterAIEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:water_enhancer:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "water_enhancer",
+      "native_tool": "WaterAIEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:water_enhancer:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "landscape",
+      "capability_id": "water_enhancer",
+      "native_tool": "WaterAIEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:water_enhancer:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "depth_volume",
+      "native_tool": "DepthVolumeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:depth_volume:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "depth_volume",
+      "native_tool": "DepthVolumeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:depth_volume:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "depth_volume",
+      "native_tool": "DepthVolumeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:depth_volume:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_transfer",
+      "native_tool": "ColorTransferEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_transfer:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_transfer",
+      "native_tool": "ColorTransferEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_transfer:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_transfer",
+      "native_tool": "ColorTransferEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_transfer:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_transfer",
+      "native_tool": "ColorTransferEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_transfer:parameter:asset_id:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "asset_id"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "magic_lights",
+      "native_tool": "MagicLightsEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:magic_lights:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "magic_lights",
+      "native_tool": "MagicLightsEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:magic_lights:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "magic_lights",
+      "native_tool": "MagicLightsEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:magic_lights:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "complex_bleach",
+      "native_tool": "ComplexBleachAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:complex_bleach:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "complex_bleach",
+      "native_tool": "ComplexBleachAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:complex_bleach:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "complex_bleach",
+      "native_tool": "ComplexBleachAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:complex_bleach:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "lut_mapping",
+      "native_tool": "LUTMappingEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:lut_mapping:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "lut_mapping",
+      "native_tool": "LUTMappingEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:lut_mapping:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "lut_mapping",
+      "native_tool": "LUTMappingEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:lut_mapping:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "lut_mapping",
+      "native_tool": "LUTMappingEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:lut_mapping:parameter:asset_id:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "asset_id"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_toning",
+      "native_tool": "ColorToningAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_toning:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_toning",
+      "native_tool": "ColorToningAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_toning:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "color_toning",
+      "native_tool": "ColorToningAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_toning:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "fade",
+      "native_tool": "FadeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fade:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "fade",
+      "native_tool": "FadeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fade:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "fade",
+      "native_tool": "FadeEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:fade:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:strokes:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "strokes"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:neon_spread:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "neon_spread"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:neon_atmosphere:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "neon_atmosphere"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:neon_hue:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "neon_hue"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "new_neon_light",
+      "native_tool": "NewNeonLightEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:new_neon_light:parameter:neon_whiteness:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "neon_whiteness"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "radiance",
+      "native_tool": "ImageRadianceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:radiance:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "radiance",
+      "native_tool": "ImageRadianceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:radiance:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "radiance",
+      "native_tool": "ImageRadianceAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:radiance:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "glow_orton",
+      "native_tool": "GlowOrtonAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:glow_orton:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "glow_orton",
+      "native_tool": "GlowOrtonAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:glow_orton:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "glow_orton",
+      "native_tool": "GlowOrtonAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:glow_orton:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "blur",
+      "native_tool": "BlurEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blur:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "blur",
+      "native_tool": "BlurEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blur:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "blur",
+      "native_tool": "BlurEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:blur:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "grain",
+      "native_tool": "GrainNewAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:grain:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "grain",
+      "native_tool": "GrainNewAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:grain:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "creative",
+      "capability_id": "grain",
+      "native_tool": "GrainNewAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:grain:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_ai",
+      "native_tool": "AIFaceDepthEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_ai:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_ai",
+      "native_tool": "AIFaceDepthEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_ai:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_ai",
+      "native_tool": "AIFaceDepthEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_ai:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "bokeh_ai",
+      "native_tool": "AIBokehNewEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bokeh_ai:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "bokeh_ai",
+      "native_tool": "AIBokehNewEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bokeh_ai:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "bokeh_ai",
+      "native_tool": "AIBokehNewEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bokeh_ai:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "bokeh_ai",
+      "native_tool": "AIBokehNewEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:bokeh_ai:parameter:bokeh_shape:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "bokeh_shape"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_enhancer",
+      "native_tool": "FaceEnhancer_vn0_EffectNew",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_enhancer:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_enhancer",
+      "native_tool": "FaceEnhancer_vn0_EffectNew",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_enhancer:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "face_enhancer",
+      "native_tool": "FaceEnhancer_vn0_EffectNew",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:face_enhancer:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "skin_smooth",
+      "native_tool": "SkinSmoothEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:skin_smooth:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "skin_smooth",
+      "native_tool": "SkinSmoothEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:skin_smooth:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "skin_smooth",
+      "native_tool": "SkinSmoothEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:skin_smooth:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "slim_people",
+      "native_tool": "SlimPeople_vn0_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:slim_people:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "slim_people",
+      "native_tool": "SlimPeople_vn0_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:slim_people:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "slim_people",
+      "native_tool": "SlimPeople_vn0_Effect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:slim_people:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "high_key",
+      "native_tool": "HighKeyAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:high_key:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "high_key",
+      "native_tool": "HighKeyAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:high_key:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "portrait",
+      "capability_id": "high_key",
+      "native_tool": "HighKeyAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:high_key:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "pro_contrast",
+      "native_tool": "ProContrastAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:pro_contrast:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "pro_contrast",
+      "native_tool": "ProContrastAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:pro_contrast:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "pro_contrast",
+      "native_tool": "ProContrastAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:pro_contrast:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "color_enhancer",
+      "native_tool": "ColorEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_enhancer:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "color_enhancer",
+      "native_tool": "ColorEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_enhancer:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "color_enhancer",
+      "native_tool": "ColorEnhancerAdjustmentLayer",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:color_enhancer:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "dodge_burn",
+      "native_tool": "DodgeAndBurnEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:dodge_burn:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "dodge_burn",
+      "native_tool": "DodgeAndBurnEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:dodge_burn:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "dodge_burn",
+      "native_tool": "DodgeAndBurnEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:dodge_burn:parameter:amount:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "amount"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "dodge_burn",
+      "native_tool": "DodgeAndBurnEffect",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:dodge_burn:parameter:strokes:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "strokes"
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "clone",
+      "native_tool": "CLONE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:clone:collapsed",
+      "kind": "tool-panel-state",
+      "state": "collapsed",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "clone",
+      "native_tool": "CLONE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:clone:expanded",
+      "kind": "tool-panel-state",
+      "state": "expanded",
+      "parameter": null
+    },
+    {
+      "workspace": "edit",
+      "surface_owner": "app",
+      "comparison_mode": "pixel",
+      "group_id": "pro",
+      "capability_id": "clone",
+      "native_tool": "CLONE",
+      "required_evidence": [
+        "native-reference",
+        "browser-current-build",
+        "pixel-parity"
+      ],
+      "id": "tool:clone:parameter:strokes:modified",
+      "kind": "tool-parameter-state",
+      "state": "modified",
+      "parameter": "strokes"
+    }
+  ]
+}

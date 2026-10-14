@@ -1,0 +1,446 @@
+{
+  "version": "1.0",
+  "graphs": [
+    {
+      "capability_id": "ai_enhance",
+      "implementation": "model-backed",
+      "required_models": [
+        "MulticlassSegmentationV2"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "raw_default_effects",
+      "implementation": "model-backed",
+      "required_models": [
+        "model_cfa_4_ch"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "structure_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "MulticlassSegmentationV2"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "landscape_enhancer",
+      "implementation": "model-backed",
+      "required_models": [
+        "improved_sky_segmentator_v462_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "sky_replace",
+      "implementation": "model-backed",
+      "required_models": [
+        "improved_sky_segmentator_v462_i8",
+        "horizon_align_i8"
+      ],
+      "conditional_models": [
+        "skyinwater_v16_i8",
+        "human_clothes_exp13_v2",
+        "salient_object_improve_exp19_it150k"
+      ]
+    },
+    {
+      "capability_id": "augmented_sky",
+      "implementation": "model-backed",
+      "required_models": [
+        "improved_sky_segmentator_v462_i8",
+        "horizon_align_i8"
+      ],
+      "conditional_models": [
+        "skyinwater_v16_i8",
+        "human_clothes_exp13_v2",
+        "salient_object_improve_exp19_it150k"
+      ]
+    },
+    {
+      "capability_id": "sky_enhancer",
+      "implementation": "model-backed",
+      "required_models": [
+        "improved_sky_segmentator_v462_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "sunrays",
+      "implementation": "model-backed",
+      "required_models": [
+        "improved_sky_segmentator_v462_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "water_enhancer",
+      "implementation": "model-backed",
+      "required_models": [
+        "skyinwater_v16_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "bokeh_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "mobilenet_exp78_portrait_BOKEH12"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "background_removal",
+      "implementation": "model-backed",
+      "required_models": [
+        "salient_object_improve_exp19_it150k"
+      ],
+      "conditional_models": [
+        "SegmentAnything"
+      ]
+    },
+    {
+      "capability_id": "mask_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "SegmentAnything"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "universal_background_removal",
+      "implementation": "model-backed",
+      "required_models": [
+        "salient_object_improve_exp19_it150k"
+      ],
+      "conditional_models": [
+        "SegmentAnything"
+      ]
+    },
+    {
+      "capability_id": "face_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "face_boxes_i8"
+      ],
+      "conditional_models": [
+        "face_landmarks_i8",
+        "eyes_detector_i8",
+        "IrisLandmarks",
+        "human_clothes_exp13_v2",
+        "salient_object_improve_exp19_it150k"
+      ]
+    },
+    {
+      "capability_id": "virtual_flash",
+      "implementation": "model-backed",
+      "required_models": [
+        "face_detector_retinaface"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "magic_lights",
+      "implementation": "model-backed",
+      "required_models": [
+        "magic_lights_exp37_dataset123_1024"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "skin_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "skin_detector_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "skin_smooth",
+      "implementation": "model-backed",
+      "required_models": [
+        "skin_detector_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "face_enhancer",
+      "implementation": "model-backed",
+      "required_models": [
+        "GFPGANv1.3_2023"
+      ],
+      "conditional_models": [
+        "face_detector_retinaface"
+      ]
+    },
+    {
+      "capability_id": "slim_people",
+      "implementation": "model-backed",
+      "required_models": [
+        "human_clothes_exp13_v2"
+      ],
+      "conditional_models": ["HumanLandmarks", "segmentator_i8"]
+    },
+    {
+      "capability_id": "photo_restoration",
+      "implementation": "model-backed",
+      "required_models": [
+        "GFPGANv1.3_2023"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "denoise",
+      "implementation": "model-backed",
+      "required_models": [
+        "model_luminocity_denoise"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "deblur",
+      "implementation": "model-backed",
+      "required_models": [
+        "srn_deblur_512"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "defocus",
+      "implementation": "model-backed",
+      "required_models": [
+        "defocus_exp35_SBDD_tile256_CBAN_UNet_7"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "super_resolution",
+      "implementation": "model-backed",
+      "required_models": [
+        "UpscaleX2HGGT"
+      ],
+      "conditional_models": [
+        "UpscaleX4HGGT",
+        "UpscaleX6HGGT",
+        "UpscaleX2NoGAN",
+        "UpscaleX4NoGAN",
+        "UpscaleX6NoGAN"
+      ]
+    },
+    {
+      "capability_id": "semantic_search",
+      "implementation": "model-backed",
+      "required_models": [
+        "SemanticSearchImage",
+        "SemanticSearchText"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "classifier",
+      "implementation": "model-backed",
+      "required_models": [
+        "image_classifier_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "crop_ai",
+      "implementation": "model-backed",
+      "required_models": [
+        "saliency_map_opset9_billinear_upsampling_keras_tensorflow_i8"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "color_transfer",
+      "implementation": "model-backed",
+      "required_models": [
+        "SemanticSearchImage"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "new_neon_light",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "relight",
+      "implementation": "model-backed",
+      "required_models": [
+        "DepthAnythingV2SmallOpenVino"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "fog",
+      "implementation": "model-backed",
+      "required_models": [
+        "DepthAnythingV2SmallOpenVino"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "depth_volume",
+      "implementation": "model-backed",
+      "required_models": [
+        "DepthAnythingV2SmallOpenVino"
+      ],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "default_effects",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "details",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "color_adjustments",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "bw_channels",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "vignette",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "color_toning",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "color_enhancer",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "blue_hour",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "complex_bleach",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "fade",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "radiance",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "lut_mapping",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "glow_orton",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "grain",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "pro_contrast",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "high_key",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "erase",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "dodge_burn",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "clone",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "hdr_merge",
+      "implementation": "workflow",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "focus_stacking",
+      "implementation": "workflow",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "panorama_stitching",
+      "implementation": "workflow",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "luminar_preset",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "denoise_laplacian",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    },
+    {
+      "capability_id": "blur",
+      "implementation": "deterministic",
+      "required_models": [],
+      "conditional_models": []
+    }
+  ]
+}
